@@ -35,18 +35,18 @@
 	
 */
 
-@import url('css/animate.css');
-@import url('css/owl.css');
-@import url('css/elegenticon.css');
-@import url('css/linearicons.css');
-@import url('css/jquery-ui.css');
-@import url('css/animation.css');
-@import url('css/icofont.min.css');
-@import url('css/themify-icons.css');
-@import url('css/simple-line-icons.css');
-@import url('css/fontawesome.min.css');
-@import url('css/jquery.fancybox.min.css');
-@import url('css/jquery.mCustomScrollbar.min.css');
+@import url('animate.css');
+@import url('owl.css');
+@import url('elegenticon.css');
+@import url('linearicons.css');
+@import url('jquery-ui.css');
+@import url('animation.css');
+@import url('icofont.min.css');
+@import url('themify-icons.css');
+@import url('simple-line-icons.css');
+@import url('fontawesome.min.css');
+@import url('jquery.fancybox.min.css');
+@import url('jquery.mCustomScrollbar.min.css');
 
 /*** 
 
@@ -185,9 +185,9 @@ h6{
 	font-size:18px;
 }
 
-/* input,button,select,textarea{
+input,button,select,textarea{
 	
-} */
+}
 
 textarea{
 	overflow:hidden;
@@ -734,7 +734,7 @@ img{
 	display:inline-block;
 }
 
-/* .main-header.fixed-header .header-upper .outer-box{
+.main-header.fixed-header .header-upper .outer-box{
 	
 }
 
@@ -744,7 +744,7 @@ img{
 
 .main-header.fixed-header .main-menu .navigation > li > a{
 	
-} */
+}
 
 .main-header.fixed-header .main-menu .navigation > li.current > a,
 .main-header.fixed-header .main-menu .navigation > li:hover > a{
@@ -1075,9 +1075,9 @@ img{
 	width:100%;
 }
 
-/* .main-menu .navigation > li > ul > li > ul > li:last-child{
+.main-menu .navigation > li > ul > li > ul > li:last-child{
 	
-} */
+}
 
 .main-menu .navigation > li > ul > li > ul > li > a{
 	position: relative;
@@ -3795,9 +3795,9 @@ img{
 	background-color:#f7f7f7;
 }
 
-/* .accordion-box .block.active-block{
+.accordion-box .block.active-block{
 	
-} */
+}
 
 .accordion-box .block .acc-btn{
 	position:relative;
