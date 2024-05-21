@@ -48,112 +48,7 @@
  	
     <!-- Main Header-->
     <header class="main-header">
-    	
-		<!-- Header Top -->
-        <div class="header-top">
-            <div class="auto-container">
-                <div class="inner-container clearfix">
-					<!-- Top Left -->
-					<div class="top-left">
-						<!-- Info List -->
-						<ul class="info-list">
-							<li><a href="mailto:hello@consulte.co"><span class="icon icofont-envelope"></span> hello@consulte.co</a></li>
-							<li><a href="tel:+1212-226-3126"><span class="icon icofont-phone"></span> +1212-226-3126</a></li>
-							<li><a href="contact.html"><span class="icon icofont-clock-time"></span> Mon - Sat: 8.00 - 17.00, Sunday Closed</a></li>
-						</ul>
-					</div>
-					
-					<!-- Top Right -->
-                    <div class="top-right pull-right">
-						<!-- Social Box -->
-						<ul class="social-box">
-							<li class="share">Our Social</li>
-							<li><a href="https://twitter.com/" class="icofont-twitter"></a></li>
-							<li><a href="http://facebook.com/" class="icofont-facebook"></a></li>
-							<li><a href="https://www.instagram.com/" class="icofont-instagram"></a></li>
-							<li><a href="https://rss.com/" class="icofont-rss"></a></li>
-							<li><a href="https://www.youtube.com/" class="icofont-play-alt-1"></a></li>
-						</ul>
-                    </div>
-					
-                </div>
-            </div>
-        </div>
-		
-    	<!-- Header Upper -->
-        <div class="header-upper">
-        	<div class="auto-container">
-            	<div class="inner-container clearfix">
-                	
-                	<div class="pull-left logo-box">
-                    	<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
-                    </div>
-					
-                   	<div class="nav-outer pull-left clearfix">
-						<!-- Main Menu -->
-						<nav class="main-menu navbar-expand-md">
-							<div class="navbar-header">
-								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-							</div>
-
-							<div class="navbar-collapse show collapse clearfix" id="navbarSupportedContent">
-								<ul class="navigation clearfix">
-									<li class="current"><a href="index.html">Home</a></li>
-									<li><a href="about.html">About</a></li>
-									<li class="dropdown"><a href="#">Service</a>
-										<ul>
-											<li><a href="service.html">Service</a></li>
-											<li><a href="service-detail.html">Service Detail</a></li>
-										</ul>
-									</li>
-									<li class="dropdown"><a href="#">Projects</a>
-										<ul>
-											<li><a href="project.html">Project</a></li>
-											<li><a href="project-details.html">Project Details</a></li>
-										</ul>
-									</li>
-									<li class="dropdown"><a href="#">Blog</a>
-										<ul class="from-right">
-											<li><a href="blog.html">Our Blog</a></li>
-											<li><a href="blog-detail.html">Blog Detail</a></li>
-										</ul>
-									</li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</div>
-							
-						</nav>
-						
-					</div>
-					
-					<!-- Outer Box -->
-					<div class="outer-box">
-						<!-- Search Btn -->
-						<div class="search-box-btn search-box-outer"><span class="icon icofont-search"></span></div>
-						<!-- Mobile Navigation Toggler -->
-                        <div class="mobile-nav-toggler"><span class="icon ti-menu"></span></div>
-					</div>
-                   
-                </div>
-            </div>
-        </div>
-        <!--End Header Upper-->
-        
-		<!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="icon lnr lnr-cross"></span></div>
-            
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-            </nav>
-        </div><!-- End Mobile Menu -->
-		
+		<?php include ('layout/header.php')?>		
     </header>
     <!--End Main Header -->
 	
@@ -172,7 +67,7 @@
 								<h1>Clever <span>Investing</span> Make Your Money Grow</h1>
 								<div class="text">Capitalise on low hanging fruit to identify a ballpark <br> value added activity to beta test. Override the digital divide <br> with additional base clickthroughs.</div>
 								<div class="btn-box">
-									<a href="about.html" class="theme-btn btn-style-one"><span class="txt">Work With Us</span></a>
+									<a href="about.php" class="theme-btn btn-style-one"><span class="txt">Work With Us</span></a>
 								</div>
 							</div>
 						</div>
@@ -193,7 +88,7 @@
 								<h1>Clever <span>Investing</span> Make Your Money Grow</h1>
 								<div class="text">Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional base clickthroughs.</div>
 								<div class="btn-box">
-									<a href="about.html" class="theme-btn btn-style-one"><span class="txt">Work With Us</span></a>
+									<a href="about.php" class="theme-btn btn-style-one"><span class="txt">Work With Us</span></a>
 								</div>
 							</div>
 						</div>
@@ -214,7 +109,7 @@
 								<h1>Clever <span>Investing</span> Make Your Money Grow</h1>
 								<div class="text">Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional base clickthroughs.</div>
 								<div class="btn-box">
-									<a href="about.html" class="theme-btn btn-style-one"><span class="txt">Work With Us</span></a>
+									<a href="about.php" class="theme-btn btn-style-one"><span class="txt">Work With Us</span></a>
 								</div>
 							</div>
 						</div>
@@ -305,9 +200,9 @@
 							<div class="icon-box">
 								<span class="icon ti-blackboard"></span>
 							</div>
-							<h5><a href="service-detail.html">Strategy</a></h5>
+							<h5><a href="service-detail.php">Strategy</a></h5>
 							<div class="text">Thought leadership pass the clap hackathon wearables.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
+							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -317,9 +212,9 @@
 							<div class="icon-box">
 								<span class="icon ti-stats-up"></span>
 							</div>
-							<h5><a href="service-detail.html">Financial</a></h5>
+							<h5><a href="service-detail.php">Financial</a></h5>
 							<div class="text">Platform omnichannel click thought leadership pivot</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
+							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -329,9 +224,9 @@
 							<div class="icon-box">
 								<span class="icon ti-shield"></span>
 							</div>
-							<h5><a href="service-detail.html">Insurance</a></h5>
+							<h5><a href="service-detail.php">Insurance</a></h5>
 							<div class="text">Disrupt taste makers help council emerging.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
+							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -341,9 +236,9 @@
 							<div class="icon-box">
 								<span class="icon ti-home"></span>
 							</div>
-							<h5><a href="service-detail.html">Estate</a></h5>
+							<h5><a href="service-detail.php">Estate</a></h5>
 							<div class="text">Mobile ready proprietary dedication intuitive</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
+							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -353,9 +248,9 @@
 							<div class="icon-box">
 								<span class="icon ti-stamp"></span>
 							</div>
-							<h5><a href="service-detail.html">Audit & Evaluation</a></h5>
+							<h5><a href="service-detail.php">Audit & Evaluation</a></h5>
 							<div class="text">Thought leadership pass the clap hackathon wearables.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
+							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -365,9 +260,9 @@
 							<div class="icon-box">
 								<span class="icon ti-money"></span>
 							</div>
-							<h5><a href="service-detail.html">Taxes & Efficiency</a></h5>
+							<h5><a href="service-detail.php">Taxes & Efficiency</a></h5>
 							<div class="text">Disrupt taste makers help council emerging.</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
+							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -377,9 +272,9 @@
 							<div class="icon-box">
 								<span class="icon ti-shopping-cart-full"></span>
 							</div>
-							<h5><a href="service-detail.html">Consumer Market</a></h5>
+							<h5><a href="service-detail.php">Consumer Market</a></h5>
 							<div class="text">Mobile ready proprietary dedication intuitive</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
+							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -389,9 +284,9 @@
 							<div class="icon-box">
 								<span class="icon ti-truck"></span>
 							</div>
-							<h5><a href="service-detail.html">Logistic</a></h5>
+							<h5><a href="service-detail.php">Logistic</a></h5>
 							<div class="text">Platform omnichannel click thought leadership pivot</div>
-							<a class="read-more" href="service-detail.html">More <span class="ti-angle-right"></span></a>
+							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -414,7 +309,7 @@
 						<h2>See Our <span>Successful Businesses</span></h2>
 					</div>
 					<div class="pull-right">
-						<a href="service.html" class="cases">all Cases <span class="arrow ti-angle-right"></span></a>
+						<a href="service.php" class="cases">all Cases <span class="arrow ti-angle-right"></span></a>
 					</div>
 				</div>
 			</div>
@@ -435,9 +330,9 @@
 										<img src="images/gallery/2.jpg" alt="" />
 										<div class="overlay-box">
 											<div class="overlay-inner">
-												<h3><a href="project-details.html">WOTa Money Save</a></h3>
+												<h3><a href="project-details.php">WOTa Money Save</a></h3>
 												<div class="designation">Finance, Consulting</div>
-												<a href="project-details.html" class="arrow ti-angle-right"></a>
+												<a href="project-details.php" class="arrow ti-angle-right"></a>
 											</div>
 										</div>
 									</div>
@@ -453,9 +348,9 @@
 										<img src="images/gallery/3.jpg" alt="" />
 										<div class="overlay-box">
 											<div class="overlay-inner">
-												<h3><a href="project-details.html">WOTa Money Save</a></h3>
+												<h3><a href="project-details.php">WOTa Money Save</a></h3>
 												<div class="designation">Finance, Consulting</div>
-												<a href="project-details.html" class="arrow ti-angle-right"></a>
+												<a href="project-details.php" class="arrow ti-angle-right"></a>
 											</div>
 										</div>
 									</div>
@@ -471,9 +366,9 @@
 										<img src="images/gallery/4.jpg" alt="" />
 										<div class="overlay-box">
 											<div class="overlay-inner">
-												<h3><a href="project-details.html">WOTa Money Save</a></h3>
+												<h3><a href="project-details.php">WOTa Money Save</a></h3>
 												<div class="designation">Finance, Consulting</div>
-												<a href="project-details.html" class="arrow ti-angle-right"></a>
+												<a href="project-details.php" class="arrow ti-angle-right"></a>
 											</div>
 										</div>
 									</div>
@@ -492,9 +387,9 @@
 								<img src="images/gallery/1.jpg" alt="" />
 								<div class="overlay-box">
 									<div class="overlay-inner">
-										<h3><a href="project-details.html">WOTa Money Save</a></h3>
+										<h3><a href="project-details.php">WOTa Money Save</a></h3>
 										<div class="designation">Finance, Consulting</div>
-										<a href="project-details.html" class="arrow ti-angle-right"></a>
+										<a href="project-details.php" class="arrow ti-angle-right"></a>
 									</div>
 								</div>
 							</div>
@@ -592,7 +487,7 @@
 							<h5>free consulation</h5>
 							
 							<div class="consult-form">
-								<form method="post" action="donate.html">
+								<form method="post" action="donate.php">
 
 									<!--Form Group-->
 									<div class="form-group">
@@ -685,7 +580,7 @@
 						<h2>We Are <span>Friendly & Profressional</span></h2>
 					</div>
 					<div class="pull-right">
-						<a href="service.html" class="experts">all experts <span class="arrow ti-angle-right"></span></a>
+						<a href="service.php" class="experts">all experts <span class="arrow ti-angle-right"></span></a>
 					</div>
 				</div>
 			</div>
@@ -778,7 +673,7 @@
 									<div class="image-column col-lg-6 col-md-6 col-sm-12">
 										<div class="inner-column">
 											<div class="image">
-												<a href="blog-detail.html"><img src="images/resource/news-1.jpg" alt="" /></a>
+												<a href="blog-detail.php"><img src="images/resource/news-1.jpg" alt="" /></a>
 											</div>
 										</div>
 									</div>
@@ -787,7 +682,7 @@
 										<div class="inner-column">
 											<div class="arrow-one"></div>
 											<div class="title">business</div>
-											<h4><a href="blog-detail.html">Problems About <br> Social Insurance For <br> Truck Drivers</a></h4>
+											<h4><a href="blog-detail.php">Problems About <br> Social Insurance For <br> Truck Drivers</a></h4>
 											<div class="post-date">Decmber 14th, 2020 by <span>Admin</span></div>
 										</div>
 									</div>
@@ -804,7 +699,7 @@
 										<div class="inner-column">
 											<div class="arrow-two"></div>
 											<div class="title">bank & finance</div>
-											<h4><a href="blog-detail.html">Payment Online - <br> Things That You Know To <br> Project Your Money</a></h4>
+											<h4><a href="blog-detail.php">Payment Online - <br> Things That You Know To <br> Project Your Money</a></h4>
 											<div class="post-date">Decmber 14th, 2020 by <span>Admin</span></div>
 										</div>
 									</div>
@@ -812,7 +707,7 @@
 									<div class="image-column col-lg-6 col-md-6 col-sm-12 order-lg-2 order-1">
 										<div class="inner-column">
 											<div class="image">
-												<a href="blog-detail.html"><img src="images/resource/news-2.jpg" alt="" /></a>
+												<a href="blog-detail.php"><img src="images/resource/news-2.jpg" alt="" /></a>
 											</div>
 										</div>
 									</div>
@@ -828,12 +723,12 @@
 						<div class="news-block-two">
 							<div class="inner-box">
 								<div class="image">
-									<a href="blog-detail.html"><img src="images/resource/news-3.jpg" alt="" /></a>
+									<a href="blog-detail.php"><img src="images/resource/news-3.jpg" alt="" /></a>
 									<div class="arrow"></div>
 								</div>
 								<div class="lower-content">
 									<div class="title">tips & tricks</div>
-									<h4><a href="blog-detail.html">5 Secrets To <br> Coaching Your Employees <br> To Greatness</a></h4>
+									<h4><a href="blog-detail.php">5 Secrets To <br> Coaching Your Employees <br> To Greatness</a></h4>
 									<div class="post-date">Decmber 14th, 2020 by <span>Admin</span></div>
 								</div>
 							</div>
@@ -869,7 +764,7 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-										<a href="index.html"><img src="images/logo.png" alt="" /></a>
+										<a href="index.php"><img src="images/logo.png" alt="" /></a>
 									</div>
 									<div class="call">
 										Call us directly
@@ -921,7 +816,7 @@
 									<div class="text">Subscribe to our newsletter and we will inform you about latest updates and offers</div>
 									<!-- Newsletter Form -->
 									<div class="newsletter-form">
-										<form method="post" action="contact.html">
+										<form method="post" action="contact.php">
 											<div class="form-group">
 												<input type="email" name="email" value="" placeholder="Email Address..." required>
 												<button type="submit" class="theme-btn icofont-arrow-right"></button>
@@ -972,7 +867,7 @@
 <div class="search-popup">
 	<button class="close-search style-two"><span class="icofont-brand-nexus"></span></button>
 	<button class="close-search"><span class="icofont-arrow-up"></span></button>
-	<form method="post" action="blog.html">
+	<form method="post" action="blog.php">
 		<div class="form-group">
 			<input type="search" name="search-field" value="" placeholder="Search Here" required="">
 			<button type="submit"><i class="fa fa-search"></i></button>
