@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
-<title>Consultix - Investment Company Bootstrap 5 Template</title>
+<title>Quantum Forge - Software House in Makassar</title>
 <meta name="description" content="Consulte is a free Bootstrap HTML Template for Investment Company"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
