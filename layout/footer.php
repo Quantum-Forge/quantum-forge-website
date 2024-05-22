@@ -17,7 +17,7 @@
 									<div class="call">
 										Call us directly
 										<a class="phone" href="tel:+1-212-226-3126">+1 212-226-3126</a>
-										<a class="email" href="mailto:hello@consulte.co">hello@consulte.co</a>
+										<a class="email" href="mailto:quantumforge@gmail.com">quantumforge@gmail.com</a>
 									</div>
 								</div>
 							</div>
@@ -87,16 +87,14 @@
 						<div class="row clearfix">
 							
 							<div class="col-lg-8 col-md-12 col-sm-12">
-								<div class="copyright">Copyright ©<script async="" src="https://www.google-analytics.com/analytics.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">HasThemes</a></div>
+								<div class="copyright">Copyright ©<script async="" src="https://www.google-analytics.com/analytics.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | Developed by <a href="#" target="_blank">Quantum Forge</a></div>
 							</div>
 							
 							<div class="col-lg-4 col-md-12 col-sm-12">
 								<ul class="social-nav">
-									<li><a href="https://twitter.com/" class="icofont-twitter"></a></li>
-									<li><a href="http://facebook.com/" class="icofont-facebook"></a></li>
-									<li><a href="https://www.instagram.com/" class="icofont-instagram"></a></li>
-									<li><a href="https://rss.com/" class="icofont-rss"></a></li>
-									<li><a href="https://www.youtube.com/" class="icofont-play-alt-1"></a></li>
+									<li><a href="https://api.whatsapp.com/send/?phone=6289505991562&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0" class="fab fa-whatsapp"></a></li>
+									<li><a href="https://www.instagram.com/quantumitco/" class="fab fa-instagram"></a></li>
+									<li><a href="https://discord.gg/hRazTHsBe8" class="fab fa-discord"></a></li>
 								</ul>
 							</div>
 							

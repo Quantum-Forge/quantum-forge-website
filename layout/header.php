@@ -6,9 +6,9 @@
 					<div class="top-left">
 						<!-- Info List -->
 						<ul class="info-list">
-							<li><a href="mailto:hello@consulte.co"><span class="icon icofont-envelope"></span> hello@consulte.co</a></li>
-							<li><a href="tel:+1212-226-3126"><span class="icon icofont-phone"></span> +1212-226-3126</a></li>
-							<li><a href="contact.php"><span class="icon icofont-clock-time"></span> Mon - Sat: 8.00 - 17.00, Sunday Closed</a></li>
+							<li><a href="mailto:quantumforge@gmail.com"><span class="icon icofont-envelope"></span> quantumforge@gmail.com</a></li>
+							<li><a href="tel:6289505991562"><span class="icon icofont-phone"></span> +6289505991562</a></li>
+							<li><a href="contact.php"><span class="icon icofont-clock-time"></span> Senin - Jumat: 9.00 - 18.00 WITA</a></li>
 						</ul>
 					</div>
 					
@@ -17,11 +17,9 @@
 						<!-- Social Box -->
 						<ul class="social-box">
 							<li class="share">Our Social</li>
-							<li><a href="https://twitter.com/" class="icofont-twitter"></a></li>
-							<li><a href="http://facebook.com/" class="icofont-whatsapp"></a></li>
-							<li><a href="https://www.instagram.com/" class="icofont-instagram"></a></li>
-							<li><a href="https://rss.com/" class="fas fa-whatsapp"></a></li>
-							<li><a href="https://www.youtube.com/" class="icofont-play-alt-1"></a></li>
+							<li><a href="https://api.whatsapp.com/send/?phone=6289505991562&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0" class="fab fa-whatsapp"></a></li>
+							<li><a href="https://www.instagram.com/quantumitco/" class="fab fa-instagram"></a></li>
+							<li><a href="https://discord.gg/hRazTHsBe8" class="fab fa-discord"></a></li>
 						</ul>
                     </div>
 					
