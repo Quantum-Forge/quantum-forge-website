@@ -339,27 +339,7 @@
 			
 			<!-- Footer Bottom -->
 			<div class="footer-bottom">
-				<div class="auto-container">
-					<div class="bottom-inner">
-						<div class="row clearfix">
-							
-							<div class="col-lg-8 col-md-12 col-sm-12">
-								<div class="copyright">Copyright ©<script async="" src="https://www.google-analytics.com/analytics.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://hasthemes.com/" target="_blank">HasThemes</a></div>
-							</div>
-							
-							<div class="col-lg-4 col-md-12 col-sm-12">
-								<ul class="social-nav">
-									<li><a href="https://twitter.com/" class="icofont-twitter"></a></li>
-									<li><a href="http://facebook.com/" class="icofont-facebook"></a></li>
-									<li><a href="https://www.instagram.com/" class="icofont-instagram"></a></li>
-									<li><a href="https://rss.com/" class="icofont-rss"></a></li>
-									<li><a href="https://www.youtube.com/" class="icofont-play-alt-1"></a></li>
-								</ul>
-							</div>
-							
-						</div>
-					</div>
-				</div>	
+				<?php include ('layout/footer.php') ?>
 			</div>
 			
 		</div>
@@ -368,21 +348,8 @@
 </div>
 <!--End pagewrapper-->
 
-<!-- Search Popup -->
-<div class="search-popup">
-	<button class="close-search style-two"><span class="icofont-brand-nexus"></span></button>
-	<button class="close-search"><span class="icofont-arrow-up"></span></button>
-	<form method="post" action="blog.php">
-		<div class="form-group">
-			<input type="search" name="search-field" value="" placeholder="Search Here" required="">
-			<button type="submit"><i class="fa fa-search"></i></button>
-		</div>
-	</form>
-</div>
-<!-- End Header Search -->
-
-<!-- Scroll To Top -->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+<?php include ('layout/search_popup.php')?>
+<
 
 <script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>

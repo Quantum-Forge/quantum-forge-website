@@ -18,9 +18,9 @@
 						<ul class="social-box">
 							<li class="share">Our Social</li>
 							<li><a href="https://twitter.com/" class="icofont-twitter"></a></li>
-							<li><a href="http://facebook.com/" class="icofont-facebook"></a></li>
+							<li><a href="http://facebook.com/" class="icofont-whatsapp"></a></li>
 							<li><a href="https://www.instagram.com/" class="icofont-instagram"></a></li>
-							<li><a href="https://rss.com/" class="far fa-user"></a></li>
+							<li><a href="https://rss.com/" class="fas fa-whatsapp"></a></li>
 							<li><a href="https://www.youtube.com/" class="icofont-play-alt-1"></a></li>
 						</ul>
                     </div>
