@@ -12,7 +12,7 @@
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget logo-widget">
 									<div class="logo">
-										<a href="index.php"><img src="images/logo.png" alt="" /></a>
+										<a href="index.php"><img class="py-3 img-fluid" width="175" height="80" src="images/logo.png" alt="" /></a>
 									</div>
 									<div class="call">
 										Call us directly

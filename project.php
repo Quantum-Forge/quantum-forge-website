@@ -162,7 +162,7 @@
 <!--End pagewrapper-->
 
 <?php include ('layout/search_popup.php')?>
-<
+
 
 <script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>

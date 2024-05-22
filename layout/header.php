@@ -35,7 +35,7 @@
             	<div class="inner-container clearfix">
                 	
                 	<div class="pull-left logo-box">
-                    	<div class="logo"><a href="index.php"><img src="images/logo.png" alt="" title=""></a></div>
+                    	<div class="logo"><a href="index.php"><img class="py-3 img-fluid" width="175" height="80" src="images/logo.png" alt="" title=""></a></div>
                     </div>
 					
                    	<div class="nav-outer pull-left clearfix">
@@ -105,7 +105,7 @@
             <div class="close-btn"><span class="icon lnr lnr-cross"></span></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.php"><img src="images/logo.png" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.php"><img width="175" height="80" src="images/logo.png" alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
             </nav>
         </div><!-- End Mobile Menu -->
