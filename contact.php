@@ -76,7 +76,7 @@
 					
 					<!-- Column -->
 					<div class="column col-lg-6 col-md-6 col-sm-12">
-						<div class="call">Call directly:<br><a href="#">+1 212-226-3126</a></div>
+						<div class="call">Call directly:<br><a href="#">+62 895 0599 1562</a></div>
 						<ul class="location-list">
 							<li><span>Brand Offices:</span>Allentown PA | Allanta, GA | Chicago, IL | Dallas, TX, <br> Edison, NJ | Houston, TX</li>
 							<li><span>Work Hours:</span>Mon - Sat: 8.00 - 17.00, Sunday closed</li>

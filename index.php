@@ -140,7 +140,7 @@
 				<div class="col-lg-5">
 					<!-- CTA Phone Number Start -->
 					<div class="cta-phone text-lg-end text-strat">
-						<h2 class="title">+0962-58-58-258</h2>
+						<h2 class="title">+62 895 0599 1562</h2>
 					</div>
 					<!-- CTA Phone Number Start -->
 				</div>
@@ -188,7 +188,7 @@
 	<div class="services-section">
 		<div class="auto-container">
 			<div class="sec-title">
-				<div class="title">our services</div>
+				<div class="title">our service</div>
 				<h2><span>Best Solutions</span> For Your Business</h2>
 			</div>
 			<div class="inner-container">
@@ -198,10 +198,10 @@
 					<div class="service-block col-lg-3 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="icon-box">
-								<span class="icon ti-blackboard"></span>
+								<img src="images/stack/laravel.png" class="w-25 img-fluid" alt="">
 							</div>
-							<h5><a href="service-detail.php">Strategy</a></h5>
-							<div class="text">Thought leadership pass the clap hackathon wearables.</div>
+							<h5><a href="service-detail.php">Laravel</a></h5>
+							<div class="text">Framework PHP untuk aplikasi web elegan.</div>
 							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
@@ -210,10 +210,10 @@
 					<div class="service-block col-lg-3 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="icon-box">
-								<span class="icon ti-stats-up"></span>
+								<img src="images/stack/firebase.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Financial</a></h5>
-							<div class="text">Platform omnichannel click thought leadership pivot</div>
+							<h5><a href="service-detail.php">Firebase</a></h5>
+							<div class="text">Platform backend-as-a-service oleh Google.</div>
 							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
@@ -222,10 +222,22 @@
 					<div class="service-block col-lg-3 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="icon-box">
-								<span class="icon ti-shield"></span>
+								<img src="images/stack/node.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Insurance</a></h5>
-							<div class="text">Disrupt taste makers help council emerging.</div>
+							<h5><a href="service-detail.php">Node.js</a></h5>
+							<div class="text">Platform JavaScript untuk aplikasi jaringan cepat.</div>
+							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
+						</div>
+					</div>
+
+					<!-- Service Block -->
+					<div class="service-block col-lg-3 col-md-6 col-sm-12">
+						<div class="inner-box">
+							<div class="icon-box">
+							<img src="images/stack/flask.png" alt="" class="w-25 img-fluid">
+							</div>
+							<h5><a href="service-detail.php">Flask</a></h5>
+							<div class="text">Framework mikro Python untuk aplikasi web.</div>
 							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
@@ -234,10 +246,10 @@
 					<div class="service-block col-lg-3 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="icon-box">
-								<span class="icon ti-home"></span>
+							<img src="images/stack/react.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Estate</a></h5>
-							<div class="text">Mobile ready proprietary dedication intuitive</div>
+							<h5><a href="service-detail.php">React</a></h5>
+							<div class="text">Library JS untuk antarmuka pengguna dinamis.</div>
 							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
@@ -246,10 +258,10 @@
 					<div class="service-block col-lg-3 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="icon-box">
-								<span class="icon ti-stamp"></span>
+							<img src="images/stack/flutter.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Audit & Evaluation</a></h5>
-							<div class="text">Thought leadership pass the clap hackathon wearables.</div>
+							<h5><a href="service-detail.php">Flutter</a></h5>
+							<div class="text">SDK Google untuk aplikasi multiplatform indah.</div>
 							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
@@ -258,10 +270,10 @@
 					<div class="service-block col-lg-3 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="icon-box">
-								<span class="icon ti-money"></span>
+							<img src="images/stack/vue.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Taxes & Efficiency</a></h5>
-							<div class="text">Disrupt taste makers help council emerging.</div>
+							<h5><a href="service-detail.php">Vue</a></h5>
+							<div class="text">Framework JS progresif untuk antarmuka interaktif.</div>
 							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
@@ -270,26 +282,13 @@
 					<div class="service-block col-lg-3 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="icon-box">
-								<span class="icon ti-shopping-cart-full"></span>
+							<img src="images/stack/figma.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Consumer Market</a></h5>
-							<div class="text">Mobile ready proprietary dedication intuitive</div>
+							<h5><a href="service-detail.php">Figma</a></h5>
+							<div class="text">Alat desain kolaboratif berbasis web efisien.</div>
 							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
-					
-					<!-- Service Block -->
-					<div class="service-block col-lg-3 col-md-6 col-sm-12">
-						<div class="inner-box">
-							<div class="icon-box">
-								<span class="icon ti-truck"></span>
-							</div>
-							<h5><a href="service-detail.php">Logistic</a></h5>
-							<div class="text">Platform omnichannel click thought leadership pivot</div>
-							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
-						</div>
-					</div>
-					
 				</div>
 				
 			</div>

@@ -55,15 +55,15 @@
                             <!-- Navbar Code -->
                             <div class="navbar-collapse show collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
-                                    <li class="<?php echo ($current_page == 'index.php') ? 'current' : ''; ?>"><a href="index.php">Home</a></li>
-                                    <li class="<?php echo ($current_page == 'about.php') ? 'current' : ''; ?>"><a href="about.php">About</a></li>
-                                    <li class="dropdown <?php echo ($current_page == 'service.php' || $current_page == 'service-detail.php') ? 'current' : ''; ?>"><a href="#">Service</a>
+                                    <li class="<?php echo ($current_page == 'index.php') ? 'current' : ''; ?>"><a href="index.php">Beranda</a></li>
+                                    <li class="<?php echo ($current_page == 'about.php') ? 'current' : ''; ?>"><a href="about.php">Tentang</a></li>
+                                    <li class="dropdown <?php echo ($current_page == 'service.php' || $current_page == 'service-detail.php') ? 'current' : ''; ?>"><a href="#">Layanan</a>
                                         <ul>
                                             <li class="<?php echo ($current_page == 'service.php') ? 'current' : ''; ?>"><a href="service.php">Service</a></li>
                                             <li class="<?php echo ($current_page == 'service-detail.php') ? 'current' : ''; ?>"><a href="service-detail.php">Service Detail</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown <?php echo ($current_page == 'project.php' || $current_page == 'project-details.php') ? 'current' : ''; ?>"><a href="#">Projects</a>
+                                    <li class="dropdown <?php echo ($current_page == 'project.php' || $current_page == 'project-details.php') ? 'current' : ''; ?>"><a href="#">Proyek</a>
                                         <ul>
                                             <li class="<?php echo ($current_page == 'project.php') ? 'current' : ''; ?>"><a href="project.php">Project</a></li>
                                             <li class="<?php echo ($current_page == 'project-details.php') ? 'current' : ''; ?>"><a href="project-details.php">Project Details</a></li>
@@ -75,7 +75,7 @@
                                             <li class="<?php echo ($current_page == 'blog-detail.php') ? 'current' : ''; ?>"><a href="blog-detail.php">Blog Detail</a></li>
                                         </ul>
                                     </li>
-                                    <li class="<?php echo ($current_page == 'contact.php') ? 'current' : ''; ?>"><a href="contact.php">Contact</a></li>
+                                    <li class="<?php echo ($current_page == 'contact.php') ? 'current' : ''; ?>"><a href="contact.php">Kontak</a></li>
                                 </ul>
                             </div>
 

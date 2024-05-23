@@ -273,7 +273,7 @@
 									</div>
 									<div class="call">
 										Call us directly
-										<a class="phone" href="tel:+1-212-226-3126">+1 212-226-3126</a>
+										<a class="phone" href="tel:+1-212-226-3126">+62 895 0599 1562</a>
 										<a class="email" href="mailto:quantumforge@gmail.com">quantumforge@gmail.com</a>
 									</div>
 								</div>

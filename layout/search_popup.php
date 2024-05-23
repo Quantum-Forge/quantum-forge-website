@@ -4,7 +4,7 @@
     <button class="close-search"><span class="icofont-arrow-up"></span></button>
     <form method="get" action="https://www.google.com/search" target="_blank">
         <div class="form-group">
-            <input type="search" name="q" value="" placeholder="Search On Google..." required="">
+            <input type="search" name="q" value="" placeholder="Cari di Google..." required="">
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
     </form>
