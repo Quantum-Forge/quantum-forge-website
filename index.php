@@ -53,12 +53,12 @@
     <!--End Main Header -->
 
 	<!-- Service Banner Section -->
-    <div class="service-banner-section" data-bg-image="images/main-slider/intro-1.png">
+    <div class="service-banner-section" data-bg-image="images/background/intro-1.png">
 		<div class="auto-container">
 			<div class="content-box">
-				<h2>Transforming <span>Ideas</span> into <span>Digital Realities</span></h2>
+				<h2>Mengubah <span>Ide</span> menjadi <span>Realitas Digital</span></h2>
 				<div class="text">Mengubah konsep menjadi realitas digital yang inovatif dan bermanfaat bagi pengguna dan bisnis.</div>
-				<a href="contact.php" class="theme-btn btn-style-one"><span class="txt">get in touch</span></a>
+				<a href="contact.php" class="theme-btn btn-style-one"><span class="txt">Hubungi Kami</span></a>
 			</div>
 			
 		</div>
@@ -74,8 +74,8 @@
 				<div class="col-lg-7">
 					<!-- CTA Content Start -->
 					<div class="cta-content">
-						<h3 class="title">Book an appoitment quickly? <span class="text-bold">Call us now!</span></h3>
-						<p>We prodive a dedicated support 24/7 for any your question</p>
+						<h3 class="title"><span class="text-bold">Hubungi kami sekarang!</span></h3>
+						<p>Kami menyediakan dukungan khusus untuk setiap pertanyaan Anda</p>
 					</div>
 					<!-- CTA Content End -->
 				</div>
@@ -114,7 +114,7 @@
 							</div>
 							<div class="text">
 								<p>
-								Quantum Forge, berbasis di Makassar Indonesia, adalah software house yang terkoneksi dengan jaringan luas ahli IT dari berbagai daerah. Didirikan pada 2023, kami menghadirkan solusi web dan mobile development bagi klien. Dengan fokus pada kolaborasi dan keahlian lintas wilayah, kami menyediakan layanan berkualitas tinggi untuk mengubah visi digital menjadi kenyataan bagi bisnis dan individu.
+								Quantum Forge, berbasis di Makassar Indonesia, adalah software house yang terkoneksi dengan jaringan luas ahli IT dari berbagai daerah yang ada di indonesia. Didirikan pada 2023, kami menghadirkan solusi web dan mobile development bagi klien. Dengan fokus pada kolaborasi dan keahlian lintas wilayah, kami menyediakan layanan berkualitas tinggi untuk mengubah visi digital menjadi kenyataan bagi bisnis dan individu.
 								</p>
 							</div>
 
