@@ -2753,6 +2753,7 @@ img{
 .testimonial-section{
 	position:relative;
 	padding-top:90px;
+	padding-bottom: 30px;
 }
 
 .testimonial-section.style-two{
