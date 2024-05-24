@@ -51,82 +51,24 @@
 		<?php include ('layout/header.php')?>		
     </header>
     <!--End Main Header -->
-	
-	<!-- Banner Section -->
-    <div class="banner-section">
-		<div class="main-slider-carousel owl-carousel owl-theme">
-            
-			<div class="slide" data-bg-image="images/main-slider/intro-1.jpg">
-				<div class="auto-container w-100">
-					<div class="row clearfix">
-						
-						<!-- Content Column -->
-						<div class="content-column col-lg-7 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="title">consulte company</div>
-								<h1>Clever <span>Investing</span> Make Your Money Grow</h1>
-								<div class="text">Capitalise on low hanging fruit to identify a ballpark <br> value added activity to beta test. Override the digital divide <br> with additional base clickthroughs.</div>
-								<div class="btn-box">
-									<a href="about.php" class="theme-btn btn-style-one"><span class="txt">Work With Us</span></a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-						
-				</div>
-			</div>
-			
-			<div class="slide" data-bg-image="images/main-slider/intro-1.jpg">
-				<div class="auto-container w-100">
-					<div class="row clearfix">
-						
-						<!-- Content Column -->
-						<div class="content-column col-lg-7 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="title">consulte company</div>
-								<h1>Clever <span>Investing</span> Make Your Money Grow</h1>
-								<div class="text">Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional base clickthroughs.</div>
-								<div class="btn-box">
-									<a href="about.php" class="theme-btn btn-style-one"><span class="txt">Work With Us</span></a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-						
-				</div>
-			</div>
-			
-			<div class="slide" data-bg-image="images/main-slider/intro-1.jpg">
-				<div class="auto-container w-100">
-					<div class="row clearfix">
-						
-						<!-- Content Column -->
-						<div class="content-column col-lg-7 col-md-12 col-sm-12">
-							<div class="inner-column">
-								<div class="title">consulte company</div>
-								<h1>Clever <span>Investing</span> Make Your Money Grow</h1>
-								<div class="text">Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional base clickthroughs.</div>
-								<div class="btn-box">
-									<a href="about.php" class="theme-btn btn-style-one"><span class="txt">Work With Us</span></a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-						
-				</div>
+
+	<!-- Service Banner Section -->
+    <div class="service-banner-section" data-bg-image="images/main-slider/intro-1.png">
+		<div class="auto-container">
+			<div class="content-box">
+				<h2>Transforming <span>Ideas</span> into <span>Digital Realities</span></h2>
+				<div class="text">Mengubah konsep menjadi realitas digital yang inovatif dan bermanfaat bagi pengguna dan bisnis.</div>
+				<a href="contact.php" class="theme-btn btn-style-one"><span class="txt">get in touch</span></a>
 			</div>
 			
 		</div>
-		
-		
 	</div>
-	<!-- End Banner Section -->
+	<!-- End Service Banner Section -->
+	
+	
 
 	<!-- CTA Section Start -->
-	<div class="cta-section" data-bg-image="images/background/cta-bg.jpg">
+	<div class="cta-section" data-bg-image="images/background/cta-bg.png">
 		<div class="auto-container">
 			<div class="row align-items-center">
 				<div class="col-lg-7">
@@ -167,14 +109,15 @@
 					<div class="content-column col-lg-6 col-md-12 col-sm-12 mb-0">
 						<div class="about-column">
 							<div class="sec-title">
-								<div class="title">about consulte</div>
-								<h2>Leading <span>Financial</span> <br> <span>Consulting</span> Company</h2>
+								<div class="title">tentang quantum</div>
+								<h2>Memajukan <span>Bisnis</span> lewat <br> <span>Solusi</span> Digital</h2>
 							</div>
 							<div class="text">
-								<p>Consulte is located in the former rectory of St. Peter’s Episcopal Church. Over our 14 year history, we have treated patients from over 114 different countries in the world. In 2010, we imposed geographical restrictions for the first time. Existing patients were not affected by this change, but new patients are now</p>
-								<p>We have compiled an extensive list of other area clinics and health resources, so that when someone calls from outside of our geographical area.</p>
+								<p>
+								Quantum Forge, berbasis di Makassar Indonesia, adalah software house yang terkoneksi dengan jaringan luas ahli IT dari berbagai daerah. Didirikan pada 2023, kami menghadirkan solusi web dan mobile development bagi klien. Dengan fokus pada kolaborasi dan keahlian lintas wilayah, kami menyediakan layanan berkualitas tinggi untuk mengubah visi digital menjadi kenyataan bagi bisnis dan individu.
+								</p>
 							</div>
-							<div class="signature">Daniel <span>Daniel Jr</span></div>
+
 						</div>
 					</div>
 					
