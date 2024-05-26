@@ -65,8 +65,8 @@
                                     </li>
                                     <li class="dropdown <?php echo ($current_page == 'project.php' || $current_page == 'project-details.php') ? 'current' : ''; ?>"><a href="#">Proyek</a>
                                         <ul>
-                                            <li class="<?php echo ($current_page == 'project.php') ? 'current' : ''; ?>"><a href="project.php">Project</a></li>
-                                            <li class="<?php echo ($current_page == 'project-details.php') ? 'current' : ''; ?>"><a href="project-details.php">Project Details</a></li>
+                                            <li class=""><a href="">BuaHatiku MIS</a></li>
+                                            <li class=""><a href="">Siagamedika CMS</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown <?php echo ($current_page == 'blog.php' || $current_page == 'blog-detail.php') ? 'current' : ''; ?>"><a href="#">Blog</a>

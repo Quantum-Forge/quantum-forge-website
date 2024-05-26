@@ -131,8 +131,8 @@
 	<div class="services-section">
 		<div class="auto-container">
 			<div class="sec-title">
-				<div class="title">our service</div>
-				<h2><span>Best Solutions</span> For Your Business</h2>
+				<div class="title">Layanan pengembangan software kami</div>
+				<h2><span>Solusi Bagus</span> Untuk Bisnis Anda</h2>
 			</div>
 			<div class="inner-container">
 				<div class="row g-0">
@@ -239,147 +239,6 @@
 	</div>
 	<!-- End Services Section -->
 
-	<!-- Project Section -->
-	<div class="project-section">
-		<div class="auto-container">
-		
-			<!-- Sec Title -->
-			<div class="sec-title">
-				<div class="clearfix">
-					<div class="pull-left">
-						<div class="title">latest projects</div>
-						<h2>See Our <span>Successful Businesses</span></h2>
-					</div>
-					<div class="pull-right">
-						<a href="service.php" class="cases">all Cases <span class="arrow ti-angle-right"></span></a>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-		<div class="outer-container">
-			<div class="row clearfix">
-
-				<!-- Column -->
-				<div class="column col-lg-6 col-md-12 col-sm-12">
-					<div class="row clearfix">
-						
-						<!-- Inner Column -->
-						<div class="inner-column col-lg-6 col-md-6 col-sm-12">
-							<div class="gallery-block">
-								<div class="inner-box">
-									<div class="image">
-										<img src="images/gallery/2.jpg" alt="" />
-										<div class="overlay-box">
-											<div class="overlay-inner">
-												<h3><a href="project-details.php">WOTa Money Save</a></h3>
-												<div class="designation">Finance, Consulting</div>
-												<a href="project-details.php" class="arrow ti-angle-right"></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Inner Column -->
-						<div class="inner-column col-lg-6 col-md-6 col-sm-12">
-							<div class="gallery-block">
-								<div class="inner-box">
-									<div class="image">
-										<img src="images/gallery/3.jpg" alt="" />
-										<div class="overlay-box">
-											<div class="overlay-inner">
-												<h3><a href="project-details.php">WOTa Money Save</a></h3>
-												<div class="designation">Finance, Consulting</div>
-												<a href="project-details.php" class="arrow ti-angle-right"></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Inner Column -->
-						<div class="inner-column col-lg-12 col-md-12 col-sm-12">
-							<div class="gallery-block">
-								<div class="inner-box">
-									<div class="image">
-										<img src="images/gallery/4.jpg" alt="" />
-										<div class="overlay-box">
-											<div class="overlay-inner">
-												<h3><a href="project-details.php">WOTa Money Save</a></h3>
-												<div class="designation">Finance, Consulting</div>
-												<a href="project-details.php" class="arrow ti-angle-right"></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				
-				<!-- Column -->
-				<div class="column col-lg-6 col-md-12 col-sm-12">
-					<div class="gallery-block">
-						<div class="inner-box">
-							<div class="image">
-								<img src="images/gallery/1.jpg" alt="" />
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<h3><a href="project-details.php">WOTa Money Save</a></h3>
-										<div class="designation">Finance, Consulting</div>
-										<a href="project-details.php" class="arrow ti-angle-right"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	<!-- End Project Section -->
-
-	<!-- Testimonial Section -->
-	<div class="testimonial-section">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title">
-				<div class="title">testimonials</div>
-				<h2><span>+2,500 Clients </span>Love Us</h2>
-			</div>
-			<div class="testimonial-carousel owl-carousel owl-theme">
-				
-				<!-- Testimonial Block -->
-				<div class="testimonial-block">
-					<div class="inner-box">
-						<div class="quote icofont-quote-right"></div>
-						<div class="author">Ryan Betthalyn <span>/ Director at Chobham Manor</span></div>
-						<div class="text">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</div>
-					</div>
-				</div>
-				
-				<!-- Testimonial Block -->
-				<div class="testimonial-block">
-					<div class="inner-box">
-						<div class="quote icofont-quote-right"></div>
-						<div class="author">Bobs Hanley <span>/ Director at Spotify</span></div>
-						<div class="text">Sed elit quam, iaculis sed semper sit amet udin vitae nibh. Rubino at magna akal semperFusce commodo molestie luctus.Lorem ipsum Dolor tusima olatiup.</div>
-					</div>
-				</div>
-				
-				
-				
-			</div>
-		</div>
-	</div>
-	<!-- End Testimonial Section -->
-
-	
 	
 	<!-- Reputation Section Two -->
 	<div class="reputation-section-two style-two">
@@ -498,14 +357,11 @@
 					<div class="carousel-outer">
 						<!--Sponsors Slider-->
 						<ul class="sponsors-carousel owl-carousel owl-theme">
-							<li><div class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></div></li>
-							<li><div class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></div></li>
-							<li><div class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></div></li>
-							<li><div class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></div></li>
-							<li><div class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></div></li>
-							<li><div class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></div></li>
-							<li><div class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></div></li>
-							<li><div class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></div></li>
+							<li><div class="image-box"><a href="#"><img src="images/provider/1.png" alt=""></a></div></li>
+							<li><div class="image-box"><a href="#"><img src="images/provider/2.png" alt=""></a></div></li>
+							<li><div class="image-box"><a href="#"><img src="images/provider/3.png" alt=""></a></div></li>
+							<li><div class="image-box"><a href="#"><img src="images/provider/4.png" alt=""></a></div></li>
+							<li><div class="image-box"><a href="#"><img src="images/provider/5.png" alt=""></a></div></li>
 						</ul>
 					</div>
 					
@@ -525,81 +381,104 @@
 				<div class="title">our blog</div>
 				<h2><span>Latest </span>From Our Press</h2>
 			</div>
+			<?php include 'php/api_news.php'; ?>
 			<div class="inner-container">
 				<div class="clearfix row g-0">
-					<!-- Column -->
+					<!-- Column for the first two articles -->
 					<div class="column col-lg-8 col-md-12 col-sm-12">
-					
-						<!-- News Block -->
-						<div class="news-block">
-							<div class="inner-box">
-								<div class="clearfix">
-									<!-- Image Column -->
-									<div class="image-column col-lg-6 col-md-6 col-sm-12">
-										<div class="inner-column">
-											<div class="image">
-												<a href="blog-detail.php"><img src="images/resource/news-1.jpg" alt="" /></a>
+						<?php if (isset($newsData['articles'])): ?>
+							<?php $count = 0; ?>
+							<?php $displayedArticles = []; ?>
+							<?php foreach ($newsData['articles'] as $index => $article): ?>
+								<?php if (!empty($article['urlToImage']) && $count < 2 && !in_array($article['url'], $displayedArticles)): ?>
+									<?php if ($count == 0): ?>
+										<!-- First News Block -->
+										<div class="news-block">
+											<div class="inner-box">
+												<div class="clearfix">
+													<!-- Image Column -->
+													<div class="image-column col-lg-6 col-md-6 col-sm-12">
+														<div class="inner-column">
+															<div class="image">
+																<a href="<?php echo $article['url']; ?>" target="_blank"><img style="width: 390px; height: 390px;" src="<?php echo $article['urlToImage']; ?>" alt="" /></a>
+															</div>
+														</div>
+													</div>
+													<!-- Content Column -->
+													<div class="content-column col-lg-6 col-md-6 col-sm-12">
+														<div class="inner-column">
+															<div class="arrow-one"></div>
+															<div class="title"><?php echo $article['source']['name']; ?></div>
+															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo $article['title']; ?></a></h4>
+															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-									</div>
-									<!-- Content Column -->
-									<div class="content-column col-lg-6 col-md-6 col-sm-12">
-										<div class="inner-column">
-											<div class="arrow-one"></div>
-											<div class="title">business</div>
-											<h4><a href="blog-detail.php">Problems About <br> Social Insurance For <br> Truck Drivers</a></h4>
-											<div class="post-date">Decmber 14th, 2020 by <span>Admin</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- News Block -->
-						<div class="news-block">
-							<div class="inner-box">
-								<div class="clearfix row g-0">
-									<!-- Content Column -->
-									<div class="content-column col-lg-6 col-md-6 col-sm-12 order-lg-1 order-2">
-										<div class="inner-column">
-											<div class="arrow-two"></div>
-											<div class="title">bank & finance</div>
-											<h4><a href="blog-detail.php">Payment Online - <br> Things That You Know To <br> Project Your Money</a></h4>
-											<div class="post-date">Decmber 14th, 2020 by <span>Admin</span></div>
-										</div>
-									</div>
-									<!-- Image Column -->
-									<div class="image-column col-lg-6 col-md-6 col-sm-12 order-lg-2 order-1">
-										<div class="inner-column">
-											<div class="image">
-												<a href="blog-detail.php"><img src="images/resource/news-2.jpg" alt="" /></a>
+									<?php else: ?>
+										<!-- Second News Block -->
+										<div class="news-block">
+											<div class="inner-box">
+												<div class="clearfix row g-0">
+													<!-- Content Column -->
+													<div class="content-column col-lg-6 col-md-6 col-sm-12 order-lg-1 order-2">
+														<div class="inner-column">
+															<div class="arrow-two"></div>
+															<div class="title"><?php echo $article['source']['name']; ?></div>
+															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo $article['title']; ?></a></h4>
+															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
+														</div>
+													</div>
+													<!-- Image Column -->
+													<div class="image-column col-lg-6 col-md-6 col-sm-12 order-lg-2 order-1">
+														<div class="inner-column">
+															<div class="image">
+																<a href="<?php echo $article['url']; ?>" target="_blank"><img style="width: 390px; height: 390px;" src="<?php echo $article['urlToImage']; ?>" alt="" /></a>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
+									<?php endif; ?>
+									<?php 
+										$displayedArticles[] = $article['url'];
+										$count++; 
+									?>
+								<?php endif; ?>
+							<?php endforeach; ?>
+						<?php endif; ?>
 					</div>
-					
-					<!-- Column -->
+
+					<!-- Column for the third article -->
 					<div class="column col-lg-4 col-md-12 col-sm-12">
-						<!-- News Block Two -->
-						<div class="news-block-two">
-							<div class="inner-box">
-								<div class="image">
-									<a href="blog-detail.php"><img src="images/resource/news-3.jpg" alt="" /></a>
-									<div class="arrow"></div>
-								</div>
-								<div class="lower-content">
-									<div class="title">tips & tricks</div>
-									<h4><a href="blog-detail.php">5 Secrets To <br> Coaching Your Employees <br> To Greatness</a></h4>
-									<div class="post-date">Decmber 14th, 2020 by <span>Admin</span></div>
-								</div>
-							</div>
-						</div>
+						<?php if (isset($newsData['articles'])): ?>
+							<?php $thirdArticleFound = false; ?>
+							<?php foreach ($newsData['articles'] as $index => $article): ?>
+								<?php if (!empty($article['urlToImage']) && !$thirdArticleFound && !in_array($article['url'], $displayedArticles)): ?>
+									<!-- News Block Two -->
+									<div class="news-block-two">
+										<div class="inner-box">
+											<div class="image">
+												<a href="<?php echo $article['url']; ?>" target="_blank"><img style="width: 390px; height: 390px;" src="<?php echo $article['urlToImage']; ?>" alt="" /></a>
+												<div class="arrow"></div>
+											</div>
+											<div class="lower-content">
+												<div class="title"><?php echo $article['source']['name']; ?></div>
+												<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo $article['title']; ?></a></h4>
+												<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
+											</div>
+										</div>
+									</div>
+									<?php 
+										$displayedArticles[] = $article['url'];
+										$thirdArticleFound = true; 
+									?>
+								<?php endif; ?>
+							<?php endforeach; ?>
+						<?php endif; ?>
 					</div>
-					
 				</div>
 			</div>
 		</div>

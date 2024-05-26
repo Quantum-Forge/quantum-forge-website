@@ -24,6 +24,8 @@ function load_env($file)
             $_SERVER[$name] = $value;
         }
     }
+     // Debug: Print loaded variables
+    //  var_dump($_ENV);
 }
 
 load_env(__DIR__ . '/../.env');
