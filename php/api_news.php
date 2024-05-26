@@ -1,12 +1,17 @@
 <?php
 require_once 'load_env.php';
 
-function fetch_news($url, $apiKey, $query)
+function fetch_news($url, $apiKey, $query = '', $page = 1, $pageSize = 5)
 {
     $params = [
         'q' => $query,
-        'apiKey' => $apiKey
+        'apiKey' => $apiKey,
+        'page' => $page,
+        'pageSize' => $pageSize,
     ];
+
+   
+
     $fullUrl = $url . '?' . http_build_query($params);
 
     $ch = curl_init();
@@ -30,15 +35,19 @@ function fetch_news($url, $apiKey, $query)
 
 $newsApiUrl = getenv('NEWS_API_URL');
 $newsApiKey = getenv('NEWS_API_KEY');
-$query = getenv('NEWS_API_QUERY');
+$query = $_GET['search'] ?? 'software';
+$page = $_GET['page'] ?? 1;
 
-$newsData = fetch_news($newsApiUrl, $newsApiKey, $query);
+$newsData = fetch_news($newsApiUrl, $newsApiKey, $query, $page);
 
 if ($newsData === null) {
-    echo "Error fetching news data";
-    var_dump($httpCode);
+    echo '
+    <div class="auto-container">
+        <p>No news available at the moment.</p>
+    </div>';
     exit;
 }
 
 // var_dump($newsData);
+
 ?>

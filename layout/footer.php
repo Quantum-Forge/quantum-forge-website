@@ -15,7 +15,7 @@
 										<a href="index.php"><img class="py-3 img-fluid" width="175" height="80" src="images/logo.png" alt="" /></a>
 									</div>
 									<div class="call">
-										Call us directly
+										<a href="#">Call us directly</a>
 										<a class="phone" href="tel:+1-212-226-3126">+62 895 0599 1562</a>
 										<a class="email" href="mailto:quantumforge@gmail.com">quantumforge@gmail.com</a>
 									</div>

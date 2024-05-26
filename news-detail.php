@@ -1,3 +1,11 @@
+<?php
+if (!isset($_GET['url'])) {
+    echo "No news URL provided";
+    exit;
+}
+
+$newsUrl = urldecode($_GET['url']);
+?>
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -110,11 +118,11 @@
 							<div class="news-block-four col-lg-6 col-md-6 col-sm-12">
 								<div class="inner-box">
 									<div class="image">
-										<a href="blog-detail.php"><img src="images/resource/news-4.jpg" alt="" /></a>
+										<a href="news-detail.php"><img src="images/resource/news-4.jpg" alt="" /></a>
 									</div>
 									<div class="lower-content">
 										<div class="title">business</div>
-										<h4><a href="blog-detail.php">Problems About Social Insurance For Truck Drivers</a></h4>
+										<h4><a href="news-detail.php">Problems About Social Insurance For Truck Drivers</a></h4>
 									</div>
 								</div>
 							</div>
@@ -123,11 +131,11 @@
 							<div class="news-block-four col-lg-6 col-md-6 col-sm-12">
 								<div class="inner-box">
 									<div class="image">
-										<a href="blog-detail.php"><img src="images/resource/news-5.jpg" alt="" /></a>
+										<a href="news-detail.php"><img src="images/resource/news-5.jpg" alt="" /></a>
 									</div>
 									<div class="lower-content">
 										<div class="title">News</div>
-										<h4><a href="blog-detail.php">5 Steps To Build Strategy Planning</a></h4>
+										<h4><a href="news-detail.php">5 Steps To Build Strategy Planning</a></h4>
 									</div>
 								</div>
 							</div>

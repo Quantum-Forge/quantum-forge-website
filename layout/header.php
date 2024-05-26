@@ -69,11 +69,7 @@
                                             <li class=""><a href="">Siagamedika CMS</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown <?php echo ($current_page == 'blog.php' || $current_page == 'blog-detail.php') ? 'current' : ''; ?>"><a href="#">Blog</a>
-                                        <ul class="from-right">
-                                            <li class="<?php echo ($current_page == 'blog.php') ? 'current' : ''; ?>"><a href="blog.php">Our Blog</a></li>
-                                            <li class="<?php echo ($current_page == 'blog-detail.php') ? 'current' : ''; ?>"><a href="blog-detail.php">Blog Detail</a></li>
-                                        </ul>
+                                    <li class="<?php echo ($current_page == 'news.php' || $current_page == 'news.php') ? 'current' : ''; ?>"><a href="news.php">Berita</a>
                                     </li>
                                     <li class="<?php echo ($current_page == 'contact.php') ? 'current' : ''; ?>"><a href="contact.php">Kontak</a></li>
                                 </ul>

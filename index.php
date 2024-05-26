@@ -131,8 +131,8 @@
 	<div class="services-section">
 		<div class="auto-container">
 			<div class="sec-title">
-				<div class="title">Layanan pengembangan software kami</div>
-				<h2><span>Solusi Bagus</span> Untuk Bisnis Anda</h2>
+				<div class="title">layanan pengembangan software</div>
+				<h2><span>Keahlian</span> Teknologi Web</h2>
 			</div>
 			<div class="inner-container">
 				<div class="row g-0">
@@ -249,39 +249,37 @@
 				<div class="form-column col-lg-5 col-md-12 col-sm-12">
 					<div class="inner-column">
 						<div class="form-boxed">
-							<h5>free consulation</h5>
+							<h5>Konsultasi Gratis</h5>
 							
 							<div class="consult-form">
-								<form method="post" action="donate.php">
+								<form method="post" action="">
 
 									<!--Form Group-->
 									<div class="form-group">
-										<label>full name</label>
-										<input type="text" name="name" value="" placeholder="Jason Staham" required>
+										<label>Nama Lengkap</label>
+										<input type="text" name="name" value="" placeholder="Isi Nama" required>
 									</div>
 									<!--Form Group-->
 									<div class="form-group">
-										<label>phone number</label>
-										<input type="text" name="phone" value="" placeholder="Enter your phone number" required>
+										<label>Nomor Telfon</label>
+										<input type="text" name="phone" value="" placeholder="Isi Nomor Telfon" required>
 									</div>
 									<!--Form Group-->
 									<div class="form-group">
-										<label>topics</label>
+										<label>Topic</label>
 										<select class="custom-select-box">
 											<option>Choose topic</option>
-											<option>Topic 01</option>
-											<option>Topic 02</option>
-											<option>Topic 03</option>
-											<option>Topic 04</option>
+											<option>Web Development</option>
+											<option>Mobile Development</option>
 										</select>
 									</div>
 									<!--Form Group-->
 									<div class="form-group">
 										<label>message</label>
-										<textarea name="message" placeholder="Write your message here"></textarea>
+										<textarea name="message" placeholder="Tulis Pesan Anda"></textarea>
 									</div>
 									<div class="form-group">
-										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">send your messenger</span></button>
+										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Kirim Pesan</span></button>
 									</div>
 								</form>
 							
@@ -295,32 +293,32 @@
 				<div class="content-column col-lg-7 col-md-12 col-sm-12">
 					<div class="inner-column">
 						<div class="sec-title">
-							<div class="title">why choose us</div>
-							<h2><span>Your Successful </span>Is<br> Our Reputation</h2>
+							<div class="title">kenapa pilih kami</div>
+							<h2><span>Suksesmu </span>Adalah<br> Reputasi kami</h2>
 						</div>
 						<div class="blocks-outer">
 							
 							<!-- Reputation Block -->
 							<div class="reputation-block">
 								<div class="inner-box">
-									<h5>Strong Martket Analysis</h5>
-									<div class="text">Tasks, docs, and files integrate with Arado’s chat to close the <br> gaps between feedback and action.</div>
+									<h5>Mengandalkan Analisis Terperinci</h5>
+									<div class="text">Tugas, dokumen dan filke kita akan lebih rincikan untuk <br> kinerja yang nyaman.</div>
 								</div>
 							</div>
 							
 							<!-- Reputation Block -->
 							<div class="reputation-block">
 								<div class="inner-box">
-									<h5>Experience & Percision</h5>
-									<div class="text">Create multiple discussions to keep all relevant conversations <br> together, all in one place with Arado</div>
+									<h5>Pengalaman & Ketepatan</h5>
+									<div class="text">Mitra yang andal dalam menciptakan solusi yang sesuai dengan kebutuhan Anda.</div>
 								</div>
 							</div>
 							
 							<!-- Reputation Block -->
 							<div class="reputation-block">
 								<div class="inner-box">
-									<h5>Experts About Business</h5>
-									<div class="text">Create multiple discussions to keep all relevant conversations <br> together, all in one place with Arado</div>
+									<h5>Ahli Dalam Bidangnya</h5>
+									<div class="text">Dapat mengatasi tantangan dan hambatan dengan kemampuan dan kepercayaan diri</div>
 								</div>
 							</div>
 							
@@ -341,11 +339,8 @@
 			<div class="sec-title">
 				<div class="clearfix">
 					<div class="pull-left">
-						<div class="title">our services</div>
-						<h2>We Are <span>Friendly & Profressional</span></h2>
-					</div>
-					<div class="pull-right">
-						<a href="service.php" class="experts">all experts <span class="arrow ti-angle-right"></span></a>
+						<div class="title">layanan provider</div>
+						<h2>Provider Server <span> Solusi Bisnis </span> Anda</h2>
 					</div>
 				</div>
 			</div>
@@ -378,8 +373,8 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered">
-				<div class="title">our blog</div>
-				<h2><span>Latest </span>From Our Press</h2>
+				<div class="title">International News</div>
+				<h2><span>Terkini </span>Dari Berita Kami</h2>
 			</div>
 			<?php include 'php/api_news.php'; ?>
 			<div class="inner-container">
@@ -409,7 +404,8 @@
 														<div class="inner-column">
 															<div class="arrow-one"></div>
 															<div class="title"><?php echo $article['source']['name']; ?></div>
-															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo $article['title']; ?></a></h4>
+															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?>
+</h4>
 															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
 														</div>
 													</div>
@@ -426,7 +422,8 @@
 														<div class="inner-column">
 															<div class="arrow-two"></div>
 															<div class="title"><?php echo $article['source']['name']; ?></div>
-															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo $article['title']; ?></a></h4>
+															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?>
+</h4>
 															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
 														</div>
 													</div>
@@ -466,7 +463,8 @@
 											</div>
 											<div class="lower-content">
 												<div class="title"><?php echo $article['source']['name']; ?></div>
-												<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo $article['title']; ?></a></h4>
+												<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?>
+</h4>
 												<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
 											</div>
 										</div>
@@ -488,7 +486,7 @@
 	<!-- Map Section -->
 	<div class="map-section">
 		<div class="contact-map-area">
-			<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.986005919501!2d-73.9685579655238!3d40.75862446708152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e4a1c884e5%3A0x24fe1071086b36d5!2sThe%20Atrium!5e0!3m2!1sen!2sbd!4v1585132512970!5m2!1sen!2sbd" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.5429495825467!2d119.51005146726126!3d-5.075887732979638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefbf62a37e94d%3A0xfe91c81b3b68ffbd!2sPT.%20Antariksa%20Prakarsa%20Utama!5e0!3m2!1sid!2sid!4v1716704726051!5m2!1sid!2sid" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 	</div>
 	<!-- End Map Section -->
