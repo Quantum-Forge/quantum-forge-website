@@ -69,7 +69,7 @@
 						</div>
 					</div>
 					<div class="pull-right">
-						<a class="phone" href="tel:+53-8698-50-50">+62 895 0599 1562</a>
+						<a class="phone" href="tel:+53-8698-50-50">+62 851 636 19 381</a>
 					</div>
 				</div>
 				

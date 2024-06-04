@@ -7,7 +7,7 @@
 						<!-- Info List -->
 						<ul class="info-list">
 							<li><a href="mailto:quantumforge@gmail.com"><span class="icon icofont-envelope"></span> quantumforge@gmail.com</a></li>
-							<li><a href="tel:6289505991562"><span class="icon icofont-phone"></span> +6289505991562</a></li>
+							<li><a href="tel:6289505991562"><span class="icon icofont-phone"></span> +6285163619381</a></li>
 							<li><a href="contact.php"><span class="icon icofont-clock-time"></span> Senin - Jumat: 9.00 - 18.00 WITA</a></li>
 						</ul>
 					</div>
@@ -20,6 +20,7 @@
 							<li><a href="https://api.whatsapp.com/send/?phone=6289505991562&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0" class="fab fa-whatsapp"></a></li>
 							<li><a href="https://www.instagram.com/quantumitco/" class="fab fa-instagram"></a></li>
 							<li><a href="https://discord.gg/hRazTHsBe8" class="fab fa-discord"></a></li>
+                            <li><a href="https://www.linkedin.com/company/quantumforge-mks/" class="fab fa-linkedin"></a></li>
 						</ul>
                     </div>
 					
@@ -67,6 +68,7 @@
                                         <ul>
                                             <li class=""><a href="">BuaHatiku MIS</a></li>
                                             <li class=""><a href="">Siagamedika CMS</a></li>
+                                            <li class=""><a href="">Selengkapnya</a></li>
                                         </ul>
                                     </li>
                                     <li class="<?php echo ($current_page == 'news.php' || $current_page == 'news.php') ? 'current' : ''; ?>"><a href="news.php">Berita</a>

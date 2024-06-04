@@ -82,7 +82,7 @@
 				<div class="col-lg-5">
 					<!-- CTA Phone Number Start -->
 					<div class="cta-phone text-lg-end text-strat">
-						<h2 class="title">+62 895 0599 1562</h2>
+						<h2 class="title">+62 851 636 19 381</h2>
 					</div>
 					<!-- CTA Phone Number Start -->
 				</div>
@@ -486,7 +486,7 @@
 	<!-- Map Section -->
 	<div class="map-section">
 		<div class="contact-map-area">
-			<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.5429495825467!2d119.51005146726126!3d-5.075887732979638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefbf62a37e94d%3A0xfe91c81b3b68ffbd!2sPT.%20Antariksa%20Prakarsa%20Utama!5e0!3m2!1sid!2sid!4v1716704726051!5m2!1sid!2sid" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15896.6841973844!2d119.510545!3d-5.0760093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefbf62a37e94d%3A0xfe91c81b3b68ffbd!2sPT.%20Antariksa%20Prakarsa%20Utama!5e0!3m2!1sid!2sid!4v1717145566212!5m2!1sid!2sid" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 	</div>
 	<!-- End Map Section -->

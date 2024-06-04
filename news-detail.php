@@ -281,7 +281,7 @@ $newsUrl = urldecode($_GET['url']);
 									</div>
 									<div class="call">
 										Call us directly
-										<a class="phone" href="tel:+1-212-226-3126">+62 895 0599 1562</a>
+										<a class="phone" href="tel:+1-212-226-3126">+62 851 636 19 381</a>
 										<a class="email" href="mailto:quantumforge@gmail.com">quantumforge@gmail.com</a>
 									</div>
 								</div>

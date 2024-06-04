@@ -16,7 +16,7 @@
 									</div>
 									<div class="call">
 										<a href="#">Call us directly</a>
-										<a class="phone" href="tel:+1-212-226-3126">+62 895 0599 1562</a>
+										<a class="phone" href="tel:+1-212-226-3126">+62 851 636 19 381</a>
 										<a class="email" href="mailto:quantumforge@gmail.com">quantumforge@gmail.com</a>
 									</div>
 								</div>
@@ -95,6 +95,7 @@
 									<li><a href="https://api.whatsapp.com/send/?phone=6289505991562&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0" class="fab fa-whatsapp"></a></li>
 									<li><a href="https://www.instagram.com/quantumitco/" class="fab fa-instagram"></a></li>
 									<li><a href="https://discord.gg/hRazTHsBe8" class="fab fa-discord"></a></li>
+									<li><a href="https://www.linkedin.com/company/quantumforge-mks/" class="fab fa-linkedin"></a></li>
 								</ul>
 							</div>
 							
