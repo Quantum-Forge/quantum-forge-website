@@ -64,11 +64,10 @@
                                             <li class="<?php echo ($current_page == 'service-detail.php') ? 'current' : ''; ?>"><a href="service-detail.php">Service Detail</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown <?php echo ($current_page == 'project.php' || $current_page == 'project-details.php') ? 'current' : ''; ?>"><a href="#">Proyek</a>
+                                    <li class="dropdown <?php echo ($current_page == 'pd-1.php' || $current_page == 'pd-2.php') ? 'current' : ''; ?>"><a href="#">Proyek</a>
                                         <ul>
-                                            <li class=""><a href="">BuaHatiku MIS</a></li>
-                                            <li class=""><a href="">Siagamedika CMS</a></li>
-                                            <li class=""><a href="">Selengkapnya</a></li>
+                                            <li class=""><a href="pd-1.php">BuaHatiku MIS</a></li>
+                                            <li class=""><a href="pd-2.php">Siagamedika CMS</a></li>
                                         </ul>
                                     </li>
                                     <li class="<?php echo ($current_page == 'news.php' || $current_page == 'news.php') ? 'current' : ''; ?>"><a href="news.php">Berita</a>
