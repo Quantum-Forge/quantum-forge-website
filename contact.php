@@ -17,10 +17,9 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Consulte - Investment Company Bootstrap HTML Template" />
-<meta property="og:url" content="PAGE_URL" />
-<meta property="og:site_name" content="SITE_NAME" />
+
 <!-- For the og:image content, replace the # with a link of an image -->
-<meta property="og:image" content="#" />
+
 <meta property="og:description" content="Consulte is a free Bootstrap HTML Template for Investment Company" />
 
 <!-- Fonts -->

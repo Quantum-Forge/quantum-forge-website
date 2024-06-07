@@ -58,10 +58,10 @@
                                 <ul class="navigation clearfix">
                                     <li class="<?php echo ($current_page == 'index.php') ? 'current' : ''; ?>"><a href="index.php">Beranda</a></li>
                                     <li class="<?php echo ($current_page == 'about.php') ? 'current' : ''; ?>"><a href="about.php">Tentang</a></li>
-                                    <li class="dropdown <?php echo ($current_page == 'service.php' || $current_page == 'service-detail.php') ? 'current' : ''; ?>"><a href="#">Layanan</a>
-                                        <ul>
-                                            <li class="<?php echo ($current_page == 'service.php') ? 'current' : ''; ?>"><a href="service.php">Service</a></li>
-                                            <li class="<?php echo ($current_page == 'service-detail.php') ? 'current' : ''; ?>"><a href="service-detail.php">Service Detail</a></li>
+                                    <li class="dropdown <?php echo ($current_page == 'mobile_app.php' || $current_page == 'web_app.php') ? 'current' : ''; ?>"><a href="#">Layanan</a>
+                                        <ul style="width: 295px !important;">
+                                            <li class="<?php echo ($current_page == 'mobile_app.php') ? 'current' : ''; ?>"><a href="mobile_app.php">Mobile App Development</a></li>
+                                            <li class="<?php echo ($current_page == 'web_app.php') ? 'current' : ''; ?>"><a href="web_app.php">Web App Development</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown <?php echo ($current_page == 'pd-1.php' || $current_page == 'pd-2.php') ? 'current' : ''; ?>"><a href="#">Proyek</a>

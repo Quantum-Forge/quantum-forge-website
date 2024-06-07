@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Quantum Forge - Software House in Makassar || Buahatiku MIS</title>
-<meta name="description" content="Consulte is a free Bootstrap HTML Template for Investment Company"/>
+<meta name="description" content="Buah Hatiku adalah sebuah aplikasi berbasis web yang dirancang khusus untuk digunakan oleh admin dan terapis yang memiliki hak akses khusus. Aplikasi ini memungkinkan admin untuk mengelola data anak terapi, mengatur jadwal terapi, dan mengakses informasi penting terkait dengan terapi autisme"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="canonical" href="Replace_with_your_PAGE_URL" />
@@ -16,12 +16,11 @@
 <!-- Open Graph (OG) meta tags are snippets of code that control how URLs are displayed when shared on social media  -->
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Consulte - Investment Company Bootstrap HTML Template" />
-<meta property="og:url" content="PAGE_URL" />
-<meta property="og:site_name" content="SITE_NAME" />
+<meta property="og:title" content="Quantum Forge - Software House in Makassar || Buahatiku MIS" />
+
 <!-- For the og:image content, replace the # with a link of an image -->
-<meta property="og:image" content="#" />
-<meta property="og:description" content="Consulte is a free Bootstrap HTML Template for Investment Company" />
+
+<meta property="og:description" content="Buah Hatiku adalah sebuah aplikasi berbasis web yang dirancang khusus untuk digunakan oleh admin dan terapis yang memiliki hak akses khusus. Aplikasi ini memungkinkan admin untuk mengelola data anak terapi, mengatur jadwal terapi, dan mengakses informasi penting terkait dengan terapi autisme" />
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
