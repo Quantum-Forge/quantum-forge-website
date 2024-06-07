@@ -30,15 +30,7 @@
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 <meta name="msapplication-TileImage" content="images/favicon.png" />
 
-<!-- Structured Data  -->
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "name": "Replace_with_your_site_title",
-  "url": "Replace_with_your_site_URL"
-}
-</script>
+
 </head>
 
 <body>
@@ -55,8 +47,8 @@
     <div class="service-banner-section" data-bg-image="images/background/intro-1.png">
 		<div class="auto-container">
 			<div class="content-box">
-				<h2>Mengubah <span>Ide</span> menjadi <span>Realitas Digital</span></h2>
-				<div class="text">Mengubah konsep menjadi realitas digital yang inovatif dan bermanfaat bagi pengguna dan bisnis.</div>
+				<h2>Apakah <span>Kamu</span> Mencari <span>Software House</span> ?</h2>
+				<div class="text">Kami membantu Anda dengan layanan pengembangan perangkat lunak berkualitas tinggi untuk merancang dan mengembangkan aplikasi web atau aplikasi mobile yang dibuat khusus untuk memenuhi kebutuhan bisnis unik Anda. Hubungi kami untuk konsultasi gratis.</div>
 				<a href="contact.php" class="theme-btn btn-style-one"><span class="txt">Hubungi Kami</span></a>
 			</div>
 			
@@ -113,7 +105,7 @@
 							</div>
 							<div class="text">
 								<p>
-								Quantum Forge, berbasis di Makassar Indonesia, adalah software house yang terkoneksi dengan jaringan luas ahli IT dari berbagai daerah yang ada di indonesia. Didirikan pada 2023, kami menghadirkan solusi web dan mobile development bagi klien. Dengan fokus pada kolaborasi dan keahlian lintas wilayah, kami menyediakan layanan berkualitas tinggi untuk mengubah visi digital menjadi kenyataan bagi bisnis dan individu.
+								Quantum Forge, yang berbasis di Makassar, Indonesia, adalah software house yang menghubungkan jaringan luas ahli IT dari berbagai daerah di seluruh Indonesia. Sejak didirikan pada tahun 2023, kami berfokus pada menyediakan solusi pengembangan web dan mobile yang canggih untuk klien kami. Kami percaya pada kekuatan kolaborasi dan keahlian lintas wilayah untuk menghadirkan layanan berkualitas tinggi. Dengan misi untuk mengubah visi digital menjadi kenyataan, Quantum Forge siap membantu bisnis dan individu mewujudkan ide-ide inovatif mereka. Hubungi kami untuk konsultasi gratis dan mulailah transformasi digital Anda bersama kami.
 								</p>
 							</div>
 
@@ -375,7 +367,7 @@
 				<div class="title">International News</div>
 				<h2><span>Terkini </span>Dari Berita Kami</h2>
 			</div>
-			<?php include 'php/api_news.php'; ?>
+			<?php include ('php/api_news.php')?>
 			<div class="inner-container">
 				<div class="clearfix row g-0">
 					<!-- Column for the first two articles -->
@@ -476,6 +468,12 @@
 							<?php endforeach; ?>
 						<?php endif; ?>
 					</div>
+
+					<?php 
+					if ($newsData === null) {
+						echo '<p class="text-center">No news available at the moment.</p>';
+					}
+					?>
 				</div>
 			</div>
 		</div>

@@ -30,15 +30,7 @@
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 <meta name="msapplication-TileImage" content="images/favicon.png" />
 
-<!-- Structured Data  -->
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "name": "Replace_with_your_site_title",
-  "url": "Replace_with_your_site_URL"
-}
-</script>
+
 </head>
 
 <body>
@@ -138,6 +130,8 @@
 									</a>
 								</li>
 							<?php endif; ?>
+
+							
 						</ul>
 					</div>
 

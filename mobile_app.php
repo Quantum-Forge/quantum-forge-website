@@ -29,15 +29,7 @@
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 <meta name="msapplication-TileImage" content="images/favicon.png" />
 
-<!-- Structured Data  -->
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "name": "Replace_with_your_site_title",
-  "url": "Replace_with_your_site_URL"
-}
-</script>
+
 </head>
 
 <body>
@@ -71,7 +63,7 @@
 							<p>Selanjutnya adalah tahap pengembangan, yang mencakup pembuatan frontend aplikasi menggunakan bahasa pemrograman yang sesuai (misalnya, Swift untuk iOS atau Kotlin untuk Android), dan pengembangan backend yang mendukung fungsi aplikasi melalui server, database, dan API. Pada tahap ini, integrasi dengan layanan pihak ketiga seperti pembayaran atau media sosial juga dilakukan. Setelah pengembangan selesai, aplikasi menjalani pengujian fungsional untuk memastikan semua fitur bekerja dengan baik, pengujian kinerja untuk memastikan aplikasi berjalan optimal di berbagai perangkat, dan pengujian keamanan untuk mengidentifikasi dan memperbaiki kerentanan.</p>
 							<p>Tahap berikutnya adalah peluncuran aplikasi, yang melibatkan distribusi aplikasi ke toko aplikasi seperti Google Play Store dan App Store, serta upaya pemasaran dan promosi untuk menarik pengguna. Setelah peluncuran, aplikasi harus dipelihara dan diperbarui secara berkala untuk memperbaiki bug, meningkatkan kinerja, dan menambah fitur baru berdasarkan umpan balik pengguna. Analitik pengguna dan umpan balik juga dikumpulkan dan dianalisis untuk memahami interaksi pengguna dengan aplikasi dan menemukan area yang perlu ditingkatkan. Melalui proses yang sistematis ini, pengembang dapat menciptakan aplikasi mobile yang efektif, aman, dan memenuhi kebutuhan pengguna.</p>
 								<blockquote>
-									Quantum Forge – didirikan dengan tujuan untuk menyediakan layanan pengembangan perangkat lunak yang inovatif dan berkualitas tinggi.
+									Quantum Forge – Kami menggunakan metodologi Waterfall yang memastikan setiap tahapan proyek Anda direncanakan dan diimplementasikan dengan presisi. Dengan pendekatan ini, Anda mendapatkan kepastian anggaran yang akurat sejak awal. Setiap fase diselesaikan secara menyeluruh sebelum melanjutkan ke fase berikutnya, memberikan Anda kontrol penuh dan transparansi terhadap perkembangan proyek. Hal ini membantu meminimalkan risiko perubahan mendadak yang dapat mempengaruhi anggaran, memastikan bahwa proyek Anda berjalan sesuai rencana dengan biaya yang telah ditentukan. Dengan dokumentasi yang detail dan fokus pada kualitas, kami memastikan bahwa setiap kebutuhan Anda dipenuhi tanpa biaya tambahan yang tidak terduga. Pilihan kami untuk metodologi Waterfall adalah untuk memberikan Anda ketenangan pikiran, mengetahui bahwa proyek Anda berada di tangan yang tepat dengan perencanaan anggaran yang tepat dan terukur.
 								</blockquote>
 								<h4>Layanan spesifik</h4>
 								<div class="row clearfix">
@@ -106,8 +98,7 @@
 										<!-- Column -->
 										<div class="column col-lg-6 col-md-6 col-sm-12">
 											<p>
-												
-Metodologi Waterfall adalah pendekatan tradisional dalam pengembangan perangkat lunak yang bersifat linear dan berurutan. Dalam metodologi ini, setiap fase proyek harus diselesaikan sebelum fase berikutnya dapat dimulai. Ini berarti tidak ada tumpang tindih atau iterasi antar fase. Berikut adalah penjelasan mendetail tentang setiap fase dalam metodologi Waterfall:
+												Metodologi Waterfall adalah pendekatan tradisional dalam pengembangan perangkat lunak yang bersifat linear dan berurutan. Dalam metodologi ini, setiap fase proyek harus diselesaikan sebelum fase berikutnya dapat dimulai. Ini berarti tidak ada tumpang tindih atau iterasi antar fase. Berikut adalah penjelasan mendetail tentang setiap fase dalam metodologi Waterfall:
 											</p>
 											<ul class="list-style-one">
 												<li>Requirement Analysis (Analisis Kebutuhan)</li>

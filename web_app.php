@@ -30,15 +30,7 @@
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 <meta name="msapplication-TileImage" content="images/favicon.png" />
 
-<!-- Structured Data  -->
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "name": "Replace_with_your_site_title",
-  "url": "Replace_with_your_site_URL"
-}
-</script>
+
 </head>
 
 <body>
@@ -68,11 +60,9 @@
 								<img src="images/resource/web_service.jpg" alt="" />
 							</div>
 							<div class="lower-content">
-								<p>
-								Pengembangan aplikasi web telah menjadi bagian integral dari banyak bisnis dan organisasi dalam dunia digital saat ini. Aplikasi web menawarkan kemudahan akses, interaktivitas, dan fungsionalitas yang memungkinkan pengguna untuk mengakses informasi dan layanan dengan cepat melalui internet. Artikel ini akan membahas langkah-langkah pengembangan aplikasi web serta teknologi terkini yang mendukung proses tersebut.
-								</p>
+								<p>Pengembangan aplikasi web merupakan inti dari transformasi digital modern, memungkinkan bisnis untuk menciptakan platform interaktif yang dapat diakses dari mana saja dengan koneksi internet. Dengan memanfaatkan teknologi terkini seperti Progressive Web Apps (PWA), Single Page Applications (SPA), dan arsitektur berbasis microservices, pengembang dapat menghasilkan aplikasi yang responsif, aman, dan memiliki pengalaman pengguna yang optimal. Implementasi praktik DevOps dan CI/CD juga mempercepat proses pengembangan dan peluncuran, memastikan aplikasi selalu diperbarui dan bebas dari bug. Dalam era digital yang terus berkembang, penguasaan pengembangan aplikasi web menjadi kunci untuk tetap kompetitif dan memenuhi kebutuhan pengguna yang semakin kompleks.</p>
 								<blockquote>
-									Quantum Forge – didirikan dengan tujuan untuk menyediakan layanan pengembangan perangkat lunak yang inovatif dan berkualitas tinggi.
+									Quantum Forge – Kami menggunakan metodologi Waterfall yang memastikan setiap tahapan proyek Anda direncanakan dan diimplementasikan dengan presisi. Dengan pendekatan ini, Anda mendapatkan kepastian anggaran yang akurat sejak awal. Setiap fase diselesaikan secara menyeluruh sebelum melanjutkan ke fase berikutnya, memberikan Anda kontrol penuh dan transparansi terhadap perkembangan proyek. Hal ini membantu meminimalkan risiko perubahan mendadak yang dapat mempengaruhi anggaran, memastikan bahwa proyek Anda berjalan sesuai rencana dengan biaya yang telah ditentukan. Dengan dokumentasi yang detail dan fokus pada kualitas, kami memastikan bahwa setiap kebutuhan Anda dipenuhi tanpa biaya tambahan yang tidak terduga. Pilihan kami untuk metodologi Waterfall adalah untuk memberikan Anda ketenangan pikiran, mengetahui bahwa proyek Anda berada di tangan yang tepat dengan perencanaan anggaran yang tepat dan terukur.
 								</blockquote>
 								<h4>Layanan spesifik</h4>
 								<div class="row clearfix">
@@ -130,7 +120,6 @@
 								
 								<div class="accordian-box">
 									<h4>Fase-fase dalam Metodologi Waterfall</h4>
-									
 									<!--Accordian Box-->
 									<ul class="accordion-box">
 										<!--Block-->

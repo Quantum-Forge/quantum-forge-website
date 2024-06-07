@@ -40,13 +40,7 @@ $page = $_GET['page'] ?? 1;
 
 $newsData = fetch_news($newsApiUrl, $newsApiKey, $query, $page);
 
-if ($newsData === null) {
-    echo '
-    <div class="auto-container">
-        <p>No news available at the moment.</p>
-    </div>';
-    exit;
-}
+
 
 // var_dump($newsData);
 
