@@ -416,7 +416,7 @@
 	<!--End Sponsors Section-->
 	
 	<!-- Main Footer -->
-    <footer class="main-footer style-one">
+    <footer class="main-footer style-two">
 		<?php include ('layout/footer.php') ?>
 	</footer>
 	
