@@ -57,7 +57,7 @@
                             <div class="navbar-collapse show collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li class="<?php echo ($current_page == 'index.php') ? 'current' : ''; ?>"><a href="index.php">Beranda</a></li>
-                                    <li class="<?php echo ($current_page == 'about-1.php') ? 'current' : ''; ?>"><a href="about-1.php">Tentang</a></li>
+                                    <li class="<?php echo ($current_page == 'about.php') ? 'current' : ''; ?>"><a href="about.php">Tentang</a></li>
                                     <li class="dropdown <?php echo ($current_page == 'mobile_app.php' || $current_page == 'web_app.php') ? 'current' : ''; ?>"><a href="#">Layanan</a>
                                         <ul style="width: 295px !important;">
                                             <li class="<?php echo ($current_page == 'mobile_app.php') ? 'current' : ''; ?>"><a href="mobile_app.php">Mobile App Development</a></li>

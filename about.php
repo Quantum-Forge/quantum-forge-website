@@ -212,7 +212,7 @@
 						<div class="inner-box">
 							<div class="quote icofont-quote-right"></div>
 							<div class="author">Mr A <span>/ Yayasan Buahatiku</span></div>
-							<div class="text">Quantum Forge telah membantu kami mencapai efisiensi operasional yang lebih tinggi dengan solusi perangkat lunak mereka yang inovatif.</div>
+							<div class="text">Quantum Forge telah membantu kami mencapai efisiensi operasional yang lebih tinggi dengan solusi perangkat lunak mereka yang inovatif. Kami sangat puas dengan hasil kerjasama ini.</div>
 						</div>
 					</div>
 					
