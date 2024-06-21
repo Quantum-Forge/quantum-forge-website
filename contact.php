@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Quantum Forge - Software House in Makassar</title>
-<meta name="description" content="Consulte is a free Bootstrap HTML Template for Investment Company"/>
+<meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="canonical" href="Replace_with_your_PAGE_URL" />
@@ -16,11 +16,11 @@
 <!-- Open Graph (OG) meta tags are snippets of code that control how URLs are displayed when shared on social media  -->
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Consulte - Investment Company Bootstrap HTML Template" />
+<meta property="og:title" content="Quantum Forge - Software House in Makassar" />
 
 <!-- For the og:image content, replace the # with a link of an image -->
 
-<meta property="og:description" content="Consulte is a free Bootstrap HTML Template for Investment Company" />
+<meta property="og:description" content="" />
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;500;600;700;900&family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
 	<!-- Map Section -->
 	<div class="map-section">
 		<div class="contact-map-area">
-			<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.986005919501!2d-73.9685579655238!3d40.75862446708152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e4a1c884e5%3A0x24fe1071086b36d5!2sThe%20Atrium!5e0!3m2!1sen!2sbd!4v1585132512970!5m2!1sen!2sbd" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254333.05220493433!2d119.23780954316575!3d-5.111126458381655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee329d96c4671%3A0x3030bfbcaf770b0!2sMakassar%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1718880683126!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</div>
 	<!-- End Map Section -->
@@ -60,17 +60,16 @@
 					
 					<!-- Column -->
 					<div class="column col-lg-6 col-md-6 col-sm-12">
-						<h2>Brooklyn, <span>New York</span></h2>
-						<div class="text">849 Diamond Str, 07th Floor, NY 10012, New York, <br> United State America</div>
-						<div class="email">Email: <a href="mailto:infor@consulte.co">infor@consulte.co</a></div>
+						<h2>Makassar, <span>Sulawesi Selatan</span></h2>
+						<div class="text">Jl. Ir. Sutami No.85, Bulurokeng, Kec. Biringkanaya, Kota Makassar, Sulawesi Selatan 90242</div>
+						<div class="email">Email: <a href="mailto:quantumforge@gmail.com">quantumforge@gmail.com</a></div>
 					</div>
 					
 					<!-- Column -->
 					<div class="column col-lg-6 col-md-6 col-sm-12">
-						<div class="call">Call directly:<br><a href="#">+62 851 636 19 381</a></div>
+						<div class="call">Telp WA:<br><a href="#">+62 851 636 19 381</a></div>
 						<ul class="location-list">
-							<li><span>Brand Offices:</span>Allentown PA | Allanta, GA | Chicago, IL | Dallas, TX, <br> Edison, NJ | Houston, TX</li>
-							<li><span>Work Hours:</span>Mon - Sat: 8.00 - 17.00, Sunday closed</li>
+							<li><span>Work Hours:</span>Senin - Jumat: 9.00 - 18.00 WITA</li>
 						</ul>
 					</div>
 					
@@ -80,15 +79,15 @@
 			<!-- Form Boxed -->
 			<div class="form-boxed">
 				<div class="sec-title centered">
-					<div class="title">contact us</div>
-					<h2>We Always Here <span>To Help You</span></h2>
+					<div class="title">kontak kami</div>
+					<h2>Kami Disini <span>Membantu Anda</span></h2>
 				</div>
 				
 				<div class="boxed-inner">
 					<!-- Contact Form -->
 					<div class="contact-form">
 						<!-- Contact Form -->
-						<form method="post" action="mail.php" id="contact-form">
+						<form method="post" action="php/whatsapp.php" id="contact-form">
 							<div class="row clearfix">
 								<div class="col-lg-4 col-md-6 col-sm-12 form-group">
 									<input type="text" name="name" placeholder="Name *" required>
@@ -107,7 +106,7 @@
 								</div>
 
 								<div class="col-lg-12 col-md-12 col-sm-12 text-center form-group">
-									<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Send Message</span></button>
+									<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Kirim Pesan</span></button>
 								</div>
 
 							</div>

@@ -60,7 +60,7 @@
 						</div>
 					</div>
 					<div class="pull-right">
-						<a class="phone" href="tel:+62-851-636-19-381">+62 851 636 19 381</a>
+						<a class="phone" href="https://wa.me/6285163619381">+62 851 636 19 381</a>
 					</div>
 				</div>
 				

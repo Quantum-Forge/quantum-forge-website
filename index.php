@@ -393,7 +393,7 @@
 	<!-- Map Section -->
 	<div class="map-section">
 		<div class="contact-map-area">
-			<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15896.6841973844!2d119.510545!3d-5.0760093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefbf62a37e94d%3A0xfe91c81b3b68ffbd!2sPT.%20Antariksa%20Prakarsa%20Utama!5e0!3m2!1sid!2sid!4v1717145566212!5m2!1sid!2sid" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254333.05220493433!2d119.23780954316575!3d-5.111126458381655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee329d96c4671%3A0x3030bfbcaf770b0!2sMakassar%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1718880683126!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</div>
 	<!-- End Map Section -->

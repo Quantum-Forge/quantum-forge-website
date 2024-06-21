@@ -7,7 +7,7 @@
 						<!-- Info List -->
 						<ul class="info-list">
 							<li><a href="mailto:quantumforge@gmail.com"><span class="icon icofont-envelope"></span> quantumforge@gmail.com</a></li>
-							<li><a href="tel:6289505991562"><span class="icon icofont-phone"></span> +6285163619381</a></li>
+							<li><a href="https://wa.me/6285163619381"><span class="icon icofont-phone"></span> +6285163619381</a></li>
 							<li><a href="contact.php"><span class="icon icofont-clock-time"></span> Senin - Jumat: 9.00 - 18.00 WITA</a></li>
 						</ul>
 					</div>
