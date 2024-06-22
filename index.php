@@ -36,7 +36,7 @@
 <body>
 
 <div class="loading-area">
-        <div class="spinner-border text-primary" role="status">
+        <div class="spinner-grow text-primary" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -140,9 +140,9 @@
 							<div class="icon-box">
 								<img src="images/stack/laravel.png" class="w-25 img-fluid" alt="">
 							</div>
-							<h5><a href="service-detail.php">Laravel</a></h5>
+							<h5><a hre target="_blank" href="https://laravel.com/">Laravel</a></h5>
 							<div class="text">Framework PHP untuk aplikasi web elegan.</div>
-							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
+							<a target="_blank" class="read-more" href="https://laravel.com/">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -152,9 +152,9 @@
 							<div class="icon-box">
 								<img src="images/stack/firebase.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Firebase</a></h5>
+							<h5><a hre target="_blank" href="https://firebase.google.com/">Firebase</a></h5>
 							<div class="text">Platform backend-as-a-service oleh Google.</div>
-							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
+							<a target="_blank" class="read-more" href="https://firebase.google.com/">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -164,9 +164,9 @@
 							<div class="icon-box">
 								<img src="images/stack/node.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Node.js</a></h5>
+							<h5><a hre target="_blank" href="https://nodejs.org/en">Node.js</a></h5>
 							<div class="text">Platform JavaScript untuk aplikasi jaringan cepat.</div>
-							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
+							<a target="_blank" class="read-more" href="https://nodejs.org/en">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 
@@ -176,9 +176,9 @@
 							<div class="icon-box">
 							<img src="images/stack/flask.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Flask</a></h5>
+							<h5><a target="_blank" href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a></h5>
 							<div class="text">Framework mikro Python untuk aplikasi web.</div>
-							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
+							<a target="_blank" class="read-more" href="https://flask.palletsprojects.com/en/3.0.x/">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -188,9 +188,9 @@
 							<div class="icon-box">
 							<img src="images/stack/react.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">React</a></h5>
+							<h5><a target="_blank" href="https://react.dev/">React</a></h5>
 							<div class="text">Library JS untuk antarmuka pengguna dinamis.</div>
-							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
+							<a target="_blank" class="read-more" href="https://react.dev/">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -200,9 +200,9 @@
 							<div class="icon-box">
 							<img src="images/stack/flutter.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Flutter</a></h5>
+							<h5><a target="_blank" href="https://flutter.dev/?gad_source=1&gclid=CjwKCAjwydSzBhBOEiwAj0XN4Lh3BBBwyJORTTwYZbMgPaxwBFXzMzk0gYNpt1BG9Qj2DW8HGepstRoCp00QAvD_BwE&gclsrc=aw.ds">Flutter</a></h5>
 							<div class="text">SDK Google untuk aplikasi multiplatform indah.</div>
-							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
+							<a target="_blank" class="read-more" href="https://flutter.dev/?gad_source=1&gclid=CjwKCAjwydSzBhBOEiwAj0XN4Lh3BBBwyJORTTwYZbMgPaxwBFXzMzk0gYNpt1BG9Qj2DW8HGepstRoCp00QAvD_BwE&gclsrc=aw.ds">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -212,9 +212,9 @@
 							<div class="icon-box">
 							<img src="images/stack/vue.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Vue</a></h5>
+							<h5><a target="_blank" href="https://vuejs.org/">Vue</a></h5>
 							<div class="text">Framework JS progresif untuk antarmuka interaktif.</div>
-							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
+							<a target="_blank" class="read-more" href="https://vuejs.org/">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 					
@@ -224,9 +224,9 @@
 							<div class="icon-box">
 							<img src="images/stack/figma.png" alt="" class="w-25 img-fluid">
 							</div>
-							<h5><a href="service-detail.php">Figma</a></h5>
+							<h5><a target="_blank" href="https://www.figma.com/">Figma</a></h5>
 							<div class="text">Alat desain kolaboratif berbasis web efisien.</div>
-							<a class="read-more" href="service-detail.php">More <span class="ti-angle-right"></span></a>
+							<a target="_blank" class="read-more" href="https://www.figma.com/">More <span class="ti-angle-right"></span></a>
 						</div>
 					</div>
 				</div>
@@ -399,7 +399,7 @@
 	<!-- Map Section -->
 	<div class="map-section">
 		<div class="contact-map-area">
-		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254333.05220493433!2d119.23780954316575!3d-5.111126458381655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee329d96c4671%3A0x3030bfbcaf770b0!2sMakassar%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1718880683126!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15896.689160711181!2d119.5107791!3d-5.0758079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefdad009d4c73%3A0xa29683b491666860!2sQuantum%20Forge%20Software%20Makassar!5e0!3m2!1sid!2sid!4v1719051022059!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</div>
 	<!-- End Map Section -->

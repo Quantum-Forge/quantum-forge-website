@@ -36,7 +36,7 @@
 <body>
 
 <div class="loading-area">
-        <div class="spinner-border text-primary" role="status">
+        <div class="spinner-grow text-primary" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -57,7 +57,7 @@
 				<li><a href="index.php">Beranda</a></li>
 				<li>Berita</li>
 			</ul>
-			<h2><span>Latest</span> From Our Press</h2>
+			<h2><span>Berita</span> Terkini dari Kami</h2>
 		</div>
 	</div>
 	<!-- End Page Title Section -->
@@ -79,7 +79,7 @@
 										<div class="inner-box">
 											<div class="image">
 												<a href="<?php echo $article['url']; ?>" target="_blank">
-													<img style="width: 300px; height: 169px;" src="<?php echo $article['urlToImage']; ?>" alt="" />
+													<img style="height: 169px;" src="<?php echo $article['urlToImage']; ?>" alt="" />
 												</a>
 											</div>
 											<div class="title"><?php echo htmlspecialchars($article['source']['name']); ?></div>

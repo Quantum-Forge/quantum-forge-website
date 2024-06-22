@@ -36,7 +36,7 @@
 <body>
 
 <div class="loading-area">
-        <div class="spinner-border text-primary" role="status">
+        <div class="spinner-grow text-primary" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -52,7 +52,7 @@
 	<!-- Map Section -->
 	<div class="map-section">
 		<div class="contact-map-area">
-		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254333.05220493433!2d119.23780954316575!3d-5.111126458381655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee329d96c4671%3A0x3030bfbcaf770b0!2sMakassar%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1718880683126!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15896.689160711181!2d119.5107791!3d-5.0758079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefdad009d4c73%3A0xa29683b491666860!2sQuantum%20Forge%20Software%20Makassar!5e0!3m2!1sid!2sid!4v1719051022059!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</div>
 	<!-- End Map Section -->

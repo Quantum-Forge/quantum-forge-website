@@ -1,32 +1,32 @@
 <!-- Header Top -->
-<div class="header-top">
-            <div class="auto-container">
-                <div class="inner-container clearfix">
-					<!-- Top Left -->
-					<div class="top-left">
-						<!-- Info List -->
-						<ul class="info-list">
-							<li><a href="mailto:quantumforge@gmail.com"><span class="icon icofont-envelope"></span> quantumforge@gmail.com</a></li>
-							<li><a href="https://wa.me/6285163619381"><span class="icon icofont-phone"></span> +6285163619381</a></li>
-							<li><a href="contact.php"><span class="icon icofont-clock-time"></span> Senin - Jumat: 9.00 - 18.00 WITA</a></li>
-						</ul>
-					</div>
-					
-					<!-- Top Right -->
-                    <div class="top-right pull-right">
-						<!-- Social Box -->
-						<ul class="social-box">
-							<li class="share">Our Social</li>
-							<li><a href="https://api.whatsapp.com/send/?phone=6289505991562&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0" class="fab fa-whatsapp"></a></li>
-							<li><a href="https://www.instagram.com/quantumitco/" class="fab fa-instagram"></a></li>
-							<li><a href="https://discord.gg/hRazTHsBe8" class="fab fa-discord"></a></li>
-                            <li><a href="https://www.linkedin.com/company/quantumforge-mks/" class="fab fa-linkedin"></a></li>
-						</ul>
-                    </div>
-					
-                </div>
+<div class="header-top d-none d-md-block">
+    <div class="auto-container">
+        <div class="inner-container clearfix">
+            <!-- Top Left -->
+            <div class="top-left">
+                <!-- Info List -->
+                <ul class="info-list">
+                    <li><a href="mailto:quantumforge@gmail.com"><span class="icon icofont-envelope"></span> quantumforge@gmail.com</a></li>
+                    <li><a href="https://wa.me/6285163619381"><span class="icon icofont-phone"></span> +6285163619381</a></li>
+                    <li><a href="contact.php"><span class="icon icofont-clock-time"></span> Senin - Jumat: 9.00 - 18.00 WITA</a></li>
+                </ul>
             </div>
+            
+            <!-- Top Right -->
+            <div class="top-right pull-right">
+                <!-- Social Box -->
+                <ul class="social-box">
+                    <li class="share">Our Social</li>
+                    <li><a href="https://api.whatsapp.com/send/?phone=6289505991562&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0" class="fab fa-whatsapp"></a></li>
+                    <li><a href="https://www.instagram.com/quantumitco/" class="fab fa-instagram"></a></li>
+                    <li><a href="https://discord.gg/hRazTHsBe8" class="fab fa-discord"></a></li>
+                    <li><a href="https://www.linkedin.com/company/quantumforge-mks/" class="fab fa-linkedin"></a></li>
+                </ul>
+            </div>
+            
         </div>
+    </div>
+</div>
 		
     	<!-- Header Upper -->
         <div class="header-upper">

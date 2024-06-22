@@ -15,8 +15,8 @@
 										<a href="index.php"><img class="py-3 img-fluid" width="175" height="80" src="images/logo.png" alt="" /></a>
 									</div>
 									<div class="call">
-										<a href="#">Call us directly</a>
-										<a class="phone" href="tel:+1-212-226-3126">+62 851 636 19 381</a>
+										<a href="#">Kontak Kami</a>
+										<a class="phone" href="https://wa.me/6285163619381">+62 851 636 19 381</a>
 										<a class="email" href="mailto:quantumforge@gmail.com">quantumforge@gmail.com</a>
 									</div>
 								</div>
@@ -25,14 +25,14 @@
 							<!-- Footer Column -->
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget links-widget">
-									<h5>Company</h5>
+									<h5>Perusahaan</h5>
 									<ul class="list-link">
-										<li><a href="">About Us</a></li>
-										<li><a href="">Team</a></li>
-										<li><a href="">Careers</a></li>
-										<li><a href="">Investors</a></li>
-										<li><a href="">Contact Us</a></li>
-										<li><a href="">Offices</a></li>
+										<li><a href="about.php">Tentang Kami</a></li>
+										<li><a href="#">Team</a></li>
+										<li><a href="#">Karir</a></li>
+										<li><a href="#">Investors</a></li>
+										<li><a href="contact.php">Kontak</a></li>
+										<li><a href="contact.php">Kantor</a></li>
 									</ul>
 								</div>
 							</div>
@@ -47,12 +47,12 @@
 							<!-- Footer Column -->
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget links-widget">
-									<h5>Quick Links</h5>
+									<h5>Link Cepat</h5>
 									<ul class="list-link">
-										<li><a href="">FAQS</a></li>
-										<li><a href="">Support</a></li>
-										<li><a href="">Sitemap</a></li>
-										<li><a href="">Community</a></li>
+										<li><a href="index.php">Beranda</a></li>
+										<li><a href="about.php">Tentang</a></li>
+										<li><a href="contact.php">Kontak</a></li>
+										<li><a href="https://discord.gg/hRazTHsBe8">Komunitas</a></li>
 									</ul>
 								</div>
 							</div>
@@ -60,8 +60,8 @@
 							<!-- Footer Column -->
                             <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="footer-widget newsletter-widget">
-									<h5>Our Newsletter</h5>
-									<div class="text">Subscribe to our newsletter and we will inform you about latest updates and offers</div>
+									<h5>Tentang Kami</h5>
+									<div class="text">Quantum Forge adalah mitra yang Anda butuhkan untuk mengatasi tantangan teknologi dan membawa bisnis Anda ke level berikutnya. Mari berinovasi bersama dan ciptakan masa depan digital yang lebih cerah.</div>
 									<!-- Newsletter Form -->
 									<div class="newsletter-form">
 										<form method="post" action="contact.php">

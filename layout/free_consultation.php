@@ -10,8 +10,7 @@
 							<h5>Konsultasi Gratis</h5>
 							
 							<div class="consult-form">
-								<form method="post" action="">
-
+								<form id="whatsapp-form" method="post" action="">
 									<!--Form Group-->
 									<div class="form-group">
 										<label>Nama Lengkap</label>
@@ -25,23 +24,23 @@
 									<!--Form Group-->
 									<div class="form-group">
 										<label>Topic</label>
-										<select class="custom-select-box">
-											<option>Choose topic</option>
-											<option>Web Development</option>
-											<option>Mobile Development</option>
+										<select name="topic" class="custom-select-box" required>
+											<option value="">Choose topic</option>
+											<option value="Web Development">Web Development</option>
+											<option value="Mobile Development">Mobile Development</option>
 										</select>
 									</div>
 									<!--Form Group-->
 									<div class="form-group">
-										<label>message</label>
-										<textarea name="message" placeholder="Tulis Pesan Anda"></textarea>
+										<label>Message</label>
+										<textarea name="message" placeholder="Tulis Pesan Anda" required></textarea>
 									</div>
 									<div class="form-group">
 										<button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="txt">Kirim Pesan</span></button>
 									</div>
 								</form>
-							
 							</div>
+
 						</div>
 						
 					</div>

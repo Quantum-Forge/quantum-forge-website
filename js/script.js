@@ -401,7 +401,31 @@
 	/*-------------------------
         Contact Form 'Konsultasi Gratis'
     ---------------------------*/
-  
+	$('#whatsapp-form').on('submit', function(e) {
+		e.preventDefault();
+
+		// Get form values
+		var name = $('input[name="name"]').val();
+		var phone = $('input[name="phone"]').val();
+		var topic = $('select[name="topic"]').val();
+		var message = $('textarea[name="message"]').val();
+
+		// Format WhatsApp message
+		var whatsappMessage = "Name: " + name + "\n" +
+							  "Phone: " + phone + "\n" +
+							  "Topic: " + topic + "\n" +
+							  "-----------------------\n" +
+							  "Halo (" + message + ")";
+
+		// WhatsApp number
+		var whatsappNumber = '6285163619381';
+
+		// Create WhatsApp URL
+		var whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(whatsappMessage);
+
+		// Redirect to WhatsApp
+		window.open(whatsappURL, '_blank');
+	});
 
 /* ==========================================================================
    When document is Scrollig, do
