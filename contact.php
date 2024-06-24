@@ -73,7 +73,7 @@
 					
 					<!-- Column -->
 					<div class="column col-lg-6 col-md-6 col-sm-12">
-						<div class="call">Telp WA:<br><a href="https://api.whatsapp.com/send/?phone=6289505991562&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0">+62 851 636 19 381</a></div>
+						<div class="call">Telp WA:<br><a href="https://api.whatsapp.com/send/?phone=6285163619381&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0">+62 851 636 19 381</a></div>
 						<ul class="location-list">
 							<li><span>Work Hours:</span>Senin - Jumat: 9.00 - 18.00 WITA</li>
 						</ul>
