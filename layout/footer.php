@@ -28,9 +28,7 @@
 									<h5>Perusahaan</h5>
 									<ul class="list-link">
 										<li><a href="about.php">Tentang Kami</a></li>
-										<li><a href="#">Team</a></li>
-										<li><a href="#">Karir</a></li>
-										<li><a href="#">Investors</a></li>
+										<li><a href="https://discord.gg/hRazTHsBe8">Team</a></li>
 										<li><a href="contact.php">Kontak</a></li>
 										<li><a href="contact.php">Kantor</a></li>
 									</ul>
@@ -64,12 +62,7 @@
 									<div class="text">Quantum Forge adalah mitra yang Anda butuhkan untuk mengatasi tantangan teknologi dan membawa bisnis Anda ke level berikutnya. Mari berinovasi bersama dan ciptakan masa depan digital yang lebih cerah.</div>
 									<!-- Newsletter Form -->
 									<div class="newsletter-form">
-										<form method="post" action="contact.php">
-											<div class="form-group">
-												<input type="email" name="email" value="" placeholder="Email Address..." required>
-												<button type="submit" class="theme-btn icofont-arrow-right"></button>
-											</div>
-										</form>
+										<a href="https://api.whatsapp.com/send/?phone=6289505991562&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0" class="btn btn-success w-100"><i class="fab fa-whatsapp me-2"></i>Whatsapp Kami</a>
 									</div>
 								</div>
 							</div>

@@ -73,7 +73,7 @@
 					
 					<!-- Column -->
 					<div class="column col-lg-6 col-md-6 col-sm-12">
-						<div class="call">Telp WA:<br><a href="#">+62 851 636 19 381</a></div>
+						<div class="call">Telp WA:<br><a href="https://api.whatsapp.com/send/?phone=6289505991562&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0">+62 851 636 19 381</a></div>
 						<ul class="location-list">
 							<li><span>Work Hours:</span>Senin - Jumat: 9.00 - 18.00 WITA</li>
 						</ul>
@@ -100,11 +100,16 @@
 								</div>
 
 								<div class="col-lg-4 col-md-6 col-sm-12 form-group">
-									<input type="email" name="email" placeholder="Emaill Address *" required>
+									<input type="text" name="phone" placeholder="Phone Number *" required>
 								</div>
 
 								<div class="col-lg-4 col-md-12 col-sm-12 form-group">
-									<input type="text" name="subject" placeholder="Subject (Optional)" required>
+									<select name="topic" required>
+										<option value="">Choose topic</option>
+										<option value="Web Development">Web Development</option>
+										<option value="Mobile Development">Mobile Development</option>
+										<option value="Others">Lainnya</option>
+									</select>
 								</div>
 
 								<div class="col-lg-12 col-md-12 col-sm-12 form-group">

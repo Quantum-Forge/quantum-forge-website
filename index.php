@@ -78,9 +78,9 @@
 				</div>
 				<div class="col-lg-5">
 					<!-- CTA Phone Number Start -->
-					<div class="cta-phone text-lg-end text-strat">
+					<a target="_blank" href="https://api.whatsapp.com/send/?phone=6289505991562&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0" class="cta-phone text-lg-end text-strat">
 						<h2 class="title">+62 851 636 19 381</h2>
-					</div>
+					</a>
 					<!-- CTA Phone Number Start -->
 				</div>
 			</div>

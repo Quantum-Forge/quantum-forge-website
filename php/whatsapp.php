@@ -1,24 +1,26 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Mendapatkan data dari form
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $subject = htmlspecialchars($_POST['subject']);
-    $message = htmlspecialchars($_POST['message']);
-    
-    // Mengatur nomor WhatsApp tujuan
-    $whatsapp_number = '6285163619381';
-    
-    // Membuat pesan yang akan dikirim
-    $whatsapp_message = "Name: $name\nEmail: $email\nSubject: $subject\n-----------------------\nHalo, $message";
-    
-    // Membuat URL WhatsApp dengan pesan
-    $whatsapp_url = "https://api.whatsapp.com/send?phone=$whatsapp_number&text=" . urlencode($whatsapp_message);
-    
-    // Redirect ke URL WhatsApp
-    header("Location: $whatsapp_url");
+    // Get form values
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $topic = $_POST['topic'];
+    $message = $_POST['message'];
+
+    // Format WhatsApp message
+    $whatsappMessage = "Name: " . $name . "\n" .
+                       "Phone: " . $phone . "\n" .
+                       "Topic: " . $topic . "\n" .
+                       "-----------------------\n" .
+                       "Halo, " . $message . "";
+
+    // WhatsApp number
+    $whatsappNumber = '6285163619381';
+
+    // Create WhatsApp URL
+    $whatsappURL = "https://wa.me/" . $whatsappNumber . "?text=" . urlencode($whatsappMessage);
+
+    // Redirect to WhatsApp
+    header("Location: " . $whatsappURL);
     exit();
-} else {
-    echo "Invalid Request Method";
 }
 ?>

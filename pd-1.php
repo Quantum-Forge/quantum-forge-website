@@ -122,9 +122,7 @@
 										</p>
 									</div>
 
-									<div class="work-btn">
-										<a class="theme-btn btn-style-one" href="https://buahatiku.or.id/" target="_blank"><span class="txt">Go to link</span></a>
-									</div>
+									
 
 								</div>
 							</div>
