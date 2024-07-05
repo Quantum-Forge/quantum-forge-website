@@ -865,6 +865,16 @@
   }
 /* Tablet Device */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.service-banner-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #e7ecf098; /* Semi-transparent white overlay */
+		z-index: 1;
+	}
 	.main-menu {
 		display: none;
 	}
@@ -1015,6 +1025,16 @@
 
 /* Large Mobile Device */
 @media only screen and (max-width: 767px) {
+	.service-banner-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #e7ecf098; /* Semi-transparent white overlay */
+		z-index: 1;
+	}
 	.about-section-two{
 		padding-top:60px;
 		padding-bottom: 60px;
@@ -1154,6 +1174,16 @@
 
 /* Extra Small Mobile Device */
 @media only screen and (max-width: 479px) {
+	.service-banner-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #e7ecf0bf; /* Semi-transparent white overlay */
+		z-index: 1;
+	}
 	.banner-section .lower-box .pull-right{
 		float: left;
 	}
