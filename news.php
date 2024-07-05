@@ -115,7 +115,7 @@
 						<ul class="clearfix">
 							<?php if ($page > 1): ?>
 								<li class="prev">
-									<a href="news.php?page=<?php echo $page - 1; ?>&search=<?php echo urlencode($query); ?>">
+									<a href="news.php?page=<?php echo $page - 1; ?>&q=<?php echo urlencode($query); ?>">
 										<span class="ti-angle-left"></span>
 									</a>
 								</li>
@@ -123,7 +123,7 @@
 
 							<?php for ($i = $startPage; $i <= $endPage; $i++): ?>
 								<li class="<?php echo ($i == $page) ? 'active' : ''; ?>">
-									<a href="news.php?page=<?php echo $i; ?>&search=<?php echo urlencode($query); ?>">
+									<a href="news.php?page=<?php echo $i; ?>&q=<?php echo urlencode($query); ?>">
 										<?php echo $i; ?>
 									</a>
 								</li>
@@ -131,7 +131,7 @@
 
 							<?php if ($page < ceil($newsData['totalResults'] / 5)): ?>
 								<li class="next">
-									<a href="news.php?page=<?php echo $page + 1; ?>&search=<?php echo urlencode($query); ?>">
+									<a href="news.php?page=<?php echo $page + 1; ?>&q=<?php echo urlencode($query); ?>">
 										<span class="ti-angle-right"></span>
 									</a>
 								</li>
