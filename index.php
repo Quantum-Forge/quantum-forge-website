@@ -298,7 +298,7 @@
 										<!-- First News Block -->
 										<div class="news-block">
 											<div class="inner-box">
-												<div class="clearfix">
+												<div class="clearfix" style="height: 390px;">
 													<!-- Image Column -->
 													<div class="image-column col-lg-6 col-md-6 col-sm-12">
 														<div class="inner-column">
@@ -324,7 +324,7 @@
 										<!-- Second News Block -->
 										<div class="news-block">
 											<div class="inner-box">
-												<div class="clearfix row g-0">
+												<div class="clearfix row g-0" style="height: 390px;">
 													<!-- Content Column -->
 													<div class="content-column col-lg-6 col-md-6 col-sm-12 order-lg-1 order-2">
 														<div class="inner-column">
