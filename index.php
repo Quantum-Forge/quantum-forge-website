@@ -286,26 +286,14 @@
 			</div>
 			<?php include ('php/api_news.php')?>
 			<div class="inner-container">
-			<?php $displayedArticles = []; ?>
 				<div class="clearfix row g-0">
-					<?php if (isset($newsData['articles'])): ?>
-						<?php $count = 0; ?>
-						<?php foreach ($newsData['articles'] as $index => $article): ?>
-							<?php if (!empty($article['urlToImage']) && $count < 3 && !in_array($article['url'], $displayedArticles)): ?>
-								<?php 
-									$displayedArticles[] = $article['url'];
-									$count++; 
-								?>
-							<?php endif; ?>
-						<?php endforeach; ?>
-					<?php endif; ?>
-
-					<?php if (count($displayedArticles) >= 3): ?>
-						<!-- Column for the first two articles -->
-						<div class="column col-lg-8 col-md-12 col-sm-12">
+					<!-- Column for the first two articles -->
+					<div class="column col-lg-8 col-md-12 col-sm-12">
+						<?php if (isset($newsData['articles'])): ?>
 							<?php $count = 0; ?>
+							<?php $displayedArticles = []; ?>
 							<?php foreach ($newsData['articles'] as $index => $article): ?>
-								<?php if (!empty($article['urlToImage']) && $count < 2 && in_array($article['url'], $displayedArticles)): ?>
+								<?php if (!empty($article['urlToImage']) && $count < 2 && !in_array($article['url'], $displayedArticles)): ?>
 									<?php if ($count == 0): ?>
 										<!-- First News Block -->
 										<div class="news-block">
@@ -324,7 +312,8 @@
 														<div class="inner-column">
 															<div class="arrow-one"></div>
 															<div class="title"><?php echo $article['source']['name']; ?></div>
-															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?></a></h4>
+															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?>
+</h4>
 															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
 														</div>
 													</div>
@@ -341,7 +330,8 @@
 														<div class="inner-column">
 															<div class="arrow-two"></div>
 															<div class="title"><?php echo $article['source']['name']; ?></div>
-															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?></a></h4>
+															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?>
+</h4>
 															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
 														</div>
 													</div>
@@ -357,16 +347,21 @@
 											</div>
 										</div>
 									<?php endif; ?>
-									<?php $count++; ?>
+									<?php 
+										$displayedArticles[] = $article['url'];
+										$count++; 
+									?>
 								<?php endif; ?>
 							<?php endforeach; ?>
-						</div>
+						<?php endif; ?>
+					</div>
 
-						<!-- Column for the third article -->
-						<div class="column col-lg-4 col-md-12 col-sm-12">
+					<!-- Column for the third article -->
+					<div class="column col-lg-4 col-md-12 col-sm-12">
+						<?php if (isset($newsData['articles'])): ?>
 							<?php $thirdArticleFound = false; ?>
 							<?php foreach ($newsData['articles'] as $index => $article): ?>
-								<?php if (!empty($article['urlToImage']) && !$thirdArticleFound && in_array($article['url'], $displayedArticles)): ?>
+								<?php if (!empty($article['urlToImage']) && !$thirdArticleFound && !in_array($article['url'], $displayedArticles)): ?>
 									<!-- News Block Two -->
 									<div class="news-block-two">
 										<div class="inner-box">
@@ -376,18 +371,25 @@
 											</div>
 											<div class="lower-content">
 												<div class="title"><?php echo $article['source']['name']; ?></div>
-												<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?></a></h4>
+												<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?></h4>
 												<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
 											</div>
 										</div>
 									</div>
-									<?php $thirdArticleFound = true; ?>
+									<?php 
+										$displayedArticles[] = $article['url'];
+										$thirdArticleFound = true; 
+									?>
 								<?php endif; ?>
 							<?php endforeach; ?>
-						</div>
-					<?php else: ?>
-						<p class="text-center">No news available at the moment.</p>
-					<?php endif; ?>
+						<?php endif; ?>
+					</div>
+
+					<?php 
+					if ($newsData === null) {
+						echo '<p class="text-center">No news available at the moment.</p>';
+					}
+					?>
 				</div>
 			</div>
 		</div>
