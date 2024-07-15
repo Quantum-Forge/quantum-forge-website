@@ -312,8 +312,7 @@
 														<div class="inner-column">
 															<div class="arrow-one"></div>
 															<div class="title"><?php echo $article['source']['name']; ?></div>
-															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?>
-</h4>
+															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php $title=$article['title']; if(strlen($title)>48){$title=substr($title,0,45) . '...';} echo $title; ?></a></h4>
 															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span>Admin</span></div>
 														</div>
 													</div>
@@ -330,8 +329,7 @@
 														<div class="inner-column">
 															<div class="arrow-two"></div>
 															<div class="title"><?php echo $article['source']['name']; ?></div>
-															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?>
-</h4>
+															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php $title=$article['title']; if(strlen($title)>48){$title=substr($title,0,45) . '...';} echo $title; ?></a></h4>
 															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span>Admin</span></div>
 														</div>
 													</div>
@@ -371,7 +369,7 @@
 											</div>
 											<div class="lower-content">
 												<div class="title"><?php echo $article['source']['name']; ?></div>
-												<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?></h4>
+												<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php $title=$article['title']; if(strlen($title)>48){$title=substr($title,0,45) . '...';} echo $title; ?></a></h4>
 												<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span>Admin</span></div>
 											</div>
 										</div>
