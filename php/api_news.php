@@ -39,7 +39,7 @@ function fetch_news($url, $apiKey, $query = '', $page = 1, $pageSize = 5)
 
 $newsApiUrl = getenv('NEWS_API_URL');
 $newsApiKey = getenv('NEWS_API_KEY');
-$query = $_GET['search'] ?? 'pengembangan aplikasi';
+$query = $_GET['search'] ?? 'UMKM Indonesia';
 $page = $_GET['page'] ?? 1;
 
 $newsData = fetch_news($newsApiUrl, $newsApiKey, $query, $page);

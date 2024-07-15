@@ -298,7 +298,7 @@
 										<!-- First News Block -->
 										<div class="news-block">
 											<div class="inner-box">
-												<div class="clearfix" style="height: 390px;">
+												<div class="clearfix">
 													<!-- Image Column -->
 													<div class="image-column col-lg-6 col-md-6 col-sm-12">
 														<div class="inner-column">
@@ -314,7 +314,7 @@
 															<div class="title"><?php echo $article['source']['name']; ?></div>
 															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?>
 </h4>
-															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
+															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span>Admin</span></div>
 														</div>
 													</div>
 												</div>
@@ -324,7 +324,7 @@
 										<!-- Second News Block -->
 										<div class="news-block">
 											<div class="inner-box">
-												<div class="clearfix row g-0" style="height: 390px;">
+												<div class="clearfix row g-0">
 													<!-- Content Column -->
 													<div class="content-column col-lg-6 col-md-6 col-sm-12 order-lg-1 order-2">
 														<div class="inner-column">
@@ -332,7 +332,7 @@
 															<div class="title"><?php echo $article['source']['name']; ?></div>
 															<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?>
 </h4>
-															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
+															<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span>Admin</span></div>
 														</div>
 													</div>
 													<!-- Image Column -->
@@ -372,7 +372,7 @@
 											<div class="lower-content">
 												<div class="title"><?php echo $article['source']['name']; ?></div>
 												<h4><a href="<?php echo $article['url']; ?>" target="_blank"><?php echo count($titleWords = str_word_count($article['title'], 1)) > 10 ? implode(' ', array_slice($titleWords, 0, 10)) . '...' : implode(' ', $titleWords); ?></h4>
-												<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span><?php echo $article['author'] ?: 'Unknown'; ?></span></div>
+												<div class="post-date"><?php echo date('F jS, Y', strtotime($article['publishedAt'])); ?> by <span>Admin</span></div>
 											</div>
 										</div>
 									</div>
