@@ -316,7 +316,7 @@
 							<div class="widget-content">
 								<h4>Untuk Pertanyaan Bisnis</h4>
 								<div class="text">Anda juga dapat mengirim email kepada kami dan kami akan segera menghubungi Anda, atau bebas pulsa.</div>
-								<div class="number">Nomor: <a href="tel:+6285-16361-9381">(+62)851-6361-9381</a></div>
+								<div class="number">Nomor: <a href="tel:+6285-16361-9381">(+62) 851-6361-9381</a></div>
 								<a href="#" class="theme-btn btn-style-two"><span class="txt">Kirim Email</span></a>
 							</div>
 						</div>

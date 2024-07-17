@@ -64,12 +64,7 @@
                                             <li class="<?php echo ($current_page == 'web_app.php') ? 'current' : ''; ?>"><a href="web_app.php">Web App Development</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown <?php echo ($current_page == 'pd-1.php' || $current_page == 'pd-2.php') ? 'current' : ''; ?>"><a href="#">Proyek</a>
-                                        <ul>
-                                            <li class=""><a href="pd-1.php">BuaHatiku MIS</a></li>
-                                            <li class=""><a href="pd-2.php">Siagamedika CMS</a></li>
-                                        </ul>
-                                    </li>
+                                    <li class="<?php echo ($current_page == 'portfolio.php' || $current_page == 'portfolio.php') ? 'current' : ''; ?>"><a href="portfolio.php">Proyek</a>
                                     <li class="<?php echo ($current_page == 'news.php' || $current_page == 'news.php') ? 'current' : ''; ?>"><a href="news.php">Berita</a>
                                     </li>
                                     <li class="<?php echo ($current_page == 'contact.php') ? 'current' : ''; ?>"><a href="contact.php">Kontak</a></li>
