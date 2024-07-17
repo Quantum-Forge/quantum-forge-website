@@ -68,7 +68,7 @@
 					<div class="column col-lg-6 col-md-6 col-sm-12">
 						<h2>Makassar, <span>Sulawesi Selatan</span></h2>
 						<div class="text">Jl. Ir. Sutami No.85, Bulurokeng, Kec. Biringkanaya, Kota Makassar, Sulawesi Selatan 90242</div>
-						<div class="email">Email: <a href="mailto:quantumforge@gmail.com">quantumforge@gmail.com</a></div>
+						<div class="email">Email: <a href="mailto:support@quantumitco.com">support@quantumitco.com</a></div>
 					</div>
 					
 					<!-- Column -->

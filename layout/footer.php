@@ -17,7 +17,7 @@
 									<div class="call">
 										<a href="#">Kontak Kami</a>
 										<a class="phone" href="https://wa.me/6285163619381">+62 851 636 19 381</a>
-										<a class="email" href="mailto:quantumforge@gmail.com">quantumforge@gmail.com</a>
+										<a class="email" href="mailto:support@quantumitco.com">support@quantumitco.com</a>
 									</div>
 								</div>
 							</div>

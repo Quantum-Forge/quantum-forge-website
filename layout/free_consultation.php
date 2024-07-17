@@ -59,7 +59,7 @@
 							<div class="reputation-block">
 								<div class="inner-box">
 									<h5>Mengandalkan Analisis Terperinci</h5>
-									<div class="text">Tugas, dokumen dan filke kita akan lebih rincikan untuk <br> kinerja yang nyaman.</div>
+									<div class="text">Tugas, dokumen dan file kita akan lebih rincikan untuk <br> kinerja yang nyaman.</div>
 								</div>
 							</div>
 							
