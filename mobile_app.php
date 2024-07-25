@@ -6,7 +6,7 @@
 <meta name="description" content="Pengembangan aplikasi mobile adalah proses pembuatan perangkat lunak yang dirancang untuk berjalan pada perangkat seperti smartphone dan tablet. Tahap pertama dalam proses ini adalah perencanaan dan analisis, di mana ide aplikasi dikembangkan, tujuan dan fungsi utama diidentifikasi, serta kebutuhan pasar dan target pengguna dianalisis. Setelah itu, tahap desain dimulai dengan pembuatan desain antarmuka pengguna (UI) dan pengalaman pengguna (UX) yang intuitif, serta penentuan arsitektur teknis aplikasi termasuk platform yang akan digunakan."/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
-<link rel="canonical" href="Replace_with_your_PAGE_URL" />
+<link rel="canonical" href="https://quantumitco.com/" />
 
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,7 +14,7 @@
 <link href="css/responsive.css" rel="stylesheet">
 
 <!-- Open Graph (OG) meta tags are snippets of code that control how URLs are displayed when shared on social media  -->
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content="id" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Quantum Forge - Layanan Pengembangan Aplikasi Mobile" />
 

@@ -6,7 +6,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
-<link rel="canonical" href="Replace_with_your_PAGE_URL" />
+<link rel="canonical" href="https://quantumitco.com/" />
 
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,7 +14,7 @@
 <link href="css/responsive.css" rel="stylesheet">
 
 <!-- Open Graph (OG) meta tags are snippets of code that control how URLs are displayed when shared on social media  -->
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content="id" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Quantum Forge - Software House in Makassar" />
 
