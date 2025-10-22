@@ -34,7 +34,7 @@
             	<div class="inner-container clearfix">
 
                 	<div class="pull-left logo-box">
-                    	<div class="logo"><a href="index.php"><img class="py-3 img-fluid" width="175" height="80" src="images/logo.png" alt="" title=""></a></div>
+                    	<div class="logo"><a href="index.php"><img class="py-3 img-fluid" width="175" height="80" src="{{ asset('images/logo.png') }}" alt="" title=""></a></div>
                     </div>
 
                    	<div class="nav-outer pull-left clearfix">
@@ -48,10 +48,7 @@
 								</button>
 							</div>
 
-							<?php
-                            // Ambil nama file dari URL
-                            $current_page = basename($_SERVER['PHP_SELF']);
-                            ?>
+
 
                             <!-- Navbar Code -->
                             <div class="navbar-collapse show collapse clearfix" id="navbarSupportedContent">

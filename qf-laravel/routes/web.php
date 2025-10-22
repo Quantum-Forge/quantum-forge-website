@@ -8,8 +8,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::view('/about', 'about')->name('about');
 Route::view('/mobile-app', 'section.blog.mobile_app')->name('section.blog.mobile_app');
 Route::view('/web-app', 'section.blog.web_app')->name('section.blog.web_app');
-Route::view('/portfolio', 'portfolio')->name('portfolio');
 Route::get('/news', [NewsController::class, 'index'])->name('news');
 Route::view('/contact', 'contact')->name('contact');
-
-Route::post('/whatsapp', [HomeController::class, 'sendToWhatsApp'])->name('whatsapp');
+// Portfolio detail route
+Route::view('/portfolio', 'portfolio')->name('portfolio');
+Route::get('/portfolio/{id}', function ($id) {
+    return view('details.portfolio');
+})->name('details.portfolio');

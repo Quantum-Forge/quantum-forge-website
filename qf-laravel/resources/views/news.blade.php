@@ -19,8 +19,31 @@
             <div class="row clearfix">
                 <!-- Content Side -->
                 <div class="content-side col-lg-12">
+
+                    @if(!empty($error))
+                        <div class="alert alert-warning">{{ $error }}</div>
+                    @endif
+
+                    @php
+                        // Normalisasi data agar kompatibel dengan legacy ($newsData) maupun controller ($news)
+                        $data = $news ?? ($newsData ?? []);
+                        $page = (int) ($page ?? request()->integer('page', 1));
+                        $pageSize = (int) ($pageSize ?? 5);
+                        $query = $query ?? request('q', '');
+                        $totalResults = (int) ($data['totalResults'] ?? 0);
+                        $totalPages = (int) ceil($totalResults / max($pageSize, 1));
+                        $articles = $data['articles'] ?? [];
+
+                        // Logika pagination identik dengan legacy
+                        $startPage = max(1, min($page - 1, $totalPages - 3));
+                        $endPage = min($startPage + 3, $totalPages);
+                        if ($endPage < 4) {
+                            $startPage = 1;
+                            $endPage = min(4, $totalPages);
+                        }
+                    @endphp
+
                     <div class="our-blogs">
-                        @php($articles = $news['articles'] ?? [])
                         @if(!empty($articles))
                             @foreach($articles as $article)
                                 @if(!empty($article['urlToImage']))
@@ -45,24 +68,9 @@
                                 @endif
                             @endforeach
                         @else
-                            <p>Tidak ada berita tersedia saat ini.</p>
+                            <p>No news available at the moment.</p>
                         @endif
                     </div>
-
-                    @php
-                        $page = (int) ($page ?? 1);
-                        $pageSize = (int) ($pageSize ?? 5);
-                        $totalPages = (int) ($totalPages ?? 0);
-                        $query = $query ?? '';
-
-                        // Legacy-like window: show up to 4 pages
-                        $startPage = max(1, min($page - 1, $totalPages - 3));
-                        $endPage = min($startPage + 3, $totalPages);
-                        if ($endPage < 4) {
-                            $startPage = 1;
-                            $endPage = min(4, $totalPages);
-                        }
-                    @endphp
 
                     <!-- Pagination -->
                     @if($totalPages > 1)
@@ -75,7 +83,6 @@
                                         </a>
                                     </li>
                                 @endif
-
                                 @for($i = $startPage; $i <= $endPage; $i++)
                                     <li class="{{ $i === $page ? 'active' : '' }}">
                                         <a href="{{ route('news', ['page' => $i, 'q' => $query]) }}">{{ $i }}</a>

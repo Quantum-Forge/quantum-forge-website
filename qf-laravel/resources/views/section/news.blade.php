@@ -1,4 +1,4 @@
-<!-- News Section migrated from legacy PHP -->
+
 <section class="news-section">
     <div class="auto-container">
         <div class="inner-container">

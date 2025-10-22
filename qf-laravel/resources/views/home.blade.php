@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <!-- Service Banner Section -->
 <section class="service-banner-section" data-bg-image="{{ asset('images/background/intro-1.png') }}">
     <div class="auto-container">
@@ -38,11 +37,11 @@
 		</div>
 	</div>
 
-    @include('section.service')
+@include('section.service')
     @include('section.consultation')
     @include('section.provider')
-
     @include('section.news')
 
 
 @endsection
+
