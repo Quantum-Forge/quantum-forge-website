@@ -15,7 +15,7 @@
 
     <?php
 // Load JSON data from parent folder of Laravel app
-$json = file_get_contents(base_path('../portfolio.json'));
+$json = file_get_contents(base_path('./portfolio.json'));
 $data = json_decode($json, true);
 $portfolios = $data['portfolio'];
 
@@ -102,7 +102,7 @@ $linkClass = is_null($portfolio['link']) ? 'd-none' : '';
             <div class="row">
                 <div class="col-lg-12">
                     <div class="custom-column-thumbnail mt-lg-70">
-                        <img class="w-100" src="<?= $portfolio['images1'] ?>" alt="finance">
+                        <img class="w-100" src="{{ asset($portfolio['images1']) }}" alt="finance">
                     </div>
                 </div>
             </div>
@@ -111,13 +111,13 @@ $linkClass = is_null($portfolio['link']) ? 'd-none' : '';
             <div class="row mt-lg-100">
                 <div class="col-lg-4 col-md-12 col-12">
                     <div class="digital-marketing">
-                        <h3 class="heading heading-h3"><?= $portfolio['heading'] ?></h3>
+                        <h3 class="heading heading-h3">{{ $portfolio['heading'] }}</h3>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-12 col-12 offset-lg-1">
                     <div class="digital-marketing mt-30">
                         <div class="inner">
-                            <p><?= $portfolio['description2'] ?></p>
+                            <p>{{ $portfolio['description2'] }}</p>
                         </div>
                     </div>
                 </div>
@@ -129,17 +129,17 @@ $linkClass = is_null($portfolio['link']) ? 'd-none' : '';
                 <div class="row mb-n30">
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="thumbnail">
-                            <img class="w-100" src="<?= $portfolio['images2'] ?>" alt="finance">
+                            <img class="w-100" src="{{ asset($portfolio['images2']) }}" alt="finance">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12 mt-50">
                         <div class="thumbnail">
-                            <img class="w-100" src="<?= $portfolio['images3'] ?>" alt="finance">
+                            <img class="w-100" src="{{ asset($portfolio['images3']) }}" alt="finance">
                         </div>
                     </div>
                     <div class="col-lg-12 mtb-30">
                         <div class="thumbnail">
-                            <img class="w-100" src="<?= $portfolio['images4'] ?>" alt="finance">
+                            <img class="w-100" src="{{ asset($portfolio['images4']) }}" alt="finance">
                         </div>
                     </div>
                 </div>

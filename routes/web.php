@@ -14,4 +14,4 @@ Route::view('/contact', 'contact')->name('contact');
 Route::view('/portfolio', 'portfolio')->name('portfolio');
 Route::get('/portfolio/{id}', function ($id) {
     return view('details.portfolio');
-})->name('details.portfolio');
+})->name('portfolio.details');
