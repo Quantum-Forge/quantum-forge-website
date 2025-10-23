@@ -29,11 +29,7 @@ return new class extends Migration
             
             // Field tambahan untuk admin panel
             $table->boolean('is_active')->default(true);
-            $table->boolean('is_featured')->default(false);
-            $table->integer('sort_order')->default(0);
             $table->string('slug')->unique();
-            $table->string('meta_title')->nullable();
-            $table->text('meta_description')->nullable();
             $table->json('tags')->nullable();
             
             // Kolom untuk audit trail
@@ -46,8 +42,7 @@ return new class extends Migration
             $table->foreign('updated_by')->references('id')->on('users')->onDelete('set null');
             
             // Indexes untuk performa
-            $table->index(['is_active', 'is_featured']);
-            $table->index('sort_order');
+            $table->index('is_active');
             $table->index('category');
             $table->index('date');
         });
