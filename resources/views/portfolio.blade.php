@@ -35,7 +35,7 @@
                             </div>
                             <div class="lower-box mt-0">
                                 <h4><a href="{{ route('portfolio.details', $portfolio) }}">{{ $portfolio->title }}</a></h4>
-                                <div class="designation">{{ $portfolio->category }}</div>
+                                <div class="designation">{{ $portfolio->category->name }}</div>
                             </div>
                         </div>
                     </div>
