@@ -25,7 +25,7 @@
                     <div class="team-block col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="inner-box wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInLeft;">
                             <div class="image">
-                                <a href="{{ route('portfolio.details', ['id' => $portfolio->id]) }}"><img src="{{ $portfolio->images1_url }}" alt=""></a>
+                                <a href="{{ route('portfolio.details', $portfolio) }}"><img src="{{ $portfolio->images1_url }}" alt=""></a>
                                 <!-- Social Box -->
                                 <ul class="social-box">
                                     <li><a href="https://api.whatsapp.com/send/?phone=6285163619381&text=%22Hi+Quantum%2C+saya+tertarik+untuk+menggunakan+jasa+IT+dari+Anda.+Bolehkah+saya+mendapatkan+informasi+lebih+lanjut%3F+Terima+kasih%21%22&type=phone_number&app_absent=0" class="icofont-whatsapp"></a></li>
@@ -34,7 +34,7 @@
                                 </ul>
                             </div>
                             <div class="lower-box mt-0">
-                                <h4><a href="{{ route('portfolio.details', ['id' => $portfolio->id]) }}">{{ $portfolio->title }}</a></h4>
+                                <h4><a href="{{ route('portfolio.details', $portfolio) }}">{{ $portfolio->title }}</a></h4>
                                 <div class="designation">{{ $portfolio->category }}</div>
                             </div>
                         </div>

@@ -13,4 +13,4 @@ Route::get('/news', [NewsController::class, 'index'])->name('news');
 Route::view('/contact', 'contact')->name('contact');
 // Portfolio routes (DB-driven)
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
-Route::get('/portfolio/{id}', [PortfolioController::class, 'show'])->name('portfolio.details');
+Route::get('/portfolio/{portfolio:slug}', [PortfolioController::class, 'show'])->name('portfolio.details');

@@ -28,6 +28,7 @@ class PortfoliosTable
                     ->searchable()
                     ->sortable(),
                 ToggleColumn::make('is_active')
+                    ->label('Status')
                     ->sortable(),
                 TextColumn::make('kota')
                     ->toggleable(isToggledHiddenByDefault: true)

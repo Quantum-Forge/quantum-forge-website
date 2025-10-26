@@ -28,12 +28,12 @@ class PortfolioController extends Controller
     /**
      * Display the specified portfolio.
      */
-    public function show($id)
+    public function show(Portfolio $portfolio)
     {
-        // Allow both numeric id and slug by attempting both
-        $portfolio = is_numeric($id)
-            ? Portfolio::query()->active()->findOrFail((int)$id)
-            : Portfolio::query()->active()->where('slug', $id)->firstOrFail();
+        // Ensure the portfolio is active
+        if (!$portfolio->is_active) {
+            abort(404);
+        }
 
         return view('details.portfolio', [
             'portfolio' => $portfolio,
