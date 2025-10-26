@@ -21,4 +21,15 @@ class Category extends Model
     {
         return $this->hasMany(Portfolio::class);
     }
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::deleting(function (Category $category) {
+            if ($category->portfolios()->exists()) {
+                throw new \RuntimeException('Kategori memiliki portfolio terkait dan tidak dapat dihapus.');
+            }
+        });
+    }
 }
