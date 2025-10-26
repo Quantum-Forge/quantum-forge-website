@@ -24,7 +24,8 @@ class PortfoliosTable
                 TextColumn::make('clients')
                     ->searchable()
                     ->sortable(),
-                TextColumn::make('category')
+                TextColumn::make('category.name')
+                    ->label('Kategori')
                     ->searchable()
                     ->sortable(),
                 ToggleColumn::make('is_active')

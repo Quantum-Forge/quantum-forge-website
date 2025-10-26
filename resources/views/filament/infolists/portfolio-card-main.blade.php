@@ -19,7 +19,7 @@
     <div class="grid grid-cols-2 gap-3">
         <div class="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-300">
             <x-filament::icon icon="heroicon-o-tag" class="w-4 h-4" />
-            <span>{{ $record->category }}</span>
+            <span>{{ $record->category?->name ?? $record->category }}</span>
         </div>
         @if(!empty($record->clients))
             <div class="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-300">

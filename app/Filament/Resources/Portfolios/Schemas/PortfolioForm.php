@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Portfolios\Schemas;
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
@@ -51,11 +52,13 @@ class PortfolioForm
                                     ->maxLength(100)
                                     ->placeholder('Nama klien')
                                     ->columnSpan(['md' => 6]),
-                                TextInput::make('category')
+                                Select::make('category_id')
                                     ->label('Kategori')
+                                    ->relationship('category', 'name')
+                                    ->searchable()
+                                    ->preload()
                                     ->required()
-                                    ->maxLength(100)
-                                    ->placeholder('Kategori proyek')
+                                    ->native(false)
                                     ->columnSpan(['md' => 6]),
                                 TextInput::make('kota')
                                     ->label('Kota')

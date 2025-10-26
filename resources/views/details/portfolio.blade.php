@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="details-list">
                                     <label>Kategori</label>
-                                    <span><a href="#">{{ $portfolio->category }}</a></span>
+                                    <span><a href="#">{{ $portfolio->category?->name ?? $portfolio->category }}</a></span>
                                 </div>
                                 <div class="details-list">
                                     <label>Kota</label>

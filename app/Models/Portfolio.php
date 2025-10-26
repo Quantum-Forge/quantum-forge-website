@@ -13,7 +13,7 @@ class Portfolio extends Model
         'title',
         'date',
         'clients',
-        'category',
+        'category_id',
         'kota',
         'description_proyek',
         'link',
@@ -36,6 +36,7 @@ class Portfolio extends Model
         'tags' => 'array',
         'created_by' => 'integer',
         'updated_by' => 'integer',
+        'category_id' => 'integer',
     ];
 
     protected static function boot()
@@ -67,6 +68,11 @@ class Portfolio extends Model
     public function updater(): BelongsTo
     {
         return $this->belongsTo(User::class, 'updated_by');
+    }
+
+    public function category(): BelongsTo
+    {
+        return $this->belongsTo(Category::class);
     }
 
     // Scopes
