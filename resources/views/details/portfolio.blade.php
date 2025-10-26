@@ -13,32 +13,9 @@
 	</div>
 	<!-- End Page Title Section -->
 
-    <?php
-// Load JSON data from parent folder of Laravel app
-$json = file_get_contents(base_path('./portfolio.json'));
-$data = json_decode($json, true);
-$portfolios = $data['portfolio'];
-
-// Get portfolio ID from route param or fallback to query param
-$id = request()->route('id') ?? request('id', 1);
-
-// Find portfolio data by ID
-$portfolio = null;
-foreach ($portfolios as $p) {
-    if ($p['id'] == $id) {
-        $portfolio = $p;
-        break;
-    }
-}
-
-// If portfolio not found, default to first item
-if (!$portfolio && !empty($portfolios)) {
-    $portfolio = $portfolios[0];
-}
-
-// Determine if the link is null
-$linkClass = is_null($portfolio['link']) ? 'd-none' : '';
-?>
+    @php
+        $linkClass = is_null($portfolio->link) ? 'd-none' : '';
+    @endphp
 
     <!-- Start Project Details -->
     <div class="project-section section-padding">
@@ -49,24 +26,24 @@ $linkClass = is_null($portfolio['link']) ? 'd-none' : '';
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="work-left work-details">
                         <div class="portfolio-main-info">
-                            <h2 class="title"><?= $portfolio['title'] ?></h2>
+                            <h2 class="title">{{ $portfolio->title }}</h2>
                             <!-- Start Details List -->
                             <div class="work-details-list mt-60">
                                 <div class="details-list">
                                     <label>Tanggal</label>
-                                    <span><?= $portfolio['date'] ?></span>
+                                    <span>{{ optional($portfolio->date)->format('d/m/Y') ?? $portfolio->date }}</span>
                                 </div>
                                 <div class="details-list">
                                     <label>Klien</label>
-                                    <span><?= $portfolio['clients'] ?></span>
+                                    <span>{{ $portfolio->clients }}</span>
                                 </div>
                                 <div class="details-list">
                                     <label>Kategori</label>
-                                    <span><a href="#"><?= $portfolio['category'] ?></a></span>
+                                    <span><a href="#">{{ $portfolio->category }}</a></span>
                                 </div>
                                 <div class="details-list">
                                     <label>Kota</label>
-                                    <span><?= $portfolio['kota'] ?></span>
+                                    <span>{{ $portfolio->kota }}</span>
                                 </div>
                             </div>
                             <!-- End Details List -->
@@ -86,10 +63,10 @@ $linkClass = is_null($portfolio['link']) ? 'd-none' : '';
                                 <h6 class="title">DESKRIPSI PROYEK</h6>
                                 <div class="desc mt-40">
                                     <div class="content mb-25">
-                                        <p><?= $portfolio['description_proyek'] ?></p>
+                                        <p>{{ $portfolio->description_proyek }}</p>
                                     </div>
-                                    <div class="work-btn <?= $linkClass ?>">
-                                        <a class="theme-btn btn-style-one" href="<?= $portfolio['link'] ?>" target="_blank"><span class="txt">Go to link</span></a>
+                                    <div class="work-btn {{ $linkClass }}">
+                                        <a class="theme-btn btn-style-one" href="{{ $portfolio->link }}" target="_blank"><span class="txt">Go to link</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +79,7 @@ $linkClass = is_null($portfolio['link']) ? 'd-none' : '';
             <div class="row">
                 <div class="col-lg-12">
                     <div class="custom-column-thumbnail mt-lg-70">
-                        <img class="w-100" src="{{ asset($portfolio['images1']) }}" alt="finance">
+                        <img class="w-100" src="{{ $portfolio->images1_url }}" alt="finance">
                     </div>
                 </div>
             </div>
@@ -111,13 +88,13 @@ $linkClass = is_null($portfolio['link']) ? 'd-none' : '';
             <div class="row mt-lg-100">
                 <div class="col-lg-4 col-md-12 col-12">
                     <div class="digital-marketing">
-                        <h3 class="heading heading-h3">{{ $portfolio['heading'] }}</h3>
+                        <h3 class="heading heading-h3">{{ $portfolio->heading }}</h3>
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-12 col-12 offset-lg-1">
                     <div class="digital-marketing mt-30">
                         <div class="inner">
-                            <p>{{ $portfolio['description2'] }}</p>
+                            <p>{{ $portfolio->description2 }}</p>
                         </div>
                     </div>
                 </div>
@@ -129,17 +106,17 @@ $linkClass = is_null($portfolio['link']) ? 'd-none' : '';
                 <div class="row mb-n30">
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="thumbnail">
-                            <img class="w-100" src="{{ asset($portfolio['images2']) }}" alt="finance">
+                            <img class="w-100" src="{{ $portfolio->images2_url }}" alt="finance">
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12 mt-50">
                         <div class="thumbnail">
-                            <img class="w-100" src="{{ asset($portfolio['images3']) }}" alt="finance">
+                            <img class="w-100" src="{{ $portfolio->images3_url }}" alt="finance">
                         </div>
                     </div>
                     <div class="col-lg-12 mtb-30">
                         <div class="thumbnail">
-                            <img class="w-100" src="{{ asset($portfolio['images4']) }}" alt="finance">
+                            <img class="w-100" src="{{ $portfolio->images4_url }}" alt="finance">
                         </div>
                     </div>
                 </div>

@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class Portfolio extends Model
 {
@@ -86,7 +87,7 @@ class Portfolio extends Model
     public function getImageUrlAttribute($imagePath)
     {
         if (!$imagePath) return null;
-        return asset($imagePath);
+        return Storage::disk('public')->url($imagePath);
     }
 
     public function getImages1UrlAttribute()
