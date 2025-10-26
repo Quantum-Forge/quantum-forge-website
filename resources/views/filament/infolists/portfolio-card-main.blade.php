@@ -11,30 +11,33 @@
             @endif
         </div>
         <div class="p-5">
-            <h3 class="text-base font-semibold text-gray-900 dark:text-gray-100">{{ $record->title }}</h3>
-            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300 line-clamp-3">{{ $record->description_proyek }}</p>
-            <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-gray-500 dark:text-gray-400">
-                <span class="inline-flex items-center"><span class="mr-1" aria-hidden="true">📅</span>{{ optional($record->date)->format('d M Y') }}</span>
-                <span class="inline-flex items-center"><span class="mr-1" aria-hidden="true">🏷️</span>{{ $record->category }}</span>
-                @if(!empty($record->clients))
-                    <span class="inline-flex items-center"><span class="mr-1" aria-hidden="true">👤</span>{{ $record->clients }}</span>
-                @endif
-                @if(!empty($record->kota))
-                    <span class="inline-flex items-center"><span class="mr-1" aria-hidden="true">📍</span>{{ $record->kota }}</span>
-                @endif
-            </div>
-        </div>
-    </div>
-
-    {{-- Skeleton loader while Livewire loading --}}
-    <div wire:loading aria-hidden="true" class="absolute inset-0 rounded-xl">
-        <div class="bg-white/70 dark:bg-gray-900/70 backdrop-blur-sm rounded-xl animate-pulse">
-            <div class="aspect-video bg-gray-200 dark:bg-gray-800"></div>
-            <div class="p-5 space-y-3">
-                <div class="h-5 w-1/2 bg-gray-200 dark:bg-gray-700 rounded"></div>
-                <div class="h-3 w-full bg-gray-200 dark:bg-gray-700 rounded"></div>
-                <div class="h-3 w-5/6 bg-gray-200 dark:bg-gray-700 rounded"></div>
-            </div>
+            <p class="mt-2 text-sm text-gray-700 dark:text-gray-300 line-clamp-5">{{ $record->description_proyek }}</p>
         </div>
     </div>
 </a>
+<div class="mt-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 p-4">
+    <div class="grid grid-cols-2 gap-3">
+        <div class="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-300">
+            <x-filament::icon icon="heroicon-o-tag" class="w-4 h-4" />
+            <span>{{ $record->category }}</span>
+        </div>
+        @if(!empty($record->clients))
+            <div class="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-300">
+                <x-filament::icon icon="heroicon-o-user" class="w-4 h-4" />
+                <span>{{ $record->clients }}</span>
+            </div>
+        @endif
+        @if(!empty($record->kota))
+            <div class="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-300">
+                <x-filament::icon icon="heroicon-o-map-pin" class="w-4 h-4" />
+                <span>{{ $record->kota }}</span>
+            </div>
+        @endif
+        @if(!empty($record->date))
+            <div class="flex items-center gap-2 text-xs text-gray-600 dark:text-gray-300">
+                <x-filament::icon icon="heroicon-o-calendar" class="w-4 h-4" />
+                <span>{{ $record->date->format('d/m/Y') }}</span>
+            </div>
+        @endif
+    </div>
+</div>

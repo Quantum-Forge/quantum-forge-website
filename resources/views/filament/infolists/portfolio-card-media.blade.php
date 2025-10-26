@@ -3,7 +3,6 @@
 <div role="article" class="group {{ $card }}">
     <div class="p-5">
         <h3 class="text-sm font-semibold tracking-wide text-gray-700 dark:text-gray-300">Media & Deskripsi</h3>
-        <p class="mt-2 text-sm text-gray-700 dark:text-gray-300 line-clamp-3">{{ $record->description2 }}</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5 p-5">
