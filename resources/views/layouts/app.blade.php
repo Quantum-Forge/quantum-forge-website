@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>Quantum Forge</title>
+    <title>Quantum Forge - Software House Makassar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Stylesheets -->

@@ -14,10 +14,10 @@ class PortfoliosTable
     {
         return $table
             ->columns([
-                ImageColumn::make('images1')
-                    ->disk('public')
-                    ->label('Thumbnail')
-                    ->default(null),
+                TextColumn::make('id')
+                    ->label('No')
+                    ->sortable(),
+
                 TextColumn::make('title')
                     ->searchable()
                     ->sortable(),
@@ -28,23 +28,14 @@ class PortfoliosTable
                     ->label('Kategori')
                     ->searchable()
                     ->sortable(),
-                ToggleColumn::make('is_active')
-                    ->label('Status')
-                    ->sortable(),
                 TextColumn::make('kota')
-                    ->toggleable(isToggledHiddenByDefault: true)
-                    ->searchable()
-                    ->sortable(),
-                TextColumn::make('heading')
-                    ->toggleable(isToggledHiddenByDefault: true)
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('date')
-                    ->toggleable(isToggledHiddenByDefault: true)
+                    ->date('d/m/Y')
                     ->sortable(),
-                TextColumn::make('slug')
-                    ->toggleable(isToggledHiddenByDefault: true)
-                    ->searchable()
+                ToggleColumn::make('is_active')
+                    ->label('Status')
                     ->sortable(),
             ])
             ->filters([
