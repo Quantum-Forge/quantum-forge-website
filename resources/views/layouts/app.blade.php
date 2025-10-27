@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Quantum Forge - Software House Makassar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="theme-color" content="#1A73E8">
+    <meta name="msapplication-TileColor" content="#1A73E8">
     <!-- Stylesheets -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
