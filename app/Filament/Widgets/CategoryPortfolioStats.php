@@ -9,6 +9,8 @@ use Filament\Widgets\StatsOverviewWidget\Stat;
 
 class CategoryPortfolioStats extends BaseStatsOverviewWidget
 {
+    protected int|string|array $columnSpan = ['sm' => 12, 'md' => 6];
+
     protected function getStats(): array
     {
         return [
@@ -21,7 +23,7 @@ class CategoryPortfolioStats extends BaseStatsOverviewWidget
 
     protected function getColumns(): int|array
     {
-        // Full width (1 col) on mobile, 2 cols on desktop
+        // Full width on mobile (1 col), 2 cols on md+
         return [
             'md' => 2,
         ];

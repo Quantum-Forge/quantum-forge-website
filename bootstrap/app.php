@@ -16,6 +16,9 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'api.key' => \App\Http\Middleware\CheckApiKey::class,
         ]);
+
+        // Record non-admin web visits
+        $middleware->appendToGroup('web', \App\Http\Middleware\RecordVisit::class);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         // You can customize exception handling here

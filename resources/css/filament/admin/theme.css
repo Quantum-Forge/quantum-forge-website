@@ -26,3 +26,15 @@
   width: auto !important;
   max-width: 200px !important;
 }
+
+/* Remove grid gap for StatsOverview to make cards flush */
+.fi-widget-stats-overview .grid,
+.fi-stats-overview .grid,
+.fi-dashboard .fi-widget .grid {
+  gap: 0 !important;
+}
+
+/* Optional: reduce inner padding of stat cards if needed */
+.fi-stat, .fi-stat-card {
+  margin: 0 !important;
+}
