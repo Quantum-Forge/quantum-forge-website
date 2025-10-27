@@ -102,7 +102,7 @@
             <!-- End Digital Marketion Area -->
 
             <!-- Start Gallery Area -->
-            <div class="custom-layout-gallery mt-lg-100">
+            <div class="custom-layout-gallery mt-lg-100 {{ empty($portfolio->images2_url) && empty($portfolio->images3_url) && empty($portfolio->images4_url) ? 'd-none' : '' }}">
                 <div class="row mb-n30">
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="thumbnail">
