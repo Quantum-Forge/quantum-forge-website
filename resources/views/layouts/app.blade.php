@@ -7,9 +7,7 @@
     <meta name="theme-color" content="#1A73E8">
     <meta name="msapplication-TileColor" content="#1A73E8">
     <!-- Stylesheets -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
+    @vite(['resources/css/app.css'])
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -45,20 +43,7 @@
 @include('partials.searchPopup')
 
 <!-- Scripts -->
-<script src="{{ asset('js/jquery.js') }}"></script>
-<script src="{{ asset('js/popper.min.js') }}"></script>
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
-<script src="{{ asset('js/jquery.fancybox.js') }}"></script>
-<script src="{{ asset('js/appear.js') }}"></script>
-<script src="{{ asset('js/owl.js') }}"></script>
-<script src="{{ asset('js/wow.js') }}"></script>
-<script src="{{ asset('js/parallax.min.js') }}"></script>
-<script src="{{ asset('js/tilt.jquery.min.js') }}"></script>
-<script src="{{ asset('js/jquery.paroller.min.js') }}"></script>
-<script src="{{ asset('js/jquery-ui.js') }}"></script>
-<script src="{{ asset('js/validate.js') }}"></script>
-<script src="{{ asset('js/script.js') }}"></script>
+@vite(['resources/js/app.js'])
 
 </body>
 </html>

@@ -1,12 +1,17 @@
-@import 'tailwindcss';
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source "../**/*.blade.php";
-@source "../**/*.js";
-@source "../**/*.vue";
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
+@import '../../public/css/bootstrap.min.css';
+@import '../../public/css/animate.css';
+@import '../../public/css/owl.css';
+@import '../../public/css/elegenticon.css';
+@import '../../public/css/linearicons.css';
+@import '../../public/css/jquery-ui.css';
+@import '../../public/css/animation.css';
+@import '../../public/css/icofont.min.css';
+@import '../../public/css/themify-icons.css';
+@import '../../public/css/simple-line-icons.css';
+@import '../../public/css/fontawesome.min.css';
+@import '../../public/css/jquery.fancybox.min.css';
+@import '../../public/css/jquery.mCustomScrollbar.min.css';
+/* Import legacy site styles so they are served via Vite */
+@import '../../public/css/main.css';
+@import '../../public/css/responsive.css';

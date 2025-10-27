@@ -1,6 +1,174 @@
 {
+  "public/fonts/ElegantIcons.eot": {
+    "file": "assets/ElegantIcons-DAcKoRel.eot",
+    "src": "public/fonts/ElegantIcons.eot"
+  },
+  "public/fonts/ElegantIcons.svg": {
+    "file": "assets/ElegantIcons-BLHFlQ6G.svg",
+    "src": "public/fonts/ElegantIcons.svg"
+  },
+  "public/fonts/ElegantIcons.ttf": {
+    "file": "assets/ElegantIcons-DN4ZM7zy.ttf",
+    "src": "public/fonts/ElegantIcons.ttf"
+  },
+  "public/fonts/ElegantIcons.woff": {
+    "file": "assets/ElegantIcons-DznOoThm.woff",
+    "src": "public/fonts/ElegantIcons.woff"
+  },
+  "public/fonts/Linearicons-Free.eot": {
+    "file": "assets/Linearicons-Free-oZKath84.eot",
+    "src": "public/fonts/Linearicons-Free.eot"
+  },
+  "public/fonts/Linearicons-Free.svg": {
+    "file": "assets/Linearicons-Free-PF4LO5wD.svg",
+    "src": "public/fonts/Linearicons-Free.svg"
+  },
+  "public/fonts/Linearicons-Free.ttf": {
+    "file": "assets/Linearicons-Free-W-LatyLF.ttf",
+    "src": "public/fonts/Linearicons-Free.ttf"
+  },
+  "public/fonts/Linearicons-Free.woff": {
+    "file": "assets/Linearicons-Free-Bc5Qqeqv.woff",
+    "src": "public/fonts/Linearicons-Free.woff"
+  },
+  "public/fonts/Linearicons-Free.woff2": {
+    "file": "assets/Linearicons-Free-wAKUI212.woff2",
+    "src": "public/fonts/Linearicons-Free.woff2"
+  },
+  "public/fonts/SignericaMedium.eot": {
+    "file": "assets/SignericaMedium-8f-OkSpE.eot",
+    "src": "public/fonts/SignericaMedium.eot"
+  },
+  "public/fonts/SignericaMedium.svg": {
+    "file": "assets/SignericaMedium-D2GSHa67.svg",
+    "src": "public/fonts/SignericaMedium.svg"
+  },
+  "public/fonts/SignericaMedium.ttf": {
+    "file": "assets/SignericaMedium-T1rE4us8.ttf",
+    "src": "public/fonts/SignericaMedium.ttf"
+  },
+  "public/fonts/SignericaMedium.woff": {
+    "file": "assets/SignericaMedium-CPJqbdZg.woff",
+    "src": "public/fonts/SignericaMedium.woff"
+  },
+  "public/fonts/fa-brands-400.eot": {
+    "file": "assets/fa-brands-400-BP-byM1z.eot",
+    "src": "public/fonts/fa-brands-400.eot"
+  },
+  "public/fonts/fa-brands-400.svg": {
+    "file": "assets/fa-brands-400-CwYvrPXy.svg",
+    "src": "public/fonts/fa-brands-400.svg"
+  },
+  "public/fonts/fa-brands-400.ttf": {
+    "file": "assets/fa-brands-400-BvOfcHLm.ttf",
+    "src": "public/fonts/fa-brands-400.ttf"
+  },
+  "public/fonts/fa-brands-400.woff": {
+    "file": "assets/fa-brands-400-DqZqNCSp.woff",
+    "src": "public/fonts/fa-brands-400.woff"
+  },
+  "public/fonts/fa-brands-400.woff2": {
+    "file": "assets/fa-brands-400-B9NtTMAN.woff2",
+    "src": "public/fonts/fa-brands-400.woff2"
+  },
+  "public/fonts/fa-regular-400.eot": {
+    "file": "assets/fa-regular-400-C8GVsgD2.eot",
+    "src": "public/fonts/fa-regular-400.eot"
+  },
+  "public/fonts/fa-regular-400.svg": {
+    "file": "assets/fa-regular-400-DYS_BsKA.svg",
+    "src": "public/fonts/fa-regular-400.svg"
+  },
+  "public/fonts/fa-regular-400.ttf": {
+    "file": "assets/fa-regular-400-CcXn14M0.ttf",
+    "src": "public/fonts/fa-regular-400.ttf"
+  },
+  "public/fonts/fa-regular-400.woff": {
+    "file": "assets/fa-regular-400-Cea8WKql.woff",
+    "src": "public/fonts/fa-regular-400.woff"
+  },
+  "public/fonts/fa-regular-400.woff2": {
+    "file": "assets/fa-regular-400-BxYFLS9j.woff2",
+    "src": "public/fonts/fa-regular-400.woff2"
+  },
+  "public/fonts/fa-solid-900.eot": {
+    "file": "assets/fa-solid-900-DRNqNWD9.eot",
+    "src": "public/fonts/fa-solid-900.eot"
+  },
+  "public/fonts/fa-solid-900.svg": {
+    "file": "assets/fa-solid-900-QT1_Ihr7.svg",
+    "src": "public/fonts/fa-solid-900.svg"
+  },
+  "public/fonts/fa-solid-900.ttf": {
+    "file": "assets/fa-solid-900-v_-DUAvR.ttf",
+    "src": "public/fonts/fa-solid-900.ttf"
+  },
+  "public/fonts/fa-solid-900.woff": {
+    "file": "assets/fa-solid-900-Ic6bH3kJ.woff",
+    "src": "public/fonts/fa-solid-900.woff"
+  },
+  "public/fonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-DQndEtzL.woff2",
+    "src": "public/fonts/fa-solid-900.woff2"
+  },
+  "public/fonts/icofont.eot": {
+    "file": "assets/icofont-E6-6zeJF.eot",
+    "src": "public/fonts/icofont.eot"
+  },
+  "public/fonts/icofont.svg": {
+    "file": "assets/icofont-CoEsjlHh.svg",
+    "src": "public/fonts/icofont.svg"
+  },
+  "public/fonts/icofont.ttf": {
+    "file": "assets/icofont-CX842MwY.ttf",
+    "src": "public/fonts/icofont.ttf"
+  },
+  "public/fonts/icofont.woff": {
+    "file": "assets/icofont-CRj9mKsw.woff",
+    "src": "public/fonts/icofont.woff"
+  },
+  "public/fonts/simple-Line-Icons.eot": {
+    "file": "assets/simple-Line-Icons-CKKl-dGR.eot",
+    "src": "public/fonts/simple-Line-Icons.eot"
+  },
+  "public/fonts/simple-Line-Icons.svg": {
+    "file": "assets/simple-Line-Icons-DsHGv33-.svg",
+    "src": "public/fonts/simple-Line-Icons.svg"
+  },
+  "public/fonts/simple-Line-Icons.ttf": {
+    "file": "assets/simple-Line-Icons-mVuQrdSX.ttf",
+    "src": "public/fonts/simple-Line-Icons.ttf"
+  },
+  "public/fonts/simple-Line-Icons.woff": {
+    "file": "assets/simple-Line-Icons-BAgH0-Pt.woff",
+    "src": "public/fonts/simple-Line-Icons.woff"
+  },
+  "public/fonts/simple-Line-Icons.woff2": {
+    "file": "assets/simple-Line-Icons-D0KobG-u.woff2",
+    "src": "public/fonts/simple-Line-Icons.woff2"
+  },
+  "public/fonts/themify.eot": {
+    "file": "assets/themify-BifPJsew.eot",
+    "src": "public/fonts/themify.eot"
+  },
+  "public/fonts/themify.svg": {
+    "file": "assets/themify-DqOiMLGc.svg",
+    "src": "public/fonts/themify.svg"
+  },
+  "public/fonts/themify.ttf": {
+    "file": "assets/themify-DuU3rJAt.ttf",
+    "src": "public/fonts/themify.ttf"
+  },
+  "public/fonts/themify.woff": {
+    "file": "assets/themify-BgsFA67P.woff",
+    "src": "public/fonts/themify.woff"
+  },
+  "public/images/icons/waves-shape.png": {
+    "file": "assets/waves-shape-m4H2CtVt.png",
+    "src": "public/images/icons/waves-shape.png"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-C84WxvWl.css",
+    "file": "assets/app-Cq4m5DHB.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -10,7 +178,7 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-Bj43h_rG.js",
+    "file": "assets/app-Couex4q9.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true

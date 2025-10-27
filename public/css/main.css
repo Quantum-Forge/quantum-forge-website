@@ -28,34 +28,23 @@
 **********************************************/
 
 /*
-	
+
 	font-family: 'Libre Baskerville', serif;
 	font-family: 'Work Sans', sans-serif;
 	font-family: 'Heebo', sans-serif;
-	
+
 */
 
-@import url('animate.css');
-@import url('owl.css');
-@import url('elegenticon.css');
-@import url('linearicons.css');
-@import url('jquery-ui.css');
-@import url('animation.css');
-@import url('icofont.min.css');
-@import url('themify-icons.css');
-@import url('simple-line-icons.css');
-@import url('fontawesome.min.css');
-@import url('jquery.fancybox.min.css');
-@import url('jquery.mCustomScrollbar.min.css');
 
-/*** 
+
+/***
 
 ====================================================================
 	Reset
 ====================================================================
 
  ***/
- 
+
 * {
 	margin:0px;
 	padding:0px;
@@ -107,7 +96,7 @@
   font-style: normal;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Global Settings
@@ -186,7 +175,7 @@ h6{
 }
 
 input,button,select,textarea{
-	
+
 }
 
 textarea{
@@ -195,7 +184,7 @@ textarea{
 
 p{
 	position:relative;
-	line-height:1.8em;	
+	line-height:1.8em;
 }
 
 .auto-container{
@@ -219,7 +208,7 @@ p{
 ul,li{
 	list-style:none;
 	padding:0px;
-	margin:0px;	
+	margin:0px;
 }
 
 img{
@@ -237,7 +226,7 @@ img{
 }
 
 .centered{
-	text-align:center;	
+	text-align:center;
 }
 
 /*Btn Style One*/
@@ -447,10 +436,10 @@ img{
 img{
 	display:inline-block;
 	max-width:100%;
-	height:auto;	
+	height:auto;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Scroll To Top style
@@ -490,7 +479,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;		
+	transition:all 300ms ease;
 }
 
 .scroll-to-top:hover{
@@ -498,7 +487,7 @@ img{
 	background:#66A3FF;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Section Title
@@ -584,7 +573,7 @@ img{
 	font-family: IcoFont!important;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Header style
@@ -748,15 +737,15 @@ img{
 }
 
 .main-header.fixed-header .header-upper .outer-box{
-	
+
 }
 
 .main-header.fixed-header .header-upper .logo-box .logo{
-	
+
 }
 
 .main-header.fixed-header .main-menu .navigation > li > a{
-	
+
 }
 
 .main-header.fixed-header .main-menu .navigation > li.current > a,
@@ -838,7 +827,7 @@ img{
 	-moz-animation-iteration-count: 1;
 	-op-animation-iteration-count: 1;
 	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;	
+	animation-iteration-count: 1;
 }
 
 .sticky-header .main-menu .navigation > li > a{
@@ -986,7 +975,7 @@ img{
 
 .main-menu .navigation > li > ul.from-right{
 	left:auto !important;
-	right:-30px !important;	
+	right:-30px !important;
 }
 
 .main-menu .navigation > li > ul > li{
@@ -1052,12 +1041,12 @@ img{
 	font-size:16px;
 	font-weight:normal;
 	text-align:center;
-	z-index:5;	
+	z-index:5;
 	font-weight:800;
 }
 
 .main-menu .navigation > li > ul > li.dropdown:hover > a:after{
-	color:#222222;	
+	color:#222222;
 }
 
 .main-menu .navigation > li > ul > li > ul{
@@ -1080,7 +1069,7 @@ img{
 
 .main-menu .navigation > li > ul > li > ul.from-right{
 	left:auto;
-	right:0px;	
+	right:0px;
 }
 
 .main-menu .navigation > li > ul > li > ul > li{
@@ -1089,7 +1078,7 @@ img{
 }
 
 .main-menu .navigation > li > ul > li > ul > li:last-child{
-	
+
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a{
@@ -1150,11 +1139,11 @@ img{
 	font-size:16px;
 	font-weight:normal;
 	text-align:center;
-	z-index:5;	
+	z-index:5;
 }
 
 .main-menu .navigation > li > ul > li > ul > li.dropdown:hover > a:after{
-	color:#ffffff;	
+	color:#ffffff;
 }
 
 .main-menu .navigation > li.dropdown:hover > ul{
@@ -1175,7 +1164,7 @@ img{
 	-moz-transition:all 300ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;	
+	-o-transition:all 300ms ease;
 }
 
 .main-menu .navbar-collapse > ul li.dropdown .dropdown-btn{
@@ -1310,7 +1299,7 @@ img{
     border-left: 1px solid rgba(255,255,255,0.30);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Mobile Menu
@@ -1349,7 +1338,7 @@ img{
 .mobile-menu .nav-logo{
 	position:relative;
 	padding:20px 20px;
-	text-align:left;	
+	text-align:left;
 }
 
 .mobile-menu .nav-logo img{
@@ -1493,7 +1482,7 @@ img{
 
 .mobile-menu .navigation li:hover > a,
 .mobile-menu .navigation li.current > a{
-	color:#1A73E8;	
+	color:#1A73E8;
 }
 
 .mobile-menu .navigation li.dropdown .dropdown-btn{
@@ -1563,7 +1552,7 @@ img{
 	position:relative;
 	top:2px;
 	text-indent:0px;
-	color:#333333;	
+	color:#333333;
 }
 
 .form-group .ui-button .ui-icon:before{
@@ -1590,7 +1579,7 @@ img{
 }
 
 .ui-menu .ui-menu-item:last-child{
-	border:none;	
+	border:none;
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active{
@@ -1610,7 +1599,7 @@ img{
 	background-color:#1A73E8;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Search Popup
@@ -1733,7 +1722,7 @@ img{
 
 .search-popup .form-group{
 	position:relative;
-	margin:0px;	
+	margin:0px;
 	overflow: hidden;
 }
 
@@ -1812,7 +1801,7 @@ img{
 	color:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section
@@ -2098,7 +2087,7 @@ img{
 	opacity:1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Section
@@ -2173,7 +2162,7 @@ img{
 
 .consult-form form .form-group{
 	position:relative;
-	margin:0px 0px 20px;	
+	margin:0px 0px 20px;
 }
 
 .consult-form form .form-group:last-child{
@@ -2204,7 +2193,7 @@ img{
 	line-height:28px;
 	padding:0px 0px 0px;
 	font-size:18px;
-	font-style:normal;	
+	font-style:normal;
 	background:#ffffff;
 	border-radius:0px;
 	transition:all 500ms ease;
@@ -2219,7 +2208,7 @@ img{
 	line-height:28px;
 	padding:0px 0px 0px;
 	font-size:18px;
-	font-style:normal;	
+	font-style:normal;
 	background:#ffffff;
 	border-radius:0px;
 	resize:none;
@@ -2284,7 +2273,7 @@ img{
 	font-family: 'Work Sans', sans-serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section
@@ -2423,7 +2412,7 @@ img{
 	color:#1A73E8;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Reputation Section
@@ -2484,7 +2473,7 @@ img{
 	margin-top:15px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Experts Section
@@ -2632,7 +2621,7 @@ img{
 	margin-top:5px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Project Section
@@ -2755,7 +2744,7 @@ img{
 	font-size:60px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section
@@ -2871,7 +2860,7 @@ img{
 	margin-top:20px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sponsors Section
@@ -2905,7 +2894,7 @@ img{
 	filter: grayscale(0%);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Blog Section
@@ -3176,7 +3165,7 @@ img{
 	border-bottom-color:#1A73E8;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Footer
@@ -3408,7 +3397,7 @@ img{
 	color:#1A73E8;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Map Section
@@ -3473,7 +3462,7 @@ img{
 	display:block;
 }
 
-/*** 
+/***
 
 ====================================================================
 	About Section Two
@@ -3549,7 +3538,7 @@ img{
 	font-family: 'Work Sans', sans-serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Reputation Section Two
@@ -3606,7 +3595,7 @@ img{
 	padding-left:170px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Service Banner Section
@@ -3616,7 +3605,7 @@ img{
 
 .service-banner-section{
 	background-size: cover;
-	background-position: center center;	
+	background-position: center center;
 	position:relative;
 	padding-top:170px;
 	overflow:hidden;
@@ -3697,7 +3686,7 @@ img{
 	bottom:0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sidebar Page Container
@@ -3809,7 +3798,7 @@ img{
 }
 
 .accordion-box .block.active-block{
-	
+
 }
 
 .accordion-box .block .acc-btn{
@@ -3886,7 +3875,7 @@ img{
 }
 
 .accordion-box .block .acc-content.current{
-	display:block;	
+	display:block;
 }
 
 .accordion-box .block .content{
@@ -3897,13 +3886,13 @@ img{
 
 .accordion-box .block .content .accordian-text{
 	line-height:1.9em;
-	font-size:14px;	
+	font-size:14px;
 	color:#666666;
 	font-weight:400;
 }
 
 .accordion-box .block .content p:last-child{
-	margin-bottom:0px;	
+	margin-bottom:0px;
 }
 
 .sticky-top{
@@ -4108,7 +4097,7 @@ img{
 
 .sidebar .search-box .form-group{
 	position:relative;
-	margin:0px;	
+	margin:0px;
 }
 
 .sidebar .search-box .form-group input[type="text"],
@@ -4295,10 +4284,10 @@ img{
 .sidebar .tags a:hover{
 	background-color:#1A73E8;
 	border-color:#1A73E8;
-	color:#ffffff;	
+	color:#ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Page Title Section
@@ -4454,7 +4443,7 @@ img{
 	min-height:auto;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Styled Pagination
@@ -4795,7 +4784,7 @@ img{
 	font-family: 'Heebo', sans-serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Blog Detail Section
@@ -4978,7 +4967,7 @@ img{
 .contact-form input.error,
 .contact-form select.error,
 .contact-form textarea.error{
-	border-color:#ff0000 !important;	
+	border-color:#ff0000 !important;
 }
 
 .contact-form label.error{
@@ -4989,12 +4978,12 @@ img{
 	text-transform:uppercase;
 	font-size:12px;
 	color:#ff0000;
-	font-weight:500;	
+	font-weight:500;
 }
 
 
 /* ======================
-	23. CTA Section 
+	23. CTA Section
 =========================*/
 
 .cta-section {
