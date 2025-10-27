@@ -52,7 +52,12 @@
                                         <div class="inner-box">
                                             <div class="image">
                                                 <a href="{{ $article['url'] }}" target="_blank">
-                                                    <img style="height: 169px;" src="{{ !empty($article['urlToImage']) ? $article['urlToImage'] : 'https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg' }}" alt="" />
+                                                    <img
+                                                        style="height: 169px;"
+                                                        src="{{ !empty($article['urlToImage']) ? $article['urlToImage'] : 'https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg' }}"
+                                                        onerror="this.onerror=null;this.src='https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg';"
+                                                        alt=""
+                                                    />
                                                 </a>
                                             </div>
                                             <div class="title">{{ e($article['source']['name'] ?? '') }}</div>
