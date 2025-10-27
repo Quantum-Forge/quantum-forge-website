@@ -27,6 +27,24 @@
   max-width: 200px !important;
 }
 
+/* Tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  .fi-sidebar-header .fi-logo {
+    height: 34px !important;
+    margin-top: 20px;
+    max-width: 160px !important;
+  }
+}
+
+/* Phone (<= 640px) */
+@media (max-width: 640px) {
+  .fi-sidebar-header .fi-logo {
+    height: 40px !important;
+    margin-top: 30px;
+    max-width: auto !important;
+  }
+}
+
 /* Remove grid gap for StatsOverview to make cards flush */
 .fi-widget-stats-overview .grid,
 .fi-stats-overview .grid,
