@@ -1,66 +1,103 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Quantum Forge Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Proyek ini dibangun dengan Laravel, Filament v4, dan Vite untuk pengelolaan aset front-end. README ini mencakup cara setup, menjalankan, build produksi, serta dokumentasi pembuatan user admin Filament dengan `php artisan filament:user`.
 
-## About Laravel
+## Stack
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Laravel (Backend Framework)
+- Filament v4 (Admin Panel)
+- Vite (Bundler & Dev Server)
+- Tailwind CSS (opsional, jika digunakan)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Prasyarat
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- PHP 8.2+
+- Composer
+- Node.js 18+ dan npm
+- Database (MySQL/MariaDB/PostgreSQL)
 
-## Learning Laravel
+## Instalasi
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Salin environment:
+   - Salin `.env.example` menjadi `.env`
+   - Sesuaikan koneksi database dan `APP_URL`
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+2. Install dependencies:
+   - `composer install`
+   - `npm install`
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+3. Generate app key:
+   - `php artisan key:generate`
 
-## Laravel Sponsors
+4. Migrasi database:
+   - `php artisan migrate`
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+5. (Opsional) Link storage:
+   - `php artisan storage:link`
 
-### Premium Partners
+## Menjalankan (Development)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- Jalankan Vite dev server: `npm run dev`
+- Jalankan Laravel dev server: `php artisan serve`
+- Aplikasi dapat diakses pada `http://127.0.0.1:8000` (atau port yang ditentukan)
 
-## Contributing
+Jika menggunakan Laravel Vite Plugin, asset akan otomatis ter-refresh saat development.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Build Produksi
 
-## Code of Conduct
+- Build aset: `npm run build`
+- Pastikan `public/build/` berisi hasil bundling terbaru
+- Jalankan aplikasi di server produksi sesuai konfigurasi web server (Nginx/Apache)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Filament v4 – Admin Panel
 
-## Security Vulnerabilities
+### URL Panel
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Secara default: `http://{APP_URL}/admin` (dapat berbeda jika dikonfigurasi)
 
-## License
+### Instalasi Filament (jika belum)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- `composer require filament/filament:^4.0`
+- `php artisan filament:install` (akan men-setup resource dasar)
+
+### Membuat User Admin
+
+Gunakan perintah berikut untuk membuat akun admin Filament secara interaktif:
+
+```
+php artisan filament:user
+```
+
+Perintah di atas akan meminta nama, email, dan password, kemudian membuat user dengan akses ke panel Filament. Jika perintah tidak tersedia di proyek Anda, alternatif yang umum digunakan adalah:
+
+```
+php artisan make:filament-user
+```
+
+Keduanya memiliki tujuan yang sama (membuat user admin). Jika ingin non-interaktif, beberapa instalasi menyediakan opsi bendera, misalnya:
+
+```
+php artisan make:filament-user --name="Admin" --email="admin@example.com" --password="secret"
+```
+
+Catatan: Opsi bendera dapat berbeda tergantung versi/konfigurasi paket Filament yang terpasang.
+
+### Login ke Panel
+
+- Buka `http://{APP_URL}/admin`
+- Masuk menggunakan kredensial yang baru dibuat
+
+## Troubleshooting
+
+- Jika `php artisan filament:user` tidak dikenal:
+  - Jalankan `php artisan` untuk melihat daftar perintah yang tersedia
+  - Coba `php artisan make:filament-user`
+  - Pastikan paket Filament sudah terpasang dan diinstal (`composer require filament/filament` lalu `php artisan filament:install`)
+
+- Jika asset tidak ter-update:
+  - Hapus cache build dengan mengosongkan `public/build/`
+  - Jalankan kembali `npm run build`
+
+- Jika terjadi error terkait jQuery/UMD saat bundling:
+  - Pastikan plugin legacy dimuat sebagai classic scripts dan urutan pemuatan jQuery → plugin dijaga agar berjalan di browser (bukan CommonJS)
+
