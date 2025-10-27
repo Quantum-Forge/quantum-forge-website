@@ -32,7 +32,7 @@ class DashboardPanelProvider extends PanelProvider
             ->darkModeBrandLogo(asset('images/logo_white.png'))
             ->viteTheme('resources/css/filament/admin/theme.css')
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::hex('#1A73E8'),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')

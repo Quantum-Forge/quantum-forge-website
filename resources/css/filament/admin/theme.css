@@ -2,3 +2,27 @@
 
 @source '../../../../app/Filament/**/*';
 @source '../../../../resources/views/filament/**/*';
+
+/* Hide Login page title heading */
+.fi-simple-header-heading {
+  display: none !important;
+}
+
+/* Customize brand logo size */
+.fi-logo {
+  height: 60px !important; /* Sesuaikan tinggi logo */
+  width: auto !important;
+}
+
+/* Alternative: Target logo in topbar specifically */
+.fi-topbar .fi-logo {
+  height: 40px !important;
+  width: auto !important;
+}
+
+/* Logo in sidebar (if using sidebar layout) */
+.fi-sidebar-header .fi-logo {
+  height: 80px !important;
+  width: auto !important;
+  max-width: 200px !important;
+}
