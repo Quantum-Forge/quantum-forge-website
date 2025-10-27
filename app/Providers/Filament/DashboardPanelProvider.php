@@ -28,6 +28,7 @@ class DashboardPanelProvider extends PanelProvider
             ->login()
             ->brandLogo(asset('images/logo.png'))
             ->darkModeBrandLogo(asset('images/logo_white.png'))
+            ->favicon(asset('images/favicon.png'))
             ->viteTheme('resources/css/filament/admin/theme.css')
             ->colors([
                 'primary' => Color::hex('#1A73E8'),
