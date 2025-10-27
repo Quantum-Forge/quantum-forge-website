@@ -111,12 +111,12 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-12 mt-50">
                         <div class="thumbnail">
-                            <img class="w-100" src="{{ $portfolio->images3_url }}" alt="finance">
+                            <img class="w-100" width="573" height="614" src="{{ $portfolio->images3_url }}" alt="finance">
                         </div>
                     </div>
                     <div class="col-lg-12 mtb-30">
                         <div class="thumbnail">
-                            <img class="w-100" src="{{ $portfolio->images4_url }}" alt="finance">
+                            <img class="w-100" width="573" height="614" src="{{ $portfolio->images4_url }}" alt="finance">
                         </div>
                     </div>
                 </div>
