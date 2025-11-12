@@ -40,4 +40,14 @@ class EditPortfoliosApi extends EditRecord
             ->success()
             ->send();
     }
+
+    public function getTitle(): string
+    {
+        return 'Portfolio API';
+    }
+
+    public function getBreadcrumbs(): array
+    {
+        return [];
+    }
 }
