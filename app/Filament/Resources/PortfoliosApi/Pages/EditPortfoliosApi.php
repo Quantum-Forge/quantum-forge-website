@@ -14,21 +14,13 @@ class EditPortfoliosApi extends EditRecord
 
     protected function getHeaderActions(): array
     {
-        return [
-            Action::make('generateApiKey')
-                ->label('Generate API Key')
-                ->requiresConfirmation()
-                ->action(function () {
-                    $this->record->api_key = (string) Str::uuid();
-                    $this->record->api_key_created_at = now();
-                    $this->form->fill($this->record->attributesToArray());
-                }),
-        ];
+        return [];
     }
 
     protected function getRedirectUrl(): ?string
     {
-        return static::getResource()::getUrl('index');
+        // Selalu tetap di halaman edit setelah menyimpan
+        return static::getResource()::getUrl('edit', ['record' => $this->record]);
     }
 
     protected function afterSave(): void

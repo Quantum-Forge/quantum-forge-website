@@ -13,4 +13,13 @@ class ListPortfoliosApis extends ListRecords
     {
         return [];
     }
+
+    public function mount(): void
+    {
+        $user = auth()->user();
+
+        if ($user) {
+            $this->redirect(PortfoliosApiResource::getUrl('edit', ['record' => $user]));
+        }
+    }
 }

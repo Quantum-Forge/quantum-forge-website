@@ -48,4 +48,15 @@ class PortfoliosApiResource extends Resource
     {
         return parent::getEloquentQuery()->where('id', auth()->id());
     }
+
+    public static function getNavigationUrl(): string
+    {
+        $user = auth()->user();
+
+        if (! $user) {
+            return static::getUrl('index');
+        }
+
+        return static::getUrl('edit', ['record' => $user]);
+    }
 }
