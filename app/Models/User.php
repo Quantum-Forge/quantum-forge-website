@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'api_key',
+        'api_key_created_at',
+        'selected_portfolio_ids',
     ];
 
     /**
@@ -43,6 +46,8 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'api_key_created_at' => 'datetime',
+            'selected_portfolio_ids' => 'array',
         ];
     }
 }

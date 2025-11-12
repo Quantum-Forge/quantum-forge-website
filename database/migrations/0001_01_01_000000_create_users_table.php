@@ -17,6 +17,9 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('api_key', 36)->nullable()->unique();
+            $table->timestamp('api_key_created_at')->nullable();
+            $table->json('selected_portfolio_ids')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
