@@ -18,6 +18,8 @@ class PortfoliosApiResource extends Resource
 {
     protected static ?string $model = User::class;
 
+    protected static ?string $slug = 'settings/portfolios-apis';
+
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedKey;
 
     protected static UnitEnum|string|null $navigationGroup = 'API';
@@ -40,7 +42,7 @@ class PortfoliosApiResource extends Resource
     {
         return [
             'index' => ListPortfoliosApis::route('/'),
-            'edit' => EditPortfoliosApi::route('/{record}/edit'),
+            'edit' => EditPortfoliosApi::route('/{record}'),
         ];
     }
 

@@ -53,13 +53,17 @@ class PortfoliosApiForm
                                     ->label('Endpoint URL')
                                     ->content(fn () => url('/api/portfolios'))
                                     ->columnSpan(['md' => 6]),
-                                Placeholder::make('auth_header')
-                                    ->label('Auth Header')
-                                    ->content('X-API-Key')
-                                    ->columnSpan(['md' => 6]),
+                                // Placeholder::make('auth_header')
+                                //     ->label('Auth Header')
+                                //     ->content('X-API-Key')
+                                //     ->columnSpan(['md' => 6]),
                                 Placeholder::make('usage')
                                     ->label('Usage')
                                     ->content(fn ($record) => "curl -H 'X-API-Key: " . ($record->api_key ?? '{YOUR_KEY}') . "' '" . url('/api/portfolios') . "'")
+                                    ->columnSpan(['md' => 6]),
+                                Placeholder::make('usage_query')
+                                    ->label('Usage (Query)')
+                                    ->content(fn ($record) => url('/api/portfolios') . '?api_key=' . ($record->api_key ?? '{YOUR_KEY}'))
                                     ->columnSpan(['md' => 6]),
                             ]),
                 ]),
@@ -77,7 +81,7 @@ class PortfoliosApiForm
                             ->columns(2)
                             ->gridDirection('row')
                             ->live()
-                            ->hint(fn (Get $get) => empty($get('selected_portfolio_ids')) ? 'Belum ada portfolio yang dipilih' : null)
+                            // ->hint(fn (Get $get) => empty($get('selected_portfolio_ids')) ? 'Belum ada portfolio yang dipilih' : null)
                             ->helperText(fn () => Portfolio::query()->exists() ? null : 'Belum Ada Portfolio')
                             ->disabled(fn () => ! Portfolio::query()->exists()),
                     ]),

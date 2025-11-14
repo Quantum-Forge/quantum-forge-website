@@ -34,11 +34,6 @@ class EditPortfoliosApi extends EditRecord
                 ->send();
             return;
         }
-
-        Notification::make()
-            ->title('Perubahan disimpan')
-            ->success()
-            ->send();
     }
 
     public function getTitle(): string

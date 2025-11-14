@@ -11,7 +11,9 @@ class CheckApiKey
 {
     public function handle(Request $request, Closure $next)
     {
-        $apiKey = $request->header('X-API-Key');
+        $apiKey = $request->header('X-API-Key')
+            ?? $request->query('api_key')
+            ?? $request->query('API_KEY');
 
         if (! $apiKey) {
             return response()->json([
