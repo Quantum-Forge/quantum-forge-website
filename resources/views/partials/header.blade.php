@@ -62,7 +62,7 @@
                                         </ul>
                                     </li>
                                     <li class="{{ request()->routeIs('portfolio') ? 'current' : '' }}"><a href="{{ route('portfolio') }}">Proyek</a></li>
-                                    <li class="{{ request()->routeIs('news') ? 'current' : '' }}"><a href="{{ route('news') }}">Berita</a></li>
+                                    <li class="{{ request()->routeIs('articles') ? 'current' : '' }}"><a href="{{ route('articles') }}">Artikel</a></li>
                                     <li class="{{ request()->routeIs('contact') ? 'current' : '' }}"><a href="{{ route('contact') }}">Kontak</a></li>
                                 </ul>
                             </div>
