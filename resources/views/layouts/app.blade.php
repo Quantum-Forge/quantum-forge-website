@@ -26,7 +26,14 @@
 
 <div class="page-wrapper">
     <!-- Main Header -->
-    <header class="main-header {{ (request()->routeIs('portfolio.details') || request()->routeIs('portfolio') ||  request()->routeIs('articles') || request()->routeIs('contact') || request()->routeIs('section.blog.mobile_app') || request()->routeIs('section.blog.web_app')) ? 'style-three' : '' }}">
+    <header class="main-header 
+    {{ (request()->routeIs('portfolio.details') || 
+        request()->routeIs('portfolio') ||
+        request()->routeIs('articles') ||   
+        request()->routeIs('articles.details') || 
+        request()->routeIs('contact') || 
+        request()->routeIs('section.blog.mobile_app') || 
+        request()->routeIs('section.blog.web_app')) ? 'style-three' : '' }}">
         @include('partials.header')
     </header>
     <!-- End Main Header -->

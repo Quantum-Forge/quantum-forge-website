@@ -10,6 +10,7 @@ Route::view('/about', 'about')->name('about');
 Route::view('/mobile-app', 'section.blog.mobile_app')->name('section.blog.mobile_app');
 Route::view('/web-app', 'section.blog.web_app')->name('section.blog.web_app');
 Route::view('/articles', 'articles')->name('articles');
+Route::view('/articles/details', 'details.articles')->name('articles.details');
 Route::view('/contact', 'contact')->name('contact');
 // Portfolio routes (DB-driven)
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
