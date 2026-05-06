@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('portfolios', function (Blueprint $table) {
+            $table->dropIndex('portfolios_category_index');
             $table->dropColumn('category');
         });
     }
@@ -23,6 +24,7 @@ return new class extends Migration
     {
         Schema::table('portfolios', function (Blueprint $table) {
             $table->string('category')->nullable()->after('clients');
+            $table->index('category');
         });
     }
 };
