@@ -21,35 +21,136 @@
                 <div class="content-side col-lg-9 col-md-12 col-sm-12">
 
                     <div class="our-blogs">
-                        @forelse($articles as $article)
-                            <div class="news-block-three">
-                                <div class="inner-box">
-                                    <div class="image">
-                                        <a href="{{ route('articles.show', $article) }}">
-                                            <img style="height: 188px; object-fit: cover;" src="{{ $article->featured_image_url ?? '' }}" onerror="this.onerror=null;this.src='https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg';" alt="" />
-                                        </a>
-                                    </div>
-                                    <div class="title">{{ $article->keywords[0] ?? 'Artikel' }}</div>
-                                    <h4>
-                                        <a href="{{ route('articles.show', $article) }}">{{ $article->title }}</a>
-                                    </h4>
-                                    <div class="post-date">
-                                        {{ optional($article->published_at)->format('F jS, Y') }} by
-                                        <span>{{ $article->author?->name ?? 'Admin' }}</span>
-                                    </div>
+                        <!-- News Block Three -->
+                        <div class="news-block-three">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <a href="#">
+                                        <img style="height: 188px; object-fit: cover;" src="{{ asset('build/assets/images/resource/news-1.jpg') }}" onerror="this.onerror=null;this.src='https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg';" alt="" />
+                                    </a>
+                                </div>
+                                <div class="title">Technology</div>
+                                <h4>
+                                    <a href="#">Contoh Judul Artikel Pertama</a>
+                                </h4>
+                                <div class="post-date">
+                                    January 10th, 2024 by
+                                    <span>Admin</span>
                                 </div>
                             </div>
-                        @empty
-                            <div class="news-block-three">
-                                <div class="inner-box">
-                                    <h4>Belum ada artikel yang dipublikasikan.</h4>
+                        </div>
+
+                        <!-- News Block Three -->
+                        <div class="news-block-three">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <a href="#">
+                                        <img style="height: 169px; object-fit: cover;" src="{{ asset('build/assets/images/resource/news-2.jpg') }}" onerror="this.onerror=null;this.src='https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg';" alt="" />
+                                    </a>
+                                </div>
+                                <div class="title">Software</div>
+                                <h4>
+                                    <a href="#">Contoh Judul Artikel Kedua</a>
+                                </h4>
+                                <div class="post-date">
+                                    February 15th, 2024 by
+                                    <span>Penulis</span>
                                 </div>
                             </div>
-                        @endforelse
+                        </div>
+
+                        <!-- News Block Three -->
+                        <div class="news-block-three">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <a href="#">
+                                        <img style="height: 169px; object-fit: cover;" src="{{ asset('build/assets/images/resource/news-3.jpg') }}" onerror="this.onerror=null;this.src='https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg';" alt="" />
+                                    </a>
+                                </div>
+                                <div class="title">Programming</div>
+                                <h4>
+                                    <a href="#">Contoh Judul Artikel Ketiga</a>
+                                </h4>
+                                <div class="post-date">
+                                    March 20th, 2024 by
+                                    <span>Editor</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dummy Content Tambahan agar halaman lebih panjang dari sidebar -->
+                        <div class="news-block-three">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <a href="#">
+                                        <img style="height: 169px; object-fit: cover;" src="{{ asset('build/assets/images/resource/news-1.jpg') }}" onerror="this.onerror=null;this.src='https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg';" alt="" />
+                                    </a>
+                                </div>
+                                <div class="title">AI & Machine Learning</div>
+                                <h4>
+                                    <a href="#">Contoh Judul Artikel Keempat</a>
+                                </h4>
+                                <div class="post-date">
+                                    April 10th, 2024 by
+                                    <span>Admin</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news-block-three">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <a href="#">
+                                        <img style="height: 169px; object-fit: cover;" src="{{ asset('build/assets/images/resource/news-2.jpg') }}" onerror="this.onerror=null;this.src='https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg';" alt="" />
+                                    </a>
+                                </div>
+                                <div class="title">Web Development</div>
+                                <h4>
+                                    <a href="#">Contoh Judul Artikel Kelima</a>
+                                </h4>
+                                <div class="post-date">
+                                    May 5th, 2024 by
+                                    <span>Admin</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news-block-three">
+                            <div class="inner-box">
+                                <div class="image">
+                                    <a href="#">
+                                        <img style="height: 169px; object-fit: cover;" src="{{ asset('build/assets/images/resource/news-3.jpg') }}" onerror="this.onerror=null;this.src='https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg';" alt="" />
+                                    </a>
+                                </div>
+                                <div class="title">Mobile Apps</div>
+                                <h4>
+                                    <a href="#">Contoh Judul Artikel Keenam</a>
+                                </h4>
+                                <div class="post-date">
+                                    June 12th, 2024 by
+                                    <span>Admin</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- Pagination -->
                     <div class="styled-pagination">
-                        {{ $articles->links() }}
+                        <ul class="clearfix">
+                            <li class="prev">
+                                <a href="#">
+                                    <span class="ti-angle-left"></span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="next">
+                                <a href="#">
+                                    <span class="ti-angle-right"></span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>

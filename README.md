@@ -125,7 +125,7 @@ use Illuminate\Support\Facades\Http;
 // Generate Text via OpenRouter (Gemma 2 27B)
 $response = Http::withToken(env('OPENROUTER_API_KEY'))
     ->post('https://openrouter.ai/api/v1/chat/completions', [
-        'model' => env('OPENROUTER_MODEL'),
+        'model' => 'google/gemma-2-27b-it:free',
         'messages' => [
             ['role' => 'system', 'content' => 'Anda adalah copywriter senior untuk Software House.'],
             ['role' => 'user', 'content' => 'Buat artikel 500 kata tentang tren AI.']
