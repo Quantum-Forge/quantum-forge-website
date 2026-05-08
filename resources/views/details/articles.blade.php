@@ -33,7 +33,7 @@
                                 <div class="post-info"><span class="theme_color">{{ $article->category->name ?? 'Uncategorized' }}</span> -  {{ $article->published_at ? $article->published_at->format('F jS, Y') : $article->created_at->format('F jS, Y') }} by <i>Sledge</i></div>
 
                                 <div class="mt-4">
-                                    {!! $article->content !!}
+                                    {!! preg_replace('/<ul\b[^>]*>/i', '<ul class="list-style-one">', $article->content) !!}
                                 </div>
 
                                 <!-- Post Share Options-->
