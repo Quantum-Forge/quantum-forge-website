@@ -74,13 +74,15 @@ class AiService
     {
         $prompt = "Tuliskan artikel blog SEO dalam bahasa Indonesia tentang: $topic.
                    PENTING: Hanya berikan output berupa kode HTML murni tanpa tag pembuka/penutup ```html atau markdown lainnya.
+                   DILARANG KERAS MENGGUNAKAN MARKDOWN FORMATTING SEPERTI **teks tebal** ATAU *teks miring*.
+                   Jika ingin menebalkan teks, GUNAKAN tag HTML <strong> atau <b>.
                    Gunakan struktur HTML yang persis dengan template berikut ini untuk memformat artikel (buat isinya panjang dan informatif, minimal 5 paragraf).
                    Pastikan kamu menggunakan elemen HTML sesuai struktur ini:
 
                    <p>Paragraf pembuka yang memikat perhatian pembaca tentang $topic. Jelaskan latar belakang dan mengapa topik ini penting.</p>
 
                    <h4>Subjudul pertama yang relevan dan menarik</h4>
-                   <p>Paragraf isi yang menjelaskan subjudul di atas secara komprehensif dan mendalam.</p>
+                   <p>Paragraf isi yang menjelaskan subjudul di atas secara komprehensif dan mendalam. <strong>Ini contoh teks tebal menggunakan HTML</strong>.</p>
 
                    <blockquote>
                        <div class=\"blockquote-text\"><span class=\"quote icofont-quote-left\"></span>Kutipan menarik, fakta penting, atau insight kunci yang relevan dengan topik ini.</div>
@@ -90,7 +92,7 @@ class AiService
                    <p>Paragraf isi tambahan yang memberikan wawasan lebih dalam, contoh kasus, atau penjelasan lanjutan.</p>
                    <p>Paragraf penutup yang merangkum keseluruhan poin-poin artikel dan memberikan kesimpulan yang kuat.</p>
 
-                   Jangan tambahkan tag <html>, <head>, <body>, atau <style>. Fokus HANYA pada isi konten dengan elemen <p>, <h4>, dan <blockquote> persis seperti contoh di atas.";
+                   Jangan tambahkan tag <html>, <head>, <body>, atau <style>. Fokus HANYA pada isi konten dengan elemen <p>, <h4>, <blockquote>, dan <strong> persis seperti contoh di atas.";
 
         try {
             $result = Gemini::generativeModel('gemini-2.5-flash')->generateContent($prompt);
