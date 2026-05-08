@@ -9,6 +9,64 @@ use Illuminate\Support\Str;
 
 class AiService
 {
+    public function generateArticleTopics(int $count = 10): array
+    {
+        $prompt = "Kamu adalah seorang ahli SEO dan content strategist untuk sebuah perusahaan Software House (Web Development, Mobile App, AI, IT Consultant).
+                   Tugasmu adalah membuat $count judul/topik artikel blog yang unik, sangat menarik, dan berpotensi viral/mendatangkan banyak traffic untuk website Software House tersebut.
+                   Topik harus bervariasi (contoh: tren teknologi, tips bisnis IT, transformasi digital, UI/UX, dll).
+                   PENTING: Output HANYA berupa daftar $count judul/topik yang dipisahkan oleh karakter baris baru (newline) tanpa nomor urut, tanpa tanda kutip, tanpa penjelasan apapun.
+                   Contoh output yang benar:
+                   Masa Depan AI dalam Pengembangan Aplikasi Mobile
+                   5 Alasan Bisnis Anda Membutuhkan Website Custom
+                   Panduan Memilih Software House Terbaik untuk Startup";
+
+        try {
+            $result = Gemini::generativeModel('gemini-2.5-flash')->generateContent($prompt);
+            $text = trim($result->text());
+
+            // Bersihkan jika ada format list markdown seperti - atau * atau angka 1. 2.
+            $text = preg_replace('/^[\d\.\-\*\s]+/m', '', $text);
+            $text = str_replace(['"', '`', "'"], '', $text);
+
+            $topics = array_filter(array_map('trim', explode("\n", $text)));
+            return array_values($topics);
+        } catch (\Exception $e) {
+            return [
+                'Pentingnya Transformasi Digital untuk Bisnis',
+                'Tren Pengembangan Web di Tahun Ini',
+                'Mengapa UI/UX Design Sangat Penting',
+                'Masa Depan AI dalam Aplikasi Mobile'
+            ];
+        }
+    }
+
+    public function categorizeTopic($topic, array $availableCategories): string
+    {
+        $categoriesStr = implode(', ', $availableCategories);
+        $prompt = "Kamu adalah sistem kategorisasi otomatis.
+                   Diberikan topik artikel: '$topic'
+                   Pilih SATU kategori yang paling tepat dari daftar berikut: $categoriesStr
+                   PENTING: Output HANYA NAMA KATEGORI, tanpa penjelasan, tanpa tanda kutip.";
+
+        try {
+            $result = Gemini::generativeModel('gemini-2.5-flash')->generateContent($prompt);
+            $categoryName = trim($result->text());
+            $categoryName = str_replace(['"', '`', "'"], '', $categoryName);
+            
+            // Verifikasi hasil ada di daftar
+            foreach ($availableCategories as $cat) {
+                if (strtolower($cat) === strtolower($categoryName)) {
+                    return $cat;
+                }
+            }
+            
+            // Fallback jika aneh
+            return 'Other';
+        } catch (\Exception $e) {
+            return 'Other'; // Fallback
+        }
+    }
+
     /**
      * Generate Artikel menggunakan Gemini 1.5 Flash
      */

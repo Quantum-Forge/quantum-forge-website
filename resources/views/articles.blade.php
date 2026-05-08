@@ -50,7 +50,10 @@
                         </div>
                         @empty
                         <div class="alert alert-warning text-center" style="width: 100%; border-radius: 8px;">
-                            Maaf, tidak ada artikel yang ditemukan untuk kata kunci "{{ request('search') }}".
+                            Maaf, tidak ada artikel yang ditemukan.
+                            @if(request('search'))
+                                Coba cari artikel yang lebih spesifik.
+                            @endif
                         </div>
                         @endforelse
                     </div>
