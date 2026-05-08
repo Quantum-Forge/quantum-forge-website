@@ -28,6 +28,10 @@ class CategoriesTable
                     ->label('Jumlah Portfolio')
                     ->state(fn (Category $record) => $record->portfolios()->count())
                     ->sortable(),
+                TextColumn::make('articles_count')
+                    ->label('Jumlah Artikel')
+                    ->state(fn (Category $record) => $record->articles()->count())
+                    ->sortable(),
                 ToggleColumn::make('is_active')
                     ->label('Aktif')
                     ->sortable(),
@@ -37,8 +41,8 @@ class CategoriesTable
                 DeleteAction::make()
                     ->label('Delete')
                     ->requiresConfirmation()
-                    ->disabled(fn (Category $record) => $record->portfolios()->exists())
-                    ->tooltip('Tidak bisa dihapus jika ada portfolio terkait'),
+                    ->disabled(fn (Category $record) => $record->portfolios()->exists() || $record->articles()->exists())
+                    ->tooltip('Tidak bisa dihapus jika ada portfolio atau artikel terkait'),
             ])
             
             ->filters([

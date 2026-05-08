@@ -11,14 +11,16 @@ class AiService
 {
     public function generateArticleTopics(int $count = 10): array
     {
-        $prompt = "Kamu adalah seorang ahli SEO dan content strategist untuk sebuah perusahaan Software House (Web Development, Mobile App, AI, IT Consultant).
+        $prompt = "Kamu adalah seorang ahli SEO dan content strategist untuk sebuah perusahaan Software House (Web Development, Mobile App, IT Consultant, Cloud, dll).
                    Tugasmu adalah membuat $count judul/topik artikel blog yang unik, sangat menarik, dan berpotensi viral/mendatangkan banyak traffic untuk website Software House tersebut.
-                   Topik harus bervariasi (contoh: tren teknologi, tips bisnis IT, transformasi digital, UI/UX, dll).
-                   PENTING: Output HANYA berupa daftar $count judul/topik yang dipisahkan oleh karakter baris baru (newline) tanpa nomor urut, tanpa tanda kutip, tanpa penjelasan apapun.
+                   PENTING: Topik harus SANGAT BERVARIASI secara merata dan sebisa mungkin relevan dengan salah satu kategori berikut:
+                   Web Development, Mobile App Development, API Development, UI/UX Design, DevOps, QA & Testing, E-commerce, SaaS, IoT, Data Engineering, Machine Learning, Cloud Migration, CMS Development, RPA & Automation, Blockchain, Cloud Computing, Big Data, Business, atau Tips & Tricks.
+                   JANGAN hanya fokus membahas AI. Batasi maksimal hanya 1 atau 2 topik tentang AI/Machine Learning.
+                   Output HANYA berupa daftar $count judul/topik yang dipisahkan oleh karakter baris baru (newline) tanpa nomor urut, tanpa tanda kutip, tanpa penjelasan apapun.
                    Contoh output yang benar:
-                   Masa Depan AI dalam Pengembangan Aplikasi Mobile
-                   5 Alasan Bisnis Anda Membutuhkan Website Custom
-                   Panduan Memilih Software House Terbaik untuk Startup";
+                   Rahasia Membuat UI/UX Aplikasi Mobile yang Bikin User Betah
+                   5 Alasan Mengapa Startup Anda Wajib Memiliki Website Custom
+                   Mengenal DevOps: Kunci Rilis Software Lebih Cepat dan Tangguh";
 
         try {
             $result = Gemini::generativeModel('gemini-2.5-flash')->generateContent($prompt);
