@@ -99,13 +99,12 @@ php artisan make:filament-user --name="Admin" --email="admin@example.com" --pass
 ## 🤖 Implementasi AI (AiService)
 
 Proyek ini menggunakan `App\Services\AiService` untuk menyatukan fungsi AI:
-- `generateArticle($topic)`: Menggunakan Gemini 1.5 Flash.
-- `generateImage($prompt)`: Menggunakan Stable Diffusion via Hugging Face.
+- `generateArticle($topic)`: Menggunakan model Gemini (`gemini-2.5-flash`).
+- `generateImage($prompt)`: Menggunakan Pollinations AI.
 
 **Catatan Penting AI:**
 - Pastikan sudah menjalankan `php artisan storage:link` agar gambar hasil AI dapat diakses di browser.
 - Karena menggunakan versi API gratis, hindari terlalu banyak permintaan dalam waktu singkat untuk mencegah limitasi (spam).
-- Model teks yang direkomendasikan adalah `gemini-1.5-flash` untuk stabilitas pada kuota gratis.
 
 ## 🔧 Troubleshooting
 

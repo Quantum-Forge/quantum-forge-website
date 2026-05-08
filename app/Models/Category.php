@@ -22,13 +22,27 @@ class Category extends Model
         return $this->hasMany(Portfolio::class);
     }
 
+    public function articles(): HasMany
+    {
+        return $this->hasMany(Article::class);
+    }
+
     protected static function boot()
     {
         parent::boot();
 
+        static::saving(function (Category $category) {
+            if (empty($category->slug)) {
+                $category->slug = \Illuminate\Support\Str::slug($category->name);
+            }
+        });
+
         static::deleting(function (Category $category) {
             if ($category->portfolios()->exists()) {
                 throw new \RuntimeException('Kategori memiliki portfolio terkait dan tidak dapat dihapus.');
+            }
+            if ($category->articles()->exists()) {
+                throw new \RuntimeException('Kategori memiliki artikel terkait dan tidak dapat dihapus.');
             }
         });
     }

@@ -15,13 +15,14 @@ class ArticlesTable
     {
         return $table
             ->columns([
+                ImageColumn::make('image_url')
+                ->disk('public'),
                 TextColumn::make('title')
                     ->searchable(),
-                TextColumn::make('slug')
-                    ->searchable(),
-                TextColumn::make('category')
-                    ->searchable(),
-                ImageColumn::make('image_url'),
+                TextColumn::make('category.name')
+                    ->label('Category')
+                    ->searchable()
+                    ->sortable(),
                 TextColumn::make('published_at')
                     ->dateTime()
                     ->sortable(),

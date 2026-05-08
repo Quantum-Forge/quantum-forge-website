@@ -34,9 +34,9 @@ class CategoryForm
                                     ->columnSpan(['md' => 6]),
                                 TextInput::make('slug')
                                     ->label('Slug')
-                                    ->required()
                                     ->unique(ignoreRecord: true)
                                     ->hidden()
+                                    ->dehydrated()
                                     ->dehydrateStateUsing(fn ($state, $get) => Str::slug($get('name') ?? '')),
                                 Textarea::make('description')
                                     ->label('Deskripsi')

@@ -6,6 +6,7 @@ use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\RichEditor;
+use Filament\Forms\Components\Select;
 use Filament\Schemas\Schema;
 
 class ArticleForm
@@ -18,13 +19,19 @@ class ArticleForm
                     ->required(),
                 TextInput::make('slug')
                     ->required(),
-                TextInput::make('category')
-                    ->default(null),
+                Select::make('category_id')
+                    ->relationship('category', 'name')
+                    ->searchable()
+                    ->preload()
+                    ->required(),
                 RichEditor::make('content')
                     ->default(null)
                     ->columnSpanFull(),
                 FileUpload::make('image_url')
-                    ->image(),
+                    ->label('Thumbnail Image')
+                    ->image()
+                    ->disk('public')
+                    ->directory('images'),
                 DateTimePicker::make('published_at'),
             ]);
     }

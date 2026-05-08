@@ -34,7 +34,7 @@
                                         @endif
                                     </a>
                                 </div>
-                                <div class="title">{{ $article->category ?? 'Uncategorized' }}</div>
+                                <div class="title">{{ $article->category->name ?? 'Uncategorized' }}</div>
                                 <h4>
                                     <a href="{{ route('articles.details', $article->slug) }}">{{ $article->title }}</a>
                                 </h4>
