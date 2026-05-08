@@ -111,8 +111,8 @@ class AiService
         $html = preg_replace('/```html\s*/i', '', $html);
         $html = preg_replace('/```\s*/i', '', $html);
 
-        // Pastikan setiap tag <ul> yang digenerate AI selalu menggunakan class list-style-one
-        $html = preg_replace('/<ul\b[^>]*>/i', '<ul class="list-style-one">', $html);
+        // Pastikan setiap tag <ul> atau <ol> yang digenerate AI selalu menggunakan class list-style-one
+        $html = preg_replace('/<(ul|ol)\b[^>]*>/i', '<$1 class="list-style-one">', $html);
 
         return trim($html);
     }
