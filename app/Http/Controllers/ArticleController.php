@@ -7,10 +7,16 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $articles = Article::latest()->paginate(6);
-        return view('articles', compact('articles'));
+        $search = $request->input('search');
+
+        $articles = Article::when($search, function ($query, $search) {
+            return $query->where('title', 'like', "%{$search}%")
+                         ->orWhere('content', 'like', "%{$search}%");
+        })->latest()->paginate(5)->withQueryString();
+
+        return view('articles', compact('articles', 'search'));
     }
 
     public function show(Article $article)

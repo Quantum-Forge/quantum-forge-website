@@ -8,7 +8,11 @@
                 <li><a href="{{ route('home') }}">Beranda</a></li>
                 <li>Artikel</li>
             </ul>
-            <h2><span>Artikel</span> Terbaru</h2>
+            @if(request('search'))
+                <h2>Hasil Pencarian: <span>"{{ request('search') }}"</span></h2>
+            @else
+                <h2><span>Artikel</span> Terbaru</h2>
+            @endif
         </div>
     </div>
     <!-- End Page Title Section -->
@@ -21,7 +25,7 @@
                 <div class="content-side col-lg-9 col-md-12 col-sm-12">
 
                     <div class="our-blogs">
-                        @foreach($articles as $article)
+                        @forelse($articles as $article)
                         <!-- News Block Three -->
                         <div class="news-block-three">
                             <div class="inner-box">
@@ -44,13 +48,15 @@
                                 </div>
                             </div>
                         </div>
-                        @endforeach
+                        @empty
+                        <div class="alert alert-warning text-center" style="width: 100%; border-radius: 8px;">
+                            Maaf, tidak ada artikel yang ditemukan untuk kata kunci "{{ request('search') }}".
+                        </div>
+                        @endforelse
                     </div>
 
                     <!-- Pagination -->
-                    <div class="styled-pagination">
-                        {{ $articles->links('pagination::bootstrap-4') }}
-                    </div>
+                    {{ $articles->onEachSide(1)->links('pagination.custom') }}
 
                 </div>
                 @include('section.articles.sidebar')

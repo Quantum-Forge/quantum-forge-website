@@ -41,7 +41,7 @@
                                     <div class="tags">
                                         @if(!empty($article->tags) && is_array($article->tags))
                                             @foreach($article->tags as $tag)
-                                                <a href="#">{{ $tag }}</a>
+                                                <a href="#" class="my-1">{{ $tag }}</a>
                                             @endforeach
                                         @else
                                             <a href="#">AI Generated</a> <a href="#">{{ $article->category->name ?? 'Uncategorized' }}</a>

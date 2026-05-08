@@ -1,14 +1,25 @@
 <div class="sidebar-side col-lg-3 col-md-12 col-sm-12">
                 	<aside class="sidebar sticky-top">
 
+                        @php
+                            $sidebarCategories = \App\Models\Category::withCount('articles')->having('articles_count', '>', 0)->get();
+                            $totalArticles = \App\Models\Article::count();
+                            $recentPosts = \App\Models\Article::latest()->take(3)->get();
+                            $softwareHouseTags = [
+                                'Software House', 'Web Development', 'Mobile Apps',
+                                'UI/UX Design', 'IT Consultant', 'Digital Transformation',
+                                'AI Solutions', 'SEO'
+                            ];
+                        @endphp
+
 						<!-- Search -->
                         <div class="sidebar-widget search-box">
 							<div class="sidebar-title">
                             	<h4>Search</h4>
                             </div>
-                        	<form method="post" action="contact.html">
+                        	<form method="GET" action="{{ route('articles') }}">
                                 <div class="form-group">
-                                    <input type="search" name="search-field" value="" placeholder="Type & Hit Enter..." required>
+                                    <input type="search" name="search" value="{{ request('search') }}" placeholder="Type & Hit Enter..." required>
                                     <button type="submit"><span class="icon fa fa-search"></span></button>
                                 </div>
                             </form>
@@ -20,11 +31,10 @@
                             	<h4>Categories</h4>
                             </div>
                             <ul>
-								<li><a href="#">All <span>25</span></a></li>
-								<li><a href="#">News <span>12</span></a></li>
-								<li><a href="#">business <span>7</span></a></li>
-								<li><a href="#">tips & tricks <span>4</span></a></li>
-								<li><a href="#">Others <span>2</span></a></li>
+								<li><a href="{{ route('articles') }}">All <span>{{ $totalArticles }}</span></a></li>
+                                @foreach($sidebarCategories as $cat)
+								<li><a href="#">{{ $cat->name }} <span>{{ $cat->articles_count }}</span></a></li>
+                                @endforeach
 							</ul>
                         </div>
 
@@ -34,20 +44,18 @@
                             	<h4>Recent Posts</h4>
                             </div>
                             <div class="widget-content">
+                                @foreach($recentPosts as $post)
                                 <div class="post">
-                                    <figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-1.jpg" alt=""></a></figure>
-                                    <div class="text"><a href="blog-single.html">5 Secrets To Coaching Your Employees To Greatness</a></div>
+                                    <figure class="post-thumb"><a href="{{ route('articles.details', $post->slug) }}">
+                                        @if($post->image_url)
+                                            <img src="{{ asset('storage/' . $post->image_url) }}" alt="{{ $post->title }}">
+                                        @else
+                                            <img src="https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg" alt="{{ $post->title }}">
+                                        @endif
+                                    </a></figure>
+                                    <div class="text"><a href="{{ route('articles.details', $post->slug) }}">{{ $post->title }}</a></div>
                                 </div>
-
-                                <div class="post">
-                                    <figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-2.jpg" alt=""></a></figure>
-                                    <div class="text"><a href="blog-single.html">5 Steps To Build Strategy Planning</a></div>
-                                </div>
-
-                                <div class="post">
-                                    <figure class="post-thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-3.jpg" alt=""></a></figure>
-                                    <div class="text"><a href="blog-single.html">Trend Of Consumer Market 2020</a></div>
-                                </div>
+                                @endforeach
                             </div>
 						</div>
 
@@ -57,11 +65,9 @@
                             	<h4>Tags</h4>
                             </div>
 							<div class="widget-content">
-								<a href="#">Structure</a>
-								<a href="#">Envato</a>
-								<a href="#">Premium</a>
-								<a href="#">Clean</a>
-								<a href="#">WordPress</a>
+                                @foreach($softwareHouseTags as $tag)
+								<a href="#">{{ $tag }}</a>
+                                @endforeach
 							</div>
 						</div>
 
