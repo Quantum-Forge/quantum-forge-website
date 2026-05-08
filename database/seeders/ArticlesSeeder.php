@@ -51,7 +51,7 @@ class ArticlesSeeder extends Seeder
 
                 $this->command->line('3. Men-generate prompt gambar & memanggil Pollinations AI...');
                 $coverPrompt = $aiService->generateImagePrompt($topic, 'main');
-                $coverImageUrl = $aiService->generateImage($coverPrompt);
+                $coverImageUrl = $aiService->generateImageWithRetries($coverPrompt, 4);
 
                 $this->command->line('4. Men-generate SEO tags...');
                 $tags = $aiService->generateTags($topic);

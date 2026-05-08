@@ -52,14 +52,14 @@ class AiService
             $result = Gemini::generativeModel('gemini-2.5-flash')->generateContent($prompt);
             $categoryName = trim($result->text());
             $categoryName = str_replace(['"', '`', "'"], '', $categoryName);
-            
+
             // Verifikasi hasil ada di daftar
             foreach ($availableCategories as $cat) {
                 if (strtolower($cat) === strtolower($categoryName)) {
                     return $cat;
                 }
             }
-            
+
             // Fallback jika aneh
             return 'Other';
         } catch (\Exception $e) {
@@ -192,7 +192,7 @@ class AiService
         $responses = Http::pool(function (\Illuminate\Http\Client\Pool $pool) use ($urls) {
             $requests = [];
             foreach ($urls as $key => $url) {
-                $requests[] = $pool->as($key)->timeout(45)->get($url);
+                $requests[] = $pool->as($key)->timeout(90)->get($url);
             }
             return $requests;
         });
@@ -214,7 +214,7 @@ class AiService
                 $url = "https://image.pollinations.ai/prompt/{$encodedPrompt}?width=1024&height=768&nologo=true&seed={$seed}";
 
                 try {
-                    $singleResponse = Http::timeout(60)->get($url);
+                    $singleResponse = Http::timeout(90)->get($url);
                     $results[$key] = $this->persistImageResponse($singleResponse, $key);
                 } catch (\Exception $e) {
                     $results[$key] = null;
@@ -237,12 +237,13 @@ class AiService
         $isImageByHeader = str_contains($contentType, 'image/');
         $isPng = str_starts_with($body, "\x89PNG\r\n\x1A\n");
         $isJpeg = str_starts_with($body, "\xFF\xD8\xFF");
+        $isWebp = str_starts_with($body, "RIFF") && substr($body, 8, 4) === "WEBP";
 
-        if (! $isImageByHeader && ! $isPng && ! $isJpeg) {
+        if (! $isImageByHeader && ! $isPng && ! $isJpeg && ! $isWebp) {
             return null;
         }
 
-        $ext = $isJpeg ? 'jpg' : 'png';
+        $ext = $isWebp ? 'webp' : ($isJpeg ? 'jpg' : 'png');
         $imageName = 'ai-gen-' . uniqid() . '-' . $key . '.' . $ext;
         Storage::disk('public')->put("images/$imageName", $body);
 
@@ -256,5 +257,23 @@ class AiService
     {
         $results = $this->generateMultipleImages(['single' => $prompt]);
         return $results['single'] ?? null;
+    }
+
+    public function generateImageWithRetries($prompt, int $maxAttempts = 4): ?string
+    {
+        $maxAttempts = max(1, $maxAttempts);
+
+        for ($attempt = 1; $attempt <= $maxAttempts; $attempt++) {
+            $path = $this->generateImage($prompt);
+            if ($path) {
+                return $path;
+            }
+
+            if ($attempt < $maxAttempts) {
+                sleep(2 * $attempt);
+            }
+        }
+
+        return null;
     }
 }
