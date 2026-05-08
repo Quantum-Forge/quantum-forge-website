@@ -15,10 +15,21 @@ class ArticlesSeeder extends Seeder
      */
     public function run(AiService $aiService): void
     {
-        $this->command->info('Meminta AI untuk memikirkan 10 topik artikel yang menarik untuk Software House...');
+        // Catat waktu mulai untuk mencegah timeout (Graceful exit)
+        $startTime = microtime(true);
+        // Batas aman eksekusi dalam detik (misal 50 detik jika limit hosting 60 detik)
+        // Jika cron dijalankan via CLI murni, ini bisa dinaikkan menjadi 280 (untuk limit 5 menit).
+        $safeExecutionLimit = 50; 
 
-        // Meminta AI membuat daftar 10 topik artikel terbaik
-        $topics = $aiService->generateArticleTopics(10);
+        ini_set('max_execution_time', 300); // Set ke 5 menit
+        set_time_limit(300);
+
+        // Jika sering terpotong karena timeout, turunkan jumlah topik (misal 2 atau 3) agar hemat token AI.
+        $jumlahTopik = 10;
+        $this->command->info("Meminta AI untuk memikirkan {$jumlahTopik} topik artikel yang menarik untuk Software House...");
+
+        // Meminta AI membuat daftar topik artikel terbaik
+        $topics = $aiService->generateArticleTopics($jumlahTopik);
 
         $this->command->info('Berhasil mendapatkan ' . count($topics) . ' topik dari AI.');
 
@@ -36,9 +47,22 @@ class ArticlesSeeder extends Seeder
 
         // Loop untuk generate masing-masing topik secara full AI
         foreach ($topics as $index => $topic) {
+            // Cek sisa waktu sebelum memproses artikel baru
+            $elapsedTime = microtime(true) - $startTime;
+            if ($elapsedTime >= $safeExecutionLimit) {
+                $this->command->warn("Waktu eksekusi sudah mencapai {$elapsedTime} detik (Batas aman: {$safeExecutionLimit} detik). Menghentikan proses dengan aman untuk menghindari error timeout dari hosting.");
+                break; // Keluar dari loop agar tidak down/timeout
+            }
+
             $this->command->info('');
             $this->command->info('----------------------------------------------------');
             $this->command->info('[' . ($index + 1) . '/' . count($topics) . '] Sedang memproses artikel: "' . $topic . '"');
+
+            // Cek apakah artikel dengan judul yang sama (atau mirip) sudah ada untuk mencegah duplikat
+            if (Article::where('title', $topic)->exists()) {
+                $this->command->warn('-> Artikel dengan topik "' . $topic . '" sudah ada di database. Melewati...');
+                continue;
+            }
 
             try {
                 $this->command->line('1. AI memilih kategori yang paling cocok...');
