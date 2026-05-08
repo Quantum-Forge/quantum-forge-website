@@ -40,7 +40,7 @@
                                 </h4>
                                 <div class="post-date">
                                     {{ $article->published_at ? $article->published_at->format('F jS, Y') : $article->created_at->format('F jS, Y') }} by
-                                    <span>AI System</span>
+                                    <span>Sledge</span>
                                 </div>
                             </div>
                         </div>

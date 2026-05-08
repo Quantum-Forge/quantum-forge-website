@@ -26,6 +26,19 @@ class CategorySeeder extends Seeder
             ['name' => 'Maintenance & Support', 'description' => 'Ongoing support and improvements'],
             ['name' => 'CMS Development', 'description' => 'Headless and traditional CMS builds'],
             ['name' => 'RPA & Automation', 'description' => 'Robotic process automation projects'],
+            ['name' => 'AI & ML', 'description' => 'Artificial intelligence and machine learning projects'],
+            ['name' => 'Quantum Computing', 'description' => 'Quantum computing and algorithms'],
+            ['name' => 'Blockchain', 'description' => 'Blockchain and cryptocurrency projects'],
+            ['name' => 'Cloud Computing', 'description' => 'Cloud services and infrastructure'],
+            ['name' => 'Big Data', 'description' => 'Data analytics and big data projects'],
+            ['name' => 'Desktop Development', 'description' => 'Desktop native or cross-platform apps'],
+            ['name' => 'Game Development', 'description' => 'Mobile and console games'],
+            ['name' => 'Software Development', 'description' => 'Android/iOS native or cross-platform apps'],
+            // Articles Categories
+            ['name' => 'News', 'description' => 'News articles and blogs'],
+            ['name' => 'Business', 'description' => 'Business news and analysis'],
+            ['name' => 'Tips & Tricks', 'description' => 'Tips, tutorials, and tricks for software development'],
+            ['name' => 'Other', 'description' => 'Other categories not covered above'],
         ];
 
         foreach ($categories as $cat) {

@@ -34,7 +34,11 @@ class AiService
 
                    Jangan tambahkan tag <html>, <head>, <body>, atau <style>. Fokus HANYA pada isi konten dengan elemen <p>, <h4>, dan <blockquote> persis seperti contoh di atas.";
 
-        $result = Gemini::generativeModel('gemini-2.5-flash')->generateContent($prompt);
+        try {
+            $result = Gemini::generativeModel('gemini-2.5-flash')->generateContent($prompt);
+        } catch (\Throwable $e) {
+            throw new \RuntimeException($this->humanizeAiError($e));
+        }
 
         // Membersihkan markdown block jika AI tetap mengirimkannya
         $html = $result->text();
@@ -42,6 +46,51 @@ class AiService
         $html = preg_replace('/```\s*/i', '', $html);
 
         return trim($html);
+    }
+
+    protected function humanizeAiError(\Throwable $e): string
+    {
+        $message = trim((string) $e->getMessage());
+        $normalized = strtolower($message);
+
+        if (str_contains($normalized, 'high demand')) {
+            return 'Model AI sedang padat. Coba lagi beberapa menit.';
+        }
+
+        if (
+            str_contains($normalized, 'rate limit') ||
+            str_contains($normalized, 'too many requests') ||
+            str_contains($normalized, 'resource_exhausted') ||
+            str_contains($normalized, 'quota')
+        ) {
+            return 'Limit AI sedang tercapai. Coba lagi sebentar.';
+        }
+
+        if (str_contains($normalized, 'timeout')) {
+            return 'Permintaan AI timeout. Coba lagi.';
+        }
+
+        return $message !== '' ? $message : 'Gagal menjalankan AI. Coba lagi.';
+    }
+
+    public function generateTags($topic)
+    {
+        $prompt = "Buatkan 3-5 kata kunci (tags) yang sangat relevan untuk artikel tentang: '$topic'.
+                   PENTING: Hanya berikan output berupa kata kunci yang dipisahkan oleh koma tanpa teks lain. Contoh: Teknologi, AI, Masa Depan, Bisnis";
+
+        try {
+            $result = Gemini::generativeModel('gemini-2.5-flash')->generateContent($prompt);
+            $tagsString = trim($result->text());
+
+            // Bersihkan jika ada kutipan atau markdown
+            $tagsString = str_replace(['"', '`', "'"], '', $tagsString);
+
+            $tagsArray = array_map('trim', explode(',', $tagsString));
+            // Filter element kosong
+            return array_values(array_filter($tagsArray));
+        } catch (\Exception $e) {
+            return ['AI Generated']; // Fallback
+        }
     }
 
     /**

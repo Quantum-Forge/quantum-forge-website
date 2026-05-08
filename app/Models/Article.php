@@ -13,11 +13,13 @@ class Article extends Model
         'category_id',
         'content',
         'image_url',
+        'tags',
         'published_at',
     ];
 
     protected $casts = [
         'published_at' => 'datetime',
+        'tags' => 'array',
     ];
 
     public function category(): BelongsTo

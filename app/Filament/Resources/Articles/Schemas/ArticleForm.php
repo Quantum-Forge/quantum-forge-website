@@ -7,6 +7,7 @@ use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TagsInput;
 use Filament\Schemas\Schema;
 
 class ArticleForm
@@ -24,15 +25,24 @@ class ArticleForm
                     ->searchable()
                     ->preload()
                     ->required(),
+                TagsInput::make('tags')
+                    ->separator(',')
+                    ->placeholder('Tambah tag baru (tekan enter)'),
                 RichEditor::make('content')
                     ->default(null)
                     ->columnSpanFull(),
-                FileUpload::make('image_url')
-                    ->label('Thumbnail Image')
-                    ->image()
-                    ->disk('public')
-                    ->directory('images'),
-                DateTimePicker::make('published_at'),
+                \Filament\Schemas\Components\Section::make('Thumbnail')
+                    ->components([
+                        FileUpload::make('image_url')
+                            ->label('Thumbnail Image')
+                            ->hiddenLabel()
+                            ->image()
+                            ->disk('public')
+                            ->directory('images')
+                            ->columnSpanFull(),
+                    ])->columnSpanFull(),
+                DateTimePicker::make('published_at')
+                    ->columnSpanFull(),
             ]);
     }
 }

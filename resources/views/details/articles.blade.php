@@ -30,7 +30,7 @@
                                 @endif
                             </div>
                             <div class="lower-content">
-                                <div class="post-info"><span class="theme_color">{{ $article->category->name ?? 'Uncategorized' }}</span> -  {{ $article->published_at ? $article->published_at->format('F jS, Y') : $article->created_at->format('F jS, Y') }} by <i>AI System</i></div>
+                                <div class="post-info"><span class="theme_color">{{ $article->category->name ?? 'Uncategorized' }}</span> -  {{ $article->published_at ? $article->published_at->format('F jS, Y') : $article->created_at->format('F jS, Y') }} by <i>Sledge</i></div>
 
                                 <div class="mt-4">
                                     {!! $article->content !!}
@@ -38,7 +38,15 @@
 
                                 <!-- Post Share Options-->
                                 <div class="post-share-options">
-                                    <div class="tags"><a href="#">AI Generated</a> <a href="#">{{ $article->category->name ?? 'Uncategorized' }}</a></div>
+                                    <div class="tags">
+                                        @if(!empty($article->tags) && is_array($article->tags))
+                                            @foreach($article->tags as $tag)
+                                                <a href="#">{{ $tag }}</a>
+                                            @endforeach
+                                        @else
+                                            <a href="#">AI Generated</a> <a href="#">{{ $article->category->name ?? 'Uncategorized' }}</a>
+                                        @endif
+                                    </div>
                                 </div>
 
                             </div>

@@ -16,7 +16,7 @@ class ListArticles extends ListRecords
 {
     protected static string $resource = ArticleResource::class;
 
-    protected function getHeaderActions(): array    
+    protected function getHeaderActions(): array
     {
         return [
             Action::make('generate_ai')
@@ -39,27 +39,33 @@ class ListArticles extends ListRecords
 
                     $aiService = new AiService();
 
-                    // Generate prompt untuk Cover (Thumbnail) dan Content Image (Gambar Tengah)
-                    $coverPrompt = $aiService->generateImagePrompt($data['topic'], 'main');
-                    $coverImageUrl = $aiService->generateImage($coverPrompt);
+                    try {
+                        $coverPrompt = $aiService->generateImagePrompt($data['topic'], 'main');
+                        $coverImageUrl = $aiService->generateImage($coverPrompt);
+                        $content = $aiService->generateArticle($data['topic']);
+                        $tags = $aiService->generateTags($data['topic']);
 
-                    // Generate Content and pass the generated image url for the middle-image
-                    $content = $aiService->generateArticle($data['topic']);
+                        Article::create([
+                            'title' => $data['topic'],
+                            'slug' => Str::slug($data['topic'] . '-' . uniqid()),
+                            'category_id' => $data['category_id'],
+                            'content' => $content,
+                            'image_url' => $coverImageUrl,
+                            'published_at' => now(),
+                            'tags' => $tags,
+                        ]);
 
-                    // Save to database
-                    Article::create([
-                        'title' => $data['topic'],
-                        'slug' => Str::slug($data['topic'] . '-' . uniqid()),
-                        'category_id' => $data['category_id'],
-                        'content' => $content,
-                        'image_url' => $coverImageUrl,
-                        'published_at' => now(),
-                    ]);
-
-                    \Filament\Notifications\Notification::make()
-                        ->title('Artikel berhasil digenerate!')
-                        ->success()
-                        ->send();
+                        \Filament\Notifications\Notification::make()
+                            ->title('Artikel berhasil digenerate!')
+                            ->success()
+                            ->send();
+                    } catch (\Throwable $e) {
+                        \Filament\Notifications\Notification::make()
+                            ->title('Gagal generate artikel')
+                            ->body($e->getMessage())
+                            ->danger()
+                            ->send();
+                    }
                 }),
             CreateAction::make(),
         ];
