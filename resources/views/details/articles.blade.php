@@ -1,5 +1,40 @@
 @extends('layouts.app')
 
+@section('title', $article->title . ' | Quantum Forge')
+@section('meta_description', Str::limit(strip_tags($article->content), 150))
+@section('meta_keywords', is_array($article->tags) ? implode(', ', $article->tags) . ', Digital Marketing, Software House Makassar' : 'Digital Marketing, Software House Makassar, ' . ($article->category->name ?? ''))
+@section('og_type', 'article')
+@section('og_image', $article->image_url ? asset('storage/' . $article->image_url) : asset('images/logo.png'))
+
+@section('schema_markup')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ $article->title }}",
+  "image": [
+    "{{ $article->image_url ? asset('storage/' . $article->image_url) : asset('images/logo.png') }}"
+  ],
+  "datePublished": "{{ $article->published_at ? $article->published_at->toIso8601String() : $article->created_at->toIso8601String() }}",
+  "dateModified": "{{ $article->updated_at->toIso8601String() }}",
+  "author": [{
+      "@type": "Organization",
+      "name": "Quantum Forge",
+      "url": "{{ route('home') }}"
+  }],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Quantum Forge",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ asset('images/logo.png') }}"
+    }
+  },
+  "description": "{{ Str::limit(strip_tags($article->content), 150) }}"
+}
+</script>
+@endsection
+
 @section('content')
     <!-- Page Title Section -->
     <div class="page-title-section style-two">

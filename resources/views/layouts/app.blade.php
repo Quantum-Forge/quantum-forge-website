@@ -2,7 +2,31 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>Quantum Forge - Software House Makassar</title>
+    <title>@yield('title', 'Quantum Forge - Software House Makassar')</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="@yield('meta_description', 'Quantum Forge adalah Software House di Makassar yang menyediakan layanan Web Development, Mobile App, UI/UX Design, IT Consulting, dan strategi Digital Marketing.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'Software House Makassar, Web Development, Mobile App, Digital Marketing, IT Consultant, Jasa Pembuatan Website')">
+    <meta name="author" content="Quantum Forge">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="@yield('og_type', 'website')">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('title', 'Quantum Forge - Software House Makassar')">
+    <meta property="og:description" content="@yield('meta_description', 'Quantum Forge adalah Software House di Makassar yang menyediakan layanan Web Development, Mobile App, UI/UX Design, IT Consulting, dan strategi Digital Marketing.')">
+    <meta property="og:image" content="@yield('og_image', asset('images/logo.png'))">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="@yield('title', 'Quantum Forge - Software House Makassar')">
+    <meta property="twitter:description" content="@yield('meta_description', 'Quantum Forge adalah Software House di Makassar yang menyediakan layanan Web Development, Mobile App, UI/UX Design, IT Consulting, dan strategi Digital Marketing.')">
+    <meta property="twitter:image" content="@yield('og_image', asset('images/logo.png'))">
+
+    <!-- Schema Markup -->
+    @yield('schema_markup')
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#1A73E8">
     <meta name="msapplication-TileColor" content="#1A73E8">
