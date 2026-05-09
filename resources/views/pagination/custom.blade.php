@@ -1,5 +1,5 @@
 @if ($paginator->hasPages())
-    <div class="styled-pagination d-flex justify-content-center">
+    <div class="styled-pagination">
         <ul class="clearfix">
             {{-- Previous Page Link --}}
             @if (! $paginator->onFirstPage())
