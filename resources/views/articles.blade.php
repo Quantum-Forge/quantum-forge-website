@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
-@section('title', request('search') ? 'Hasil Pencarian: ' . request('search') . ' | Quantum Forge' : 'Artikel & Berita Terbaru | Quantum Forge')
+@php
+    $pageTitle = request('search') ? 'Hasil Pencarian: ' . request('search') . ' | Quantum Forge' : 'Artikel & Berita Terbaru | Quantum Forge';
+@endphp
+
+@section('title', $pageTitle)
 @section('meta_description', 'Baca artikel terbaru dari Quantum Forge seputar teknologi, web development, mobile app, strategi digital marketing, dan inovasi IT terkini.')
 @section('meta_keywords', 'Artikel IT, Teknologi, Web Development, Digital Marketing, Software House Makassar')
 
