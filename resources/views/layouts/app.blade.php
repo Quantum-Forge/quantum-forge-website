@@ -9,6 +9,7 @@
     <meta name="keywords" content="@yield('meta_keywords', 'Software House Makassar, Web Development, Mobile App, Digital Marketing, IT Consultant, Jasa Pembuatan Website')">
     <meta name="author" content="Quantum Forge">
     <meta name="robots" content="index, follow">
+    <meta name="google-adsense-account" content="{{ config('services.adsense.client_id') }}">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="@yield('og_type', 'website')">
