@@ -60,7 +60,6 @@
 
                     <!-- Pagination -->
                     {{ $articles->onEachSide(1)->links('pagination.custom') }}
-
                 </div>
                 @include('section.articles.sidebar')
 
