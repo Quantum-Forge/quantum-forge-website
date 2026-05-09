@@ -27,6 +27,10 @@
     <!-- Schema Markup -->
     @yield('schema_markup')
 
+    @if(config('services.adsense.enabled') && config('services.adsense.client_id') && request()->routeIs('articles.details'))
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ config('services.adsense.client_id') }}" crossorigin="anonymous"></script>
+    @endif
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#1A73E8">
     <meta name="msapplication-TileColor" content="#1A73E8">

@@ -35,4 +35,11 @@ return [
         ],
     ],
 
+    'adsense' => [
+        'enabled' => filter_var(env('ADSENSE_ENABLED', false), FILTER_VALIDATE_BOOLEAN),
+        'client_id' => env('ADSENSE_CLIENT_ID'),
+        'in_article_slot' => env('ADSENSE_INARTICLE_SLOT'),
+        'in_article_after_paragraph' => (int) env('ADSENSE_INARTICLE_AFTER_PARAGRAPH', 2),
+    ],
+
 ];
