@@ -1,12 +1,25 @@
 @extends('layouts.app')
 
 @php
-    $pageTitle = request('search') ? 'Hasil Pencarian: ' . request('search') . ' | Quantum Forge' : 'Artikel & Berita Terbaru | Quantum Forge';
+    $categoryName = '';
+    if (request('category')) {
+        $category = \App\Models\Category::where('slug', request('category'))->first();
+        if ($category) {
+            $categoryName = $category->name;
+        }
+    }
+    
+    $pageTitle = 'Artikel & Berita Terbaru | Quantum Forge';
+    if (request('search')) {
+        $pageTitle = 'Hasil Pencarian: ' . request('search') . ' | Quantum Forge';
+    } elseif ($categoryName) {
+        $pageTitle = 'Kategori: ' . $categoryName . ' | Quantum Forge';
+    }
 @endphp
 
 @section('title', $pageTitle)
 @section('meta_description', 'Baca artikel terbaru dari Quantum Forge seputar teknologi, web development, mobile app, strategi digital marketing, dan inovasi IT terkini.')
-@section('meta_keywords', 'Artikel IT, Teknologi, Web Development, Digital Marketing, Software House Makassar')
+@section('meta_keywords', 'Artikel IT, Teknologi, Web Development, Digital Marketing, Software House Makassar' . ($categoryName ? ', ' . $categoryName : ''))
 
 @section('content')
     <!-- Page Title Section -->
@@ -18,6 +31,8 @@
             </ul>
             @if(request('search'))
                 <h2>Hasil Pencarian: <span>"{{ request('search') }}"</span></h2>
+            @elseif($categoryName)
+                <h2>Kategori: <span>{{ $categoryName }}</span></h2>
             @else
                 <h2><span>Artikel</span> Terbaru</h2>
             @endif

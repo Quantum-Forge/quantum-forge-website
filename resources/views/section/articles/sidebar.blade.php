@@ -31,9 +31,9 @@
                             	<h4>Categories</h4>
                             </div>
                             <ul>
-								<li><a href="{{ route('articles') }}">All <span>{{ $totalArticles }}</span></a></li>
+								<li><a href="{{ route('articles') }}" class="{{ !request('category') ? 'theme_color' : '' }}">All <span>{{ $totalArticles }}</span></a></li>
                                 @foreach($sidebarCategories as $cat)
-								<li><a href="#">{{ $cat->name }} <span>{{ $cat->articles_count }}</span></a></li>
+								<li><a href="{{ route('articles', ['category' => $cat->slug]) }}" class="{{ request('category') == $cat->slug ? 'theme_color' : '' }}">{{ $cat->name }} <span>{{ $cat->articles_count }}</span></a></li>
                                 @endforeach
 							</ul>
                         </div>
