@@ -35,6 +35,7 @@ class Article extends Model
         }
 
         $html = preg_replace('/<(ul|ol)\b[^>]*>/i', '<$1 class="list-style-one">', $html);
+        $html = $this->normalizeBlockquotes($html);
 
         $enabled = (bool) config('services.adsense.enabled');
         $clientId = trim((string) config('services.adsense.client_id'));
@@ -93,5 +94,92 @@ class Article extends Model
         }
 
         return $result;
+    }
+
+    private function normalizeBlockquotes(string $html): string
+    {
+        if (stripos($html, '<blockquote') === false) {
+            return $html;
+        }
+
+        $previousUseErrors = libxml_use_internal_errors(true);
+
+        try {
+            $doc = new \DOMDocument('1.0', 'UTF-8');
+            $wrapperId = '__qf_root__';
+            $doc->loadHTML(
+                '<?xml encoding="utf-8" ?><div id="' . $wrapperId . '">' . $html . '</div>',
+                LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD
+            );
+
+            $root = $doc->getElementById($wrapperId);
+            if (! $root) {
+                return $html;
+            }
+
+            $xpath = new \DOMXPath($doc);
+
+            $blockquotes = [];
+            foreach ($root->getElementsByTagName('blockquote') as $blockquote) {
+                $blockquotes[] = $blockquote;
+            }
+
+            foreach ($blockquotes as $blockquote) {
+                $existing = $xpath->query(
+                    './/*[contains(concat(" ", normalize-space(@class), " "), " blockquote-text ")]',
+                    $blockquote
+                );
+
+                if ($existing && $existing->length > 0) {
+                    continue;
+                }
+
+                $div = $doc->createElement('div');
+                $div->setAttribute('class', 'blockquote-text');
+
+                $span = $doc->createElement('span');
+                $span->setAttribute('class', 'quote icofont-quote-left');
+                $div->appendChild($span);
+
+                $elementChildren = [];
+                foreach ($blockquote->childNodes as $childNode) {
+                    if ($childNode->nodeType === XML_ELEMENT_NODE) {
+                        $elementChildren[] = $childNode;
+                    } elseif ($childNode->nodeType === XML_TEXT_NODE && trim($childNode->textContent) !== '') {
+                        $elementChildren[] = $childNode;
+                    }
+                }
+
+                $singleP = count($elementChildren) === 1
+                    && $elementChildren[0] instanceof \DOMElement
+                    && strtolower($elementChildren[0]->nodeName) === 'p';
+
+                if ($singleP) {
+                    $p = $elementChildren[0];
+                    while ($p->firstChild) {
+                        $div->appendChild($p->removeChild($p->firstChild));
+                    }
+                    $blockquote->removeChild($p);
+                } else {
+                    while ($blockquote->firstChild) {
+                        $div->appendChild($blockquote->removeChild($blockquote->firstChild));
+                    }
+                }
+
+                $blockquote->appendChild($div);
+            }
+
+            $output = '';
+            foreach ($root->childNodes as $child) {
+                $output .= $doc->saveHTML($child);
+            }
+
+            return $output;
+        } catch (\Throwable $e) {
+            return $html;
+        } finally {
+            libxml_clear_errors();
+            libxml_use_internal_errors($previousUseErrors);
+        }
     }
 }
