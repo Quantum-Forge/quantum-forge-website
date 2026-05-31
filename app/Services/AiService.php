@@ -74,7 +74,7 @@ class AiService
      */
     public function generateArticle($topic)
     {
-        $prompt = "Tuliskan artikel blog SEO dalam bahasa Indonesia tentang: $topic.
+        $promptBase = "Tuliskan artikel blog SEO dalam bahasa Indonesia tentang: $topic.
                    PENTING: Hanya berikan output berupa kode HTML murni tanpa tag pembuka/penutup ```html atau markdown lainnya.
                    DILARANG KERAS MENGGUNAKAN MARKDOWN FORMATTING SEPERTI **teks tebal** ATAU *teks miring*.
                    Jika ingin menebalkan teks, GUNAKAN tag HTML <strong> atau <b>.
@@ -102,21 +102,29 @@ class AiService
 
                    Jangan tambahkan tag <html>, <head>, <body>, atau <style>. Fokus HANYA pada isi konten dengan elemen <p>, <h4>, <blockquote>, <strong>, <ul>, dan <li> persis seperti contoh di atas.";
 
-        try {
-            $result = Gemini::generativeModel('gemini-2.5-flash')->generateContent($prompt);
-        } catch (\Throwable $e) {
-            throw new \RuntimeException($this->humanizeAiError($e));
+        $lastHtml = null;
+
+        for ($attempt = 1; $attempt <= 2; $attempt++) {
+            $prompt = $promptBase;
+            if ($attempt > 1) {
+                $prompt .= "\n\nPerbaiki kualitas: buat lebih detail, lebih spesifik, dan lebih panjang (minimal 900 kata). Tambahkan contoh praktis dan insight yang tidak generik. Jangan gunakan kalimat pembuka yang terlalu umum.";
+            }
+
+            try {
+                $result = Gemini::generativeModel('gemini-2.5-flash')->generateContent($prompt);
+            } catch (\Throwable $e) {
+                throw new \RuntimeException($this->humanizeAiError($e));
+            }
+
+            $html = $this->sanitizeGeneratedHtml((string) $result->text());
+            $lastHtml = $html;
+
+            if ($this->isAcceptableArticleHtml($html)) {
+                return $html;
+            }
         }
 
-        // Membersihkan markdown block jika AI tetap mengirimkannya
-        $html = $result->text();
-        $html = preg_replace('/```html\s*/i', '', $html);
-        $html = preg_replace('/```\s*/i', '', $html);
-
-        // Pastikan setiap tag <ul> atau <ol> yang digenerate AI selalu menggunakan class list-style-one
-        $html = preg_replace('/<(ul|ol)\b[^>]*>/i', '<$1 class="list-style-one">', $html);
-
-        return trim($html);
+        throw new \RuntimeException('Konten artikel masih kurang memadai. Coba generate ulang dengan topik yang lebih spesifik.');
     }
 
     protected function humanizeAiError(\Throwable $e): string
@@ -142,6 +150,42 @@ class AiService
         }
 
         return $message !== '' ? $message : 'Gagal menjalankan AI. Coba lagi.';
+    }
+
+    protected function sanitizeGeneratedHtml(string $html): string
+    {
+        $html = preg_replace('/```html\s*/i', '', $html);
+        $html = preg_replace('/```\s*/i', '', $html);
+        $html = str_replace(['**', '*', '`'], '', $html);
+        $html = preg_replace('/<(ul|ol)\b[^>]*>/i', '<$1 class="list-style-one">', $html);
+        return trim((string) $html);
+    }
+
+    protected function isAcceptableArticleHtml(string $html): bool
+    {
+        $plain = trim((string) strip_tags($html));
+        if ($plain === '') {
+            return false;
+        }
+
+        $normalized = strtolower(preg_replace('/\s+/', ' ', $plain) ?? '');
+        if (
+            str_contains($normalized, 'sebagai model bahasa') ||
+            str_contains($normalized, 'sebagai ai') ||
+            str_contains($normalized, 'saya tidak dapat')
+        ) {
+            return false;
+        }
+
+        $wordCount = str_word_count($plain);
+        if ($wordCount < 650) {
+            return false;
+        }
+
+        $paragraphCount = preg_match_all('/<p\b/i', $html) ?: 0;
+        $subheadingCount = preg_match_all('/<h4\b/i', $html) ?: 0;
+
+        return $paragraphCount >= 5 && $subheadingCount >= 2;
     }
 
     public function generateTags($topic)

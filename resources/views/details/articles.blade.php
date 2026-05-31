@@ -47,7 +47,7 @@
         <div class="auto-container">
             <ul class="post-meta">
                 <li><a href="{{ route('home') }}">Beranda</a></li>
-                <li>Artikel</li>
+                <li><a href="{{ route('articles') }}">Artikel</a></li>
             </ul>
             <h2>{{ $article->title }}</h2>
         </div>
@@ -67,11 +67,11 @@
                                 @if($article->image_url)
                                     <img src="{{ asset('storage/' . $article->image_url) }}" alt="{{ $article->title }}" />
                                 @else
-                                    <img src="https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg" alt="{{ $article->title }}" />
+                                    <img src="{{ asset('images/logo.png') }}" alt="{{ $article->title }}" />
                                 @endif
                             </div>
                             <div class="lower-content">
-                                <div class="post-info"><span class="theme_color">{{ $article->category->name ?? 'Uncategorized' }}</span> -  {{ $article->published_at ? $article->published_at->format('F jS, Y') : $article->created_at->format('F jS, Y') }} by <i>Sledge</i></div>
+                                <div class="post-info"><span class="theme_color">{{ $article->category->name ?? 'Uncategorized' }}</span> - {{ $article->published_at ? $article->published_at->format('d M Y') : $article->created_at->format('d M Y') }} oleh <i>Quantum Forge</i></div>
 
                                 <div class="mt-4">
                                     {!! $article->content_with_ads !!}
@@ -82,10 +82,12 @@
                                     <div class="tags">
                                         @if(!empty($article->tags) && is_array($article->tags))
                                             @foreach($article->tags as $tag)
-                                                <a href="#" class="my-1">{{ $tag }}</a>
+                                                <a href="{{ route('articles', ['search' => $tag]) }}" class="my-1">{{ $tag }}</a>
                                             @endforeach
                                         @else
-                                            <a href="#">AI Generated</a> <a href="#">{{ $article->category->name ?? 'Uncategorized' }}</a>
+                                            @if($article->category?->slug)
+                                                <a href="{{ route('articles', ['category' => $article->category->slug]) }}">{{ $article->category->name }}</a>
+                                            @endif
                                         @endif
                                     </div>
                                 </div>
@@ -98,7 +100,7 @@
                     @if($relatedArticles->count() > 0)
                     <div class="related-projects">
                         <div class="title-box">
-                            <h3>Related Posts</h3>
+                            <h3>Artikel Terkait</h3>
                         </div>
                         <div class="row clearfix">
 
@@ -111,7 +113,7 @@
                                             @if($related->image_url)
                                                 <img src="{{ asset('storage/' . $related->image_url) }}" alt="{{ $related->title }}" />
                                             @else
-                                                <img src="https://static.vecteezy.com/system/resources/previews/022/059/000/non_2x/no-image-available-icon-vector.jpg" alt="{{ $related->title }}" />
+                                                <img src="{{ asset('images/logo.png') }}" alt="{{ $related->title }}" />
                                             @endif
                                         </a>
                                     </div>
