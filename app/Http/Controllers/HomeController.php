@@ -38,10 +38,13 @@ class HomeController extends Controller
                 $imageSrc = asset('storage/' . ltrim($rawImageUrl, '/'));
             }
 
-            $categoryLabel = (string) ($article->getAttribute('category') ?? '');
-            if ($categoryLabel === '' && $article->relationLoaded('category')) {
+            $categoryLabel = '';
+            if (Schema::hasColumn('articles', 'category_id')) {
                 $categoryLabel = (string) ($article->category->name ?? '');
+            } elseif (Schema::hasColumn('articles', 'category')) {
+                $categoryLabel = (string) ($article->getAttributeValue('category') ?? '');
             }
+
             if ($categoryLabel === '') {
                 $categoryLabel = 'Uncategorized';
             }
